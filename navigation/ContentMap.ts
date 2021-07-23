@@ -9,22 +9,32 @@ export interface ContentMapElement
     //
     // -one of the following-
     //
-    html?: string // this is the html content for an actual leaf page 
+    html_id?: string // this is the html content for an actual leaf page 
     list_id?: string // this is the id of a list if the ContentMapElement is actually a parent to a child list
     url?: string // this is a URL 
 }
 //
+const htmls_by_id: { [key: string]: any } = 
+{
+    "intro-from-publisher": require('../resources/specific/intro.html'),
+    "message": require('../resources/enlightenment/top/message.html'),
+    "appearance": require('../resources/enlightenment/about_tathagata/appearance.html')
+}
+export function htmlForId(html_id: string)
+{
+    return htmls_by_id[html_id]
+}
 //
 export const content_map: { [key: string]: ContentMapElement[] } = 
 {
     "home": [
         {
             cell: "Introduction from Publisher",
-            html: require('../resources/specific/intro.html')
+            html_id: "intro-from-publisher"
         },
         {
             cell: "Message from Master Tathagata",
-            html: require('../resources/enlightenment/top/message.html')
+            html_id: "message"
         },
         {
             cell: "Lectures, Articles, and Teachings",
@@ -66,6 +76,9 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "lectures": [
         {
             cell: ""
+        },
+        {
+            cell: ""
         }
     ],
     "pubs": [
@@ -97,7 +110,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "The Life of Tathagata",
             descr: "Appearance of the Enlightened Being",
-            html: require('../resources/enlightenment/about_tathagata/appearance.html')
+            html_id: "appearance"
         }
     ],
     "new-translations": [

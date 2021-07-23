@@ -3,8 +3,10 @@
  * https://reactnavigation.org/docs/typescript/
  */
 
-export type RootStackParamList = {
-  Home: undefined;
-  NotFound: undefined;
-  WebContent: undefined;
+export type RootStackParamList =
+{
+    Home: undefined;
+    NotFound: undefined;
+    WebContent: undefined;
+    SubList: undefined;
 };

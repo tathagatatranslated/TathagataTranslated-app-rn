@@ -3,20 +3,21 @@
  * https://reactnavigation.org/docs/getting-started
  *
  */
-import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native'
+import { NavigationContainer, DefaultTheme, DarkTheme, useNavigation } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
-import React, { useState, useEffect } from 'react'
-import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native'
-
+import React, { useState/*, useEffect */} from 'react'
+import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Linking/*, Platform */} from 'react-native'
+import { SearchBar } from 'react-native-elements'
+import { WebView } from 'react-native-webview'
+//
 import NotFoundScreen from '../screens/NotFoundScreen'
 import { RootStackParamList } from '../types'
 import LinkingConfiguration from './LinkingConfiguration'
 import useColorScheme from '../hooks/useColorScheme'
-import { SearchBar } from 'react-native-elements'
-import { WebView } from 'react-native-webview'
 // import Colors from '../constants/Colors'
 //
-import { initial_root_list, ContentMapElement, contentItemListWithId } from './ContentMap'
+//
+import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId } from './ContentMap'
 //
 //
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName })
@@ -31,6 +32,7 @@ export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeNa
 interface ItemViewProps
 {
     item: ContentMapElement
+    rowTapped_fn: (item: ContentMapElement) => void
 }
 //
 const ItemView: React.FC<ItemViewProps> = (props) =>
@@ -39,7 +41,7 @@ const ItemView: React.FC<ItemViewProps> = (props) =>
     //
     return (
         <TouchableOpacity onPress={() => {
-            didSelect_rowWithItem(item)
+            props.rowTapped_fn(item)
         }}>
 
             <View style={styles.itemContentContainer}>
@@ -58,24 +60,42 @@ const ItemSeparatorView = () => {
     )
 }
 
-const didSelect_rowWithItem = (item: ContentMapElement) =>
+const didSelect_rowWithItem = (item: ContentMapElement, navigation: any) =>
 {
-    console.log("item " , item)
+    if (item.list_id) {
+        navigation.push("SubList", { list_id: item.list_id!, title: item.cell })
+        return
+    } else if (item.html_id) {
+        navigation.push("WebContent", { html_id: item.html_id!, title: item.cell })
+        return
+    } else if (item.url) {
+        Linking.openURL(item.url!)
+        return
+    }
+    console.warn("Unable to determine how to present item:", item)
+    throw new Error("Expected pushable content or list on item.")
 }
 //
 //
 interface WebContentScreen_Props
 {
-    html: string
+    // html: string
+    route: any
 }
 let WebContentScreen: React.FC<WebContentScreen_Props> = function(props)
 {
-    let html = props.html
+    let route = props.route
+    let params = route.params
+    let html = htmlForId(params.html_id)
     return (
-        <WebView
-            // originWhitelist={['*']}
-            source={{ html: html }}
-        />
+        <View style={{ flex: 1 }}>
+            <WebView
+                // originWhitelist={['*']}
+                source={{ html: html }}
+                style={{flex: 1 }}
+            >
+            </WebView>
+        </View>
     )
 }
 //
@@ -89,8 +109,8 @@ function __isMatchingContentItem(item: ContentMapElement, normalized_searchText:
     if (item.descr) {
         normalized_item_searchableDataSet += searchNormalizedString(item.descr!)
     }
-    if (item.html) {
-        normalized_item_searchableDataSet += searchNormalizedString(item.html!)
+    if (item.html_id) {
+        normalized_item_searchableDataSet += searchNormalizedString(htmlForId(item.html_id!))
     }
     if (item.url) {
         normalized_item_searchableDataSet += searchNormalizedString(item.url!)
@@ -124,13 +144,12 @@ function _filteredListWithSearchText(searchingItemsList: ContentMapElement[], no
     return filteredList
 }
 //
-function SearchableListScreen()
+let SearchableListScreen: React.FC = (props) =>
 {
     const colorScheme = useColorScheme()
     // let tintColor = Colors[colorScheme].tint
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState("")
     const [displayableDataSource, setDisplayableDataSource] = useState(initial_root_list)
-    //
     const updateDataSourceWithPossibleSearchText = (searchText: string) =>
     {
         let dataSource: any;
@@ -142,13 +161,14 @@ function SearchableListScreen()
         setDisplayableDataSource(dataSource)
         setSearch(searchText)
     }
-    //
+    let navigation = useNavigation()
+    let rowTapped_fn = (item: ContentMapElement) => { didSelect_rowWithItem(item, navigation) }
     return (<View>
         <SearchBar
             round
             searchIcon={{ size: 24 }}
-            onChangeText={(text) => updateDataSourceWithPossibleSearchText(text)}
-            onClear={(text) => updateDataSourceWithPossibleSearchText('')}
+            onChangeText={(text: string) => updateDataSourceWithPossibleSearchText(text)}
+            onClear={(_) => updateDataSourceWithPossibleSearchText('')}
             placeholder="Search Content"
             value={search}
         />
@@ -156,7 +176,33 @@ function SearchableListScreen()
             data={displayableDataSource}
             keyExtractor={(item, index) => index.toString()}
             ItemSeparatorComponent={ItemSeparatorView}
-            renderItem={ItemView}
+            renderItem={({ item }: { item: ContentMapElement }) => {
+                return (<ItemView item={item} rowTapped_fn={rowTapped_fn} />) 
+            }}
+        />
+    </View>)
+}
+interface SubListScreenProps
+{
+    route: any
+}
+let SubListScreen: React.FC<SubListScreenProps> = (props) =>
+{
+    let route = props.route
+    let list_id = route.params.list_id
+    let dataItems = contentItemListWithId(list_id)
+    //
+    let navigation = useNavigation()
+    let rowTapped_fn = (item: ContentMapElement) => { didSelect_rowWithItem(item, navigation) }
+    //
+    return (<View>
+        <FlatList
+            data={dataItems}
+            keyExtractor={(item, index) => index.toString()}
+            ItemSeparatorComponent={ItemSeparatorView}
+            renderItem={({ item }: { item: ContentMapElement }) => {
+                return (<ItemView item={item} rowTapped_fn={rowTapped_fn} />) 
+            }}
         />
     </View>)
 }
@@ -168,8 +214,12 @@ function RootNavigator()
     return (
         <RootStack.Navigator screenOptions={{ headerShown: true }}>
             
-            <RootStack.Screen name="Home" component={SearchableListScreen} options={{ title: 'Tathagata Translated' }} />
-            <RootStack.Screen name="WebContent" component={WebContentScreen} />
+            <RootStack.Screen name="Home" component={SearchableListScreen} options={{ title: 'Tathagata: Translated' }} />
+
+            <RootStack.Screen name="SubList" component={SubListScreen} options={({route}) => ({ title: (route.params! as any).title })} />
+
+            <RootStack.Screen name="WebContent" component={WebContentScreen} options={({route}) => ({ title: (route.params! as any).title })} />
+
             <RootStack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
 
         </RootStack.Navigator>
