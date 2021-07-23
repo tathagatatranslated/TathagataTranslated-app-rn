@@ -45,7 +45,12 @@ const ItemView: React.FC<ItemViewProps> = (props) =>
         }}>
 
             <View style={styles.itemContentContainer}>
-                <Text style={styles.itemLabel}>{item.cell}</Text>
+                <View style={styles.itemLabelsContainer}>
+                    <Text style={styles.itemLabels_title}>{item.cell}</Text>
+                    { item.descr ? (
+                    <Text style={styles.itemLabels_description}>{item.descr}</Text>
+                    ) : (<></>) }
+                </View>
                 {/* TOOD? conditionally include the chevron based on the type of item cell? (if e.g. nil .html) */}
                 <Text style={styles.arrow}>{"›"}</Text>
             </View>
@@ -235,13 +240,23 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         alignContent: 'stretch',
-        flex: 1
+        flex: 1,
+        minHeight: 46
     },
-    itemLabel: {
-        padding: 10,
+    itemLabelsContainer: {
+        paddingLeft: 14,
+        paddingRight: 20,
         alignSelf: 'stretch',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         // border: "1px solid red",
+    },
+    itemLabels_title: {
+        fontSize: 14,
+        fontWeight: 'bold'
+    },
+    itemLabels_description: {
+        fontSize: 13,
+        fontStyle: 'italic'
     },
     arrow: {
         color: '#9E9C9E',
