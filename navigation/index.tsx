@@ -4,9 +4,9 @@
  *
  */
 import { NavigationContainer, DefaultTheme, DarkTheme, useNavigation } from '@react-navigation/native'
-import { createStackNavigator } from '@react-navigation/stack'
+import { createStackNavigator, StackNavigationOptions, CardStyleInterpolators } from '@react-navigation/stack';
 import React, { useState/*, useEffect */} from 'react'
-import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Linking/*, Platform */} from 'react-native'
+import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Linking, Platform } from 'react-native'
 import { SearchBar } from 'react-native-elements'
 import { WebView } from 'react-native-webview'
 //
@@ -17,7 +17,7 @@ import useColorScheme from '../hooks/useColorScheme'
 // import Colors from '../constants/Colors'
 //
 //
-import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId } from './ContentMap'
+import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId, htmlForMarkdownId, mdTextForId } from './ContentMap'
 //
 //
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName })
@@ -47,7 +47,7 @@ const ItemView: React.FC<ItemViewProps> = (props) =>
             <View style={styles.itemContentContainer}>
                 <View style={styles.itemLabelsContainer}>
                     <Text style={styles.itemLabels_title}>{item.cell}</Text>
-                    { item.descr ? (
+                    { item.descr && item.descr != "" && typeof item.descr !== 'undefined' ? (
                     <Text style={styles.itemLabels_description}>{item.descr}</Text>
                     ) : (<></>) }
                 </View>
@@ -74,7 +74,11 @@ const didSelect_rowWithItem = (item: ContentMapElement, navigation: any) =>
         navigation.push("WebContent", { html_id: item.html_id!, title: item.cell })
         return
     } else if (item.url) {
-        Linking.openURL(item.url!)
+        if (Platform.OS == 'web') { // branching in order to get 'new tab' behavior on web
+            window.open(item.url!, '_blank')
+        } else {
+            Linking.openURL(item.url!)
+        }
         return
     }
     console.warn("Unable to determine how to present item:", item)
@@ -213,11 +217,39 @@ let SubListScreen: React.FC<SubListScreenProps> = (props) =>
 }
 //
 //
+const base_screenOptions: StackNavigationOptions =
+{
+    cardStyle: { flex: 1 }, // to cause screen to fill full height
+    //
+    // headerStyle: {
+        // backgroundColor: '#0099CC',
+        // shadowRadius: 5,
+        // shadowOffset: {
+        //     width: 0,
+        //     height: 1,
+        // },
+        // shadowColor: 'rgba(0, 0, 0, 0.25)',
+        // elevation: 3,
+    // },
+    // headerTitleStyle: {
+    //     fontWeight: 'normal',
+    //     color: '#FCFBFC',
+    // },
+    // headerTitleAlign: 'center',
+    // headerTintColor: '#fff'
+}
 const RootStack = createStackNavigator<RootStackParamList>()
+
 function RootNavigator()
 {
     return (
-        <RootStack.Navigator screenOptions={{ headerShown: true }}>
+        <RootStack.Navigator screenOptions={{
+            // support for horizontal web animations
+            animationEnabled: true,
+            cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            //
+            ...base_screenOptions
+        }}>
             
             <RootStack.Screen name="Home" component={SearchableListScreen} options={{ title: 'Tathagata: Translated' }} />
 

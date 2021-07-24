@@ -1,0 +1,3 @@
+[submodule "resources/TranslatingTathagata-Translations"]
+	path = resources/TranslatingTathagata-Translations
+	url = git@github.com:TranslatingTathagata/Translations.git

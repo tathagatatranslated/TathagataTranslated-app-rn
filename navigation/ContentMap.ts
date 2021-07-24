@@ -1,5 +1,6 @@
 //
 //
+import * as showdown from './showdown.min.js'
 //
 //
 export interface ContentMapElement
@@ -15,7 +16,7 @@ export interface ContentMapElement
     url?: string, // this is a URL 
 }
 //
-const htmls_by_id: { [key: string]: any } = 
+const htmls_by_id: { [key: string]: string } = 
 {
     //
     // home
@@ -242,13 +243,84 @@ const htmls_by_id: { [key: string]: any } =
     "pune": require('../resources/enlightenment/travel/pune.html'),
     "bodh_gaya": require('../resources/enlightenment/travel/bodh_gaya.html'),
     "iit": require('../resources/enlightenment/travel/iit.html'),
-    "leicester_square": require('../resources/enlightenment/travel/leicester_square.html')
+    "leicester_square": require('../resources/enlightenment/travel/leicester_square.html'),
+    //
+    // transcriptions
+    // .md files here will be hydrated as htmls from pathsFor_mds_by_html_id
+    "tathagata-qa-while-traveling-the-usa": require('../resources/transcriptions/2011/08/tathagata-qa-while-traveling-the-usa.html'),
+    "conversation-with-a-gravity-specialist": require('../resources/transcriptions/2011/08/conversation-with-a-gravity-specialist.html'),
+    "during-a-discussion-with-a-cognitive-scientis": require('../resources/transcriptions/2011/08/during-a-discussion-with-a-cognitive-scientis.html'),
+    "dialogue-with-a-professor-of-philosophy": require('../resources/transcriptions/2011/08/dialogue-with-a-professor-of-philosophy.html'),
+    "tathagata-meets-a-professor": require('../resources/transcriptions/2011/08/tathagata-meets-a-professor.html'),
+    "tathagata-meets-an-assistant-director-at-an-e": require('../resources/transcriptions/2011/08/tathagata-meets-an-assistant-director-at-an-e.html'),
+    "economy-talk-in-tathagatas-hotel-accommodatio": require('../resources/transcriptions/2011/08/economy-talk-in-tathagatas-hotel-accommodatio.html'),
+    
+    "an-american-buddhist-monk-visits-master-tatha": require('../resources/transcriptions/2011/09/an-american-buddhist-monk-visits-master-tatha.html'),
+    "tathagata-meets-a-catholic-nun": require('../resources/transcriptions/2011/09/tathagata-meets-a-catholic-nun.html'),
+    "conversation-with-the-director-of-a-buddhist": require('../resources/transcriptions/2011/09/conversation-with-the-director-of-a-buddhist.html'),
+    "conversations-with-three-professors-of-philos": require('../resources/transcriptions/2011/09/conversations-with-three-professors-of-philos.html'),
+    "explanation-about-the-subjects-of-death-the-w": require('../resources/transcriptions/2011/09/explanation-about-the-subjects-of-death-the-w.html'),
+    "meeting-buddhist-monks-in-thailand": require('../resources/transcriptions/2011/09/meeting-buddhist-monks-in-thailand.html'),
+    "tathagata-giving-a-talk-in-thailand": require('../resources/transcriptions/2011/10/tathagata-giving-a-talk-in-thailand.html'),
+    "master-tathagata-meets-a-global-climate-exper": require('../resources/transcriptions/2011/10/master-tathagata-meets-a-global-climate-exper.html'),
+    "master-tathagata-meets-a-philosophy-professor": require('../resources/transcriptions/2011/10/master-tathagata-meets-a-philosophy-professor.html'),
+    "meeting-in-the-philosophy-department": require('../resources/transcriptions/2011/11/meeting-in-the-philosophy-department.html'),
+    
+    "tathagata-during-hotel-room-talk": require('../resources/transcriptions/2012/03/tathagata-during-hotel-room-talk.html'),
+    "satto-asks-master-tathagata-about-dreams": require('../resources/transcriptions/2012/03/satto-asks-master-tathagata-about-dreams.html'),
+    "from-meeting-at-a-catholic-church": require('../resources/transcriptions/2012/03/from-meeting-at-a-catholic-church.html'),
+    "last-part-of-a-conversation-with-a-professor": require('../resources/transcriptions/2012/03/last-part-of-a-conversation-with-a-professor.html'),
+    "while-soyun-talks-to-satto": require('../resources/transcriptions/2012/03/while-soyun-talks-to-satto.html'),
+    "meeting-a-brain-cognitive-science-specialist": require('../resources/transcriptions/2012/03/meeting-a-brain-cognitive-science-specialist.html'),
+    "lunch-at-a-buddhist-temple": require('../resources/transcriptions/2012/05/lunch-at-a-buddhist-temple.html'),
+    "at-a-universitys-international-affairs-office": require('../resources/transcriptions/2012/05/at-a-universitys-international-affairs-office.html'),
+    "transcription-tathagata-quotes": require('../resources/transcriptions/2012/06/tathagata-quotes.html'),
+    "malaysia-august-13th-2008": require('../resources/transcriptions/2012/07/malaysia-august-13th-2008.html'),
+    "meeting-in-the-philosophy-department-part-3": require('../resources/transcriptions/2012/07/meeting-in-the-philosophy-department-part-3.html'),
+    "meeting-in-the-philosophy-department-part-2": require('../resources/transcriptions/2012/07/meeting-in-the-philosophy-department-part-2.html'),
+    "during-a-talk-with-a-cognitive-scientist": require('../resources/transcriptions/2012/10/during-a-talk-with-a-cognitive-scientist.html'),
+    "brief-talk-with-a-lay-practitioner": require('../resources/transcriptions/2012/10/brief-talk-with-a-lay-practitioner.html'),
+    "beginning-discussion-with-a-primate-cognition": require('../resources/transcriptions/2012/10/beginning-discussion-with-a-primate-cognition.html'),
+    
+    "visiting-a-buddhist-university": require('../resources/transcriptions/2013/03/visiting-a-buddhist-university.html'),
+    
 
+
+
+
+    //
+    // translations
+    // .md files here will be hydrated as htmls from pathsFor_mds_by_html_id
 }
 export function htmlForId(html_id: string)
 {
     return htmls_by_id[html_id]
 }
+//
+//
+const pathsFor_mds_by_html_id: { [key: string]: string} = 
+{
+    "transcriptions-intro": require('../resources/specific/Transcriptions_README_modifiedForApp.md'),
+    "precepts-commentary": require('../resources/transcriptions/commentary on sixteen precepts.md')
+}
+let md_converter = new showdown.Converter();
+async function hydrate_mds()
+{
+    let md_ids = Object.keys(pathsFor_mds_by_html_id)
+    for (var i = 0 ; i < md_ids.length ; i++) {
+        let md_id = md_ids[i]
+        let pathFor_md = pathsFor_mds_by_html_id[md_id]
+        try {
+            let res = await fetch(pathFor_md, { credentials: "same-origin" })
+            let md_str = await res.text()
+            let html_str = md_converter.makeHtml(md_str);
+            htmls_by_id[md_id] = html_str
+        } catch (e) {
+            console.error("Unable to fetch or convert the md file at id", md_id)
+        }
+    }
+}
+//
 //
 export const content_map: { [key: string]: ContentMapElement[] } = 
 {
@@ -565,7 +637,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 		},
 		{
 			cell: "The words with leader of Tibet Buddhism, Tenshav Rinpoche",
-			descr: " ",
+			// descr: "",
 			html_id: "convo_5"
 		},
 		{
@@ -595,7 +667,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 		},
 		{
 			cell: "Samwon Rinpoche, The president of University of Tibetan Buddhism, Saranad",
-			descr: " ",
+			// descr: "",
 			html_id: "convo_11"
 		},
 		{
@@ -1510,8 +1582,180 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     ],
     "transcriptions": [
         {
-            cell: ""
-        }
+            cell: "Introduction to Travel Audio Recording Transcriptions",
+            descr: "From This Publisher",
+            html_id: "transcriptions-intro"
+        },
+        {
+            cell: "Tathagata QA while traveling the USA",
+            descr: "",
+            html_id: "tathagata-qa-while-traveling-the-usa"
+        },
+        {
+            cell: "Conversation with a gravity specialist",
+            descr: "",
+            html_id: "conversation-with-a-gravity-specialist"
+        },
+        {
+            cell: "During a discussion with a cognitive scientist",
+            descr: "",
+            html_id: "during-a-discussion-with-a-cognitive-scientis"
+        },
+        {
+            cell: "Dialogue with a professor of philosophy",
+            descr: "",
+            html_id: "dialogue-with-a-professor-of-philosophy"
+        },
+        {
+            cell: "Tathagata meets a professor",
+            descr: "",
+            html_id: "tathagata-meets-a-professor"
+        },
+        {
+            cell: "Meeting at a climate research funding organization",
+            descr: "",
+            html_id: "tathagata-meets-an-assistant-director-at-an-e"
+        },
+        {
+            cell: "Economy talk at Tathagata's hotel accommodation",
+            descr: "During Thailand travel, 2004",
+            html_id: "economy-talk-in-tathagatas-hotel-accommodatio"
+        },
+        {
+            cell: "A Buddhist monk visiting Master Tathagata",
+            descr: "At His hotel accommodation in Thailand upon receiving invitation through Soyun and Satto",
+            html_id: "an-american-buddhist-monk-visits-master-tatha"
+        },
+        {
+            cell: "Tathagata visits a Catholic church",
+            descr: "",
+            html_id: "tathagata-meets-a-catholic-nun"
+        },
+        {
+            cell: "Conversation with the director of a Buddhist university",
+            descr: "",
+            html_id: "conversation-with-the-director-of-a-buddhist"
+        },
+        {
+            cell: "Conversations with three professors of philosophy and religion",
+            descr: "",
+            html_id: "conversations-with-three-professors-of-philos"
+        },
+        {
+            cell: "Explanation about the subjects of death, the world after life, and transmigration",
+            descr: "",
+            html_id: "explanation-about-the-subjects-of-death-the-w"
+        },
+        {
+            cell: "Meeting Buddhist monks in Thailand",
+            descr: "",
+            html_id: "meeting-buddhist-monks-in-thailand"
+        },
+        {
+            cell: "Tathagata giving a private talk at a hotel where he stayed in Thailand",
+            descr: "",
+            html_id: "tathagata-giving-a-talk-in-thailand"
+        },
+        {
+            cell: "Master Tathagata meets a global climate expert",
+            descr: "",
+            html_id: "master-tathagata-meets-a-global-climate-exper"
+        },
+        {
+            cell: "Master Tathagata meets a philosophy professor in America",
+            descr: "",
+            html_id: "master-tathagata-meets-a-philosophy-professor"
+        },
+        {
+            cell: "Meeting in the philosophy department",
+            descr: "",
+            html_id: "meeting-in-the-philosophy-department"
+        },
+        {
+            cell: "Tathagata during hotel room talk",
+            descr: "",
+            html_id: "tathagata-during-hotel-room-talk"
+        },
+        {
+            cell: "Satto asks Master Tathagata about dreams",
+            descr: "",
+            html_id: "satto-asks-master-tathagata-about-dreams"
+        },
+        {
+            cell: "From meeting at a Catholic Church",
+            descr: "",
+            html_id: "from-meeting-at-a-catholic-church"
+        },
+        {
+            cell: "During the last part of a conversation with a professor of linguistics",
+            descr: "",
+            html_id: "last-part-of-a-conversation-with-a-professor"
+        },
+        {
+            cell: "While Soyun talks to Satto",
+            descr: "",
+            html_id: "while-soyun-talks-to-satto"
+        },
+        {
+            cell: "Meeting a brain & cognitive science specialist",
+            descr: "",
+            html_id: "meeting-a-brain-cognitive-science-specialist"
+        },
+        {
+            cell: "Lunch at a Buddhist temple",
+            descr: "",
+            html_id: "lunch-at-a-buddhist-temple"
+        },
+        {
+            cell: "At a university's international affairs office in Asia",
+            descr: "",
+            html_id: "at-a-universitys-international-affairs-office"
+        },
+        {
+            cell: "Tathagata Quotes",
+            descr: "A collection of quotes I wrote down",
+            html_id: "transcription-tathagata-quotes"
+        },
+        {
+            cell: "Malaysia - August 13th, 2008",
+            descr: "",
+            html_id: "malaysia-august-13th-2008"
+        },
+        {
+            cell: "Meeting in the philosophy department, Part 2",
+            descr: "",
+            html_id: "meeting-in-the-philosophy-department-part-2"
+        },
+        {
+            cell: "Meeting in the Philosophy Department, Part 3",
+            descr: "",
+            html_id: "meeting-in-the-philosophy-department-part-3"
+        },
+        {
+            cell: "During a talk with a cognitive scientist",
+            descr: "",
+            html_id: "during-a-talk-with-a-cognitive-scientist"
+        },
+        {
+            cell: "Brief talk with a lay practitioner",
+            descr: "",
+            html_id: "brief-talk-with-a-lay-practitioner"
+        },
+        {
+            cell: "Beginning discussion with a primate cognition scientist",
+            descr: "",
+            html_id: "beginning-discussion-with-a-primate-cognition"
+        },
+        {
+            cell: "Visiting a Buddhist university",
+            descr: "",
+            html_id: "visiting-a-buddhist-university"
+        },
+        {
+            cell: "Soyun's Commentary on the 'Sixteen Precepts' from Tathagata",
+            descr: "These precepts can be found in the 'New Translations' section",
+            html_id: "precepts-commentary"
+        },
     ],
     "new-translations": [
         {
@@ -1540,7 +1784,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			url: "http://www.snasc.com"
 		},
 		{
-			cell: "silsang.co.kr/",
+			cell: "silsang.co.kr",
 			descr: "",
 			url: "http://silsang.co.kr/"
 		},
@@ -1550,7 +1794,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			url: "http://www.naturalscience.biz/"
 		},
 		{
-			cell: "www.tathagata.info/",
+			cell: "www.tathagata.info",
 			descr: "",
 			url: "http://www.tathagata.info/"
 		},
@@ -1568,3 +1812,9 @@ export function contentItemListWithId(list_id: string): ContentMapElement[]
 
 export const root_list_id = "home"
 export let initial_root_list = contentItemListWithId(root_list_id)
+//
+//
+export async function setup_content() // this must be called on boot
+{
+    await hydrate_mds()
+}
