@@ -274,20 +274,20 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             list_id: "convos"
         },
         {
-            cell: "Transcripts of Recordings",
-            list_id: "transcriptions"
-        },
-        {
             cell: "Travel Accounts by Members",
             list_id: "travel-notes"
+        },
+        {
+            cell: "About Tathagata",
+            list_id: "about-tathagata"
         },
         {
             cell: "Q & A from Visitors",
             list_id: "q-a"
         },
         {
-            cell: "About Tathagata",
-            list_id: "about-tathagata"
+            cell: "Transcripts of Travel Recordings",
+            list_id: "transcriptions"
         },
         {
             cell: "New Translations",
@@ -329,15 +329,15 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			descr: "The End of the World / Changing Period / Eschatology",
 			html_id: "messages"
 		},
-        {
-			cell: "Places of Lecture",
-			descr: "",
-			html_id: "places"
-		},
 		{
 			cell: "Teaching of Tathagata",
 			descr: "The Truth",
 			html_id: "teaching"
+		},
+        {
+			cell: "Places of Lecture",
+			descr: "",
+			html_id: "places"
 		},
 		{
 			cell: "The Way of Enlightenment",
@@ -629,11 +629,6 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			html_id: "convo_17"
 		}
     ],
-    "transcriptions": [
-        {
-            cell: ""
-        }
-    ],
     "travel-notes": [
         {
 			cell: "People met in Nairobi",
@@ -659,6 +654,23 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			cell: "Leicester Square",
 			descr: "London, UK",
 			html_id: "leicester_square"
+		}
+    ],
+    "about-tathagata": [
+        {
+            cell: "The Life of Tathagata",
+            descr: "Appearance of the Enlightened Being",
+            html_id: "appearance"
+        },
+		{
+			cell: "Tathagata's Struggle",
+			descr: "Ordeals Through Enlightenment",
+			html_id: "struggle"
+		},
+		{
+			cell: "Enlightenment of Tathagata",
+			descr: "Tathagata's Love for Mankind",
+			html_id: "love"
 		}
     ],
     "q-a": [
@@ -1496,22 +1508,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			source_url: "http://www.members.tripod.com/tathagata2000/arvind.htm"
 		}
     ],
-    "about-tathagata": [
+    "transcriptions": [
         {
-            cell: "The Life of Tathagata",
-            descr: "Appearance of the Enlightened Being",
-            html_id: "appearance"
-        },
-		{
-			cell: "Tathagata's Struggle",
-			descr: "Ordeals Through Enlightenment",
-			html_id: "struggle"
-		},
-		{
-			cell: "Enlightenment of Tathagata",
-			descr: "Tathagata's Love for Mankind",
-			html_id: "love"
-		}
+            cell: ""
+        }
     ],
     "new-translations": [
         {
