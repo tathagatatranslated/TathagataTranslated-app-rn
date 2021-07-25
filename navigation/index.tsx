@@ -251,7 +251,7 @@ function RootNavigator()
             ...base_screenOptions
         }}>
             
-            <RootStack.Screen name="Home" component={SearchableListScreen} options={{ title: 'Tathagata: Translated' }} />
+            <RootStack.Screen name="Home" component={SearchableListScreen} options={{ title: 'The Teaching of Tathagata' }} />
 
             <RootStack.Screen name="SubList" component={SubListScreen} options={({route}) => ({ title: (route.params! as any).title })} />
 

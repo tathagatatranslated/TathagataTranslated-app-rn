@@ -283,11 +283,6 @@ const htmls_by_id: { [key: string]: string } =
     "beginning-discussion-with-a-primate-cognition": require('../resources/transcriptions/2012/10/beginning-discussion-with-a-primate-cognition.html'),
     
     "visiting-a-buddhist-university": require('../resources/transcriptions/2013/03/visiting-a-buddhist-university.html'),
-    
-
-
-
-
     //
     // translations
     // .md files here will be hydrated as htmls from pathsFor_mds_by_html_id
@@ -301,7 +296,74 @@ export function htmlForId(html_id: string)
 const pathsFor_mds_by_html_id: { [key: string]: string} = 
 {
     "transcriptions-intro": require('../resources/specific/Transcriptions_README_modifiedForApp.md'),
-    "precepts-commentary": require('../resources/transcriptions/commentary on sixteen precepts.md')
+    "precepts-commentary": require('../resources/transcriptions/commentary on sixteen precepts.md'),
+    //
+    // translations
+    "new-translations-intro": require('../resources/specific/Translations_intro.md'),
+    "books-lamentation": require('../resources/TranslatingTathagata-Translations/Books - Lamentation/Lamentation - English - translated by J_lee_77777.txt'),
+    "books-lonely-struggle-intro": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Lonely Struggle - Introduction - English translation by JL.txt'),
+    "books-lonely-struggle-ch30": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Lonely Struggle - Ch 30 and Epilogue - English translated by JL.txt'),
+    "guide-charity-jl": require('../resources/TranslatingTathagata-Translations/Guide - Charity - Excerpt/Charity Excerpt Translated by J_Lee_77777.md'),
+    "guide-charity-park_jihyeon": require('../resources/TranslatingTathagata-Translations/Guide - Charity - Excerpt/Charity Excerpt Translated by park_jihyeon.md'),
+    "guide-introduction1": require('../resources/TranslatingTathagata-Translations/Guide - Introduction 1 - Excerpt/Introduction1 Excerpt Translated by J_Lee_77777.md'),
+    "natureteaching-no8-qa": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Translation by Olivia on Mar 7 2019 of 02-16-1999 - Keble College - Philosophy Society QA.txt'),
+    "natureteaching-guide": require('../resources/specific/natureteaching.com - guide - teaching/Teaching.txt'),
+    "tathagata-appear": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Appear - 1chul_hyun/1chul_hyun Translated by J_Lee_77777.md'),
+    "tathagata-message-basis-and-foundation": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Basis and Foundation (February 23, 1993)] keunbon/Keunbon Translated by J_Lee_77777.md'),
+    "tathagata-message-buddhas-way-feb23": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (February 23, 1993)] bookchukil/Boochukil Translated by J_Lee_77777.md'),
+    "tathagata-message-buddhas-way-jan5": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (January 5, 1989)] bookchukil2/bookchukil2 Translated by J_Lee_77777.md'),
+    "tathagata-message-end": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [End of the World Phenomenon and the End] malsae1/Malsae1 Translated by J_Lee_77777.md'),
+    "tathagata-message-foolishness": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Foolishness and Enlightenment (February 23, 1993)] moojiwa/Moojiwa Translated by J_Lee_77777.md'),
+    "tathagata-message-i-am-a": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Am a Scientist Who Studies Behavior of the Natural World] jayun/Jayun Translated by J_Lee_77777.md'),
+    "tathagata-message-i-want": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Want to Provide Answers to This Question] daedap2/Daedap2 Translated by J_Lee_77777.md'),
+    "tathagata-message-i-will": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Will Answer Any of Your Questions] daedap/Daedap Translated by J_Lee_77777.md'),
+    "tathagata-message-in-todays-world": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [In Today’s World, What Is the Problem (January 1, 1996)] moonjae/Moonjae Translated by J_Lee_77777.md'),
+    "tathagata-message-meaning": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Meaning (Janury 28, 1990)] chunjiman/Chunjiman Translated by J_Lee_77777.md'),
+    "tathagata-message-righteous": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Righteous Person (February 23, 1993)] jinsilhanja/Jinsilhanja Translated by J_Lee_77777.md'),
+    "tathagata-message-the-most": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Most Feared Adversary is Indifference (October 1990)] juk/Juk Translated by J_Lee_77777.md'),
+    "tathagata-message-the-square": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Square of Truth (October 1990)] gwangjang/Gwangjang Translated by J_Lee_77777.md'),
+    "tathagata-message-truth": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Truth and Truthfulness (Febraury 23, 1993)] jinri/Jinri Translated by J_Lee_77777.md'),
+    "tathagata-teaching-effort": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Effort [nolyuk]/English - Teaching - Effort (nolyuk) - translated by JL.txt'),
+    "tathagata-teaching-prayer-kido": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer [kido]/English - Teaching - Prayer - translated by JL.txt'),
+    "tathagata-teaching-prayer-penitence-hope": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer of penitence and prayer of hope [chamhoi]/English - Teaching - Prayer of penitence and prayer of hope - translated by JL.txt'),
+    "tathagata-teaching-precepts": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Precepts/Precepts translated by J_lee_77777.txt'),
+    "tathagata-teaching-road1": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_1) - translated by JL.txt'),
+    "tathagata-teaching-road2": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_2) - translated by JL.txt'),
+    "tathagata-teaching-road3": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_3) - translated by JL.txt'),
+    "tathagata-teaching-road4": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_4) - translated by JL.txt'),
+    "tathagata-teaching-transcendence": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Transcendence [chowol]/English - Teaching - Transcendence (chowol) - translated by JL.txt'),
+    "tathagata-teaching-words": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Words/English - Teaching - Words - translated by JL.txt'),
+    "teaching-9ho": require('../resources/TranslatingTathagata-Translations/Teaching - 9ho - Daedam9 - Full Article/Daedam9 Translated by J_Lee_77777.md'),
+    //
+    "books-lamentation-source-info": require('../resources/TranslatingTathagata-Translations/Books - Lamentation/Source Info.txt'),
+    "books-lonely-struggle-source-info": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Source Info.txt'),
+    "guide-charity-source-info": require('../resources/TranslatingTathagata-Translations/Guide - Charity - Excerpt/Source Info.txt'),
+    "guide-introduction1-source-info": require('../resources/TranslatingTathagata-Translations/Guide - Introduction 1 - Excerpt/Source Info.txt'),
+    "natureteaching-no8-qa-source-info": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Source Info.md'),
+    "natureteaching-guide-source-info": require('../resources/TranslatingTathagata-Translations/natureteaching.com - guide - teaching/Source Info.md'),
+    "tathagata-appear-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Appear - 1chul_hyun/Source Info.txt'),
+    "tathagata-message-basis-and-foundation-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Basis and Foundation (February 23, 1993)] keunbon/Source Info.txt'),
+    "tathagata-message-buddhas-way-feb23-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (February 23, 1993)] bookchukil/Source Info.txt'),
+    "tathagata-message-buddhas-way-jan5-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (January 5, 1989)] bookchukil2/Source Info.txt'),
+    "tathagata-message-end-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [End of the World Phenomenon and the End] malsae1/Source Info.txt'),
+    "tathagata-message-foolishness-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Foolishness and Enlightenment (February 23, 1993)] moojiwa/Source Info.txt'),
+    "tathagata-message-i-am-a-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Am a Scientist Who Studies Behavior of the Natural World] jayun/Source Info.txt'),
+    "tathagata-message-i-want-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Want to Provide Answers to This Question] daedap2/Source Info.txt'),
+    "tathagata-message-i-will-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Will Answer Any of Your Questions] daedap/Source Info.txt'),
+    "tathagata-message-in-todays-world-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [In Today’s World, What Is the Problem (January 1, 1996)] moonjae/Source Info.txt'),
+    "tathagata-message-meaning-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Meaning (Janury 28, 1990)] chunjiman/Source Info.txt'),
+    "tathagata-message-righteous-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Righteous Person (February 23, 1993)] jinsilhanja/Source Info.txt'),
+    "tathagata-message-the-most-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Most Feared Adversary is Indifference (October 1990)] juk/Source Info.txt'),
+    "tathagata-message-the-square-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Square of Truth (October 1990)] gwangjang/Source Info.txt'),
+    "tathagata-message-truth-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Truth and Truthfulness (Febraury 23, 1993)] jinri/Source Info.txt'),
+    "tathagata-teaching-effort-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Effort [nolyuk]/Source Info.txt'),
+    "tathagata-teaching-prayer-kido-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer [kido]/Source Info.txt'),
+    "tathagata-teaching-prayer-penitence-hope-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer of penitence and prayer of hope [chamhoi]/Source Info.txt'),
+    "tathagata-teaching-precepts-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Precepts/Source Info.txt'),
+    "tathagata-teaching-road-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/Source Info.txt'),
+    "tathagata-teaching-transcendence-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Transcendence [chowol]/Source Info.txt'),
+    "tathagata-teaching-words-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Words/Source Info.txt'),
+    "teaching-9ho-source-info": require('../resources/TranslatingTathagata-Translations/Teaching - 9ho - Daedam9 - Full Article/Source Info - daedam9.txt')
 }
 let md_converter = new showdown.Converter();
 async function hydrate_mds()
@@ -326,11 +388,11 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 {
     "home": [
         {
-            cell: "Introduction from Publisher",
+            cell: "An Introduction to Tathagata's Enlightenment",
             html_id: "intro-from-publisher"
         },
         {
-            cell: "Message from Master Tathagata",
+            cell: "Message From Master Tathagata",
             html_id: "message"
         },
         {
@@ -1759,7 +1821,474 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     ],
     "new-translations": [
         {
-            cell: ""
+            cell: "Introduction to These New Translations",
+            descr: "Context, Background, Disclaimer, Legal",
+            html_id: "new-translations-intro"
+        },
+        {
+            cell: "Books - Traveler",
+            descr: "A new translation by two trained members",
+            list_id: "books-traveler-new"
+        },
+        {
+            cell: "Books - Lamentation",
+            list_id: "books-lamentation"
+        },
+        {
+            cell: "Books - Lonely Struggle",
+            list_id: "books-lonely-struggle"
+        },
+        {
+            cell: "Guide - Charity - Excerpt",
+            list_id: "guide-charity"
+        },
+        {
+            cell: "Guide - Introduction 1 - Excerpt",
+            list_id: "guide-introduction1"
+        },
+        {
+            cell: "natureteaching - No.8 - Correspondent Report Q&A",
+            list_id: "natureteaching-no8-qa"
+        },
+        {
+            cell: "natureteaching.com - guide - teaching",
+            list_id: "natureteaching-guide"
+        },
+        {
+            cell: "TATHAGATA - Appear - 1chul_hyun",
+            list_id: "tathagata-appear"
+        },
+        {
+            cell: "TATHAGATA - message - [Basis and Foundation (February 23, 1993)] keunbon",
+            list_id: "tathagata-message-basis-and-foundation"
+        },
+        {
+            cell: "TATHAGATA - message - [Buddha's Way (February 23, 1993)] bookchukil",
+            list_id: "tathagata-message-buddhas-way-feb23"
+        },
+        {
+            cell: "TATHAGATA - message - [Buddha's Way (January 5, 1989)] bookchukil2",
+            list_id: "tathagata-message-buddhas-way-jan5"
+        },
+        {
+            cell: "TATHAGATA - message - [End of the World Phenomenon and the End] malsae1",
+            list_id: "tathagata-message-end"
+        },
+        {
+            cell: "TATHAGATA - message - [Foolishness and Enlightenment (February 23, 1993)] moojiwa",
+            list_id: "tathagata-message-foolishness"
+        },
+        {
+            cell: "TATHAGATA - message - [I Am a Scientist Who Studies Behavior of the Natural World] jayun",
+            list_id: "tathagata-message-i-am-a"
+        },
+        {
+            cell: "TATHAGATA - message - [I Want to Provide Answers to This Question] daedap2",
+            list_id: "tathagata-message-i-want"
+        },
+        {
+            cell: "TATHAGATA - message - [I Will Answer Any of Your Questions] daedap",
+            list_id: "tathagata-message-i-will"
+        },
+        {
+            cell: "TATHAGATA - message - [In Today’s World, What Is the Problem (January 1, 1996)] moonjae",
+            list_id: "tathagata-message-in-todays-world"
+        },
+        {
+            cell: "TATHAGATA - message - [Meaning (Janury 28, 1990)] chunjiman",
+            list_id: "tathagata-message-meaning"
+        },
+        {
+            cell: "TATHAGATA - message - [Righteous Person (February 23, 1993)] jinsilhanja",
+            list_id: "tathagata-message-righteous"
+        },
+        {
+            cell: "TATHAGATA - message - [The Most Feared Adversary is Indifference (October 1990)] juk",
+            list_id: "tathagata-message-the-most"
+        },
+        {
+            cell: "TATHAGATA - message - [The Square of Truth (October 1990)] gwangjang",
+            list_id: "tathagata-message-the-square"
+        },
+        {
+            cell: "TATHAGATA - message - [Truth and Truthfulness (Febraury 23, 1993)] jinri",
+            list_id: "tathagata-message-truth"
+        },
+        {
+            cell: "TATHAGATA - Teaching - Effort [nolyuk]",
+            list_id: "tathagata-teaching-effort"
+        },
+        {
+            cell: "TATHAGATA - Teaching - Prayer [kido]",
+            list_id: "tathagata-teaching-prayer-kido"
+        },
+        {
+            cell: "TATHAGATA - Teaching - Prayer of penitence and prayer of hope [chamhoi]",
+            list_id: "tathagata-teaching-prayer-penitence-hope"
+        },
+        {
+            cell: "TATHAGATA - Teaching - Precepts",
+            list_id: "tathagata-teaching-precepts"
+        },
+        {
+            cell: "TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4",
+            list_id: "tathagata-teaching-road"
+        },
+        {
+            cell: "TATHAGATA - Teaching - Transcendence [chowol]",
+            list_id: "tathagata-teaching-transcendence"
+        },
+        {
+            cell: "TATHAGATA - Teaching - Words",
+            list_id: "tathagata-teaching-words"
+        },
+        {
+            cell: "Teaching - 9ho - Daedam9 - Full Article",
+            list_id: "teaching-9ho"
+        }
+    ],
+    "books-lamentation": [
+        {
+            cell: "Books - Lamentation",
+            descr: "English Translation",
+            html_id: "books-lamentation"
+        },
+        {
+            cell: "Source Info",
+            html_id: "books-lamentation-source-info"
+        }
+    ],
+    "books-lonely-struggle": [
+        {
+            cell: "Lonely Struggle - Introduction",
+            descr: "English Translation by JL",
+            html_id: "books-lonely-struggle-intro"
+        },
+        {
+            cell: "Lonely Struggle - Ch 30 and Epilogue",
+            descr: "English Translation by JL",
+            html_id: "books-lonely-struggle-ch30"
+        },
+        {
+            cell: "Source Info",
+            html_id: "books-lonely-struggle-source-info"
+        }
+    ],
+    "guide-charity": [
+        {
+            cell: "Charity - Excerpt",
+            descr: "English Translation by J_Lee_77777",
+            html_id: "guide-charity-jl"
+        },
+        {
+            cell: "Charity - Excerpt",
+            descr: "English Translation by park_jihyeon",
+            html_id: "guide-charity-park_jihyeon"
+        },
+        {
+            cell: "Source Info",
+            html_id: "guide-charity-source-info"
+        }
+    ],
+    "guide-introduction1": [
+        {
+            cell: "Guide - Introduction 1 - Excerpt",
+            descr: "English Translation - Assumed authored by Soyun",
+            html_id: "guide-introduction1"
+        },
+        {
+            cell: "Source Info",
+            html_id: "guide-introduction1-source-info"
+        }
+    ],
+    "natureteaching-no8-qa": [
+        {
+            cell: "Keble College - Philosophy Society QA on 02-16-1999",
+            descr: "English Translation by Olivia",
+            html_id: "natureteaching-no8-qa"
+        },
+        {
+            cell: "Source Info",
+            html_id: "natureteaching-no8-qa-source-info"
+        }
+    ],
+    "natureteaching-guide": [
+        {
+            cell: "natureteaching.com - guide - teaching",
+            descr: "English Translation",
+            html_id: "natureteaching-guide"
+        },
+        {
+            cell: "Source Info",
+            html_id: "natureteaching-guide-source-info"
+        }
+    ],
+    "tathagata-appear": [
+        {
+            cell: "Buddha's Appearance",
+            descr: "English Translation by J_Lee_77777",
+            html_id: "tathagata-appear"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-appear-source-info"
+        }
+    ],
+    "tathagata-message-basis-and-foundation": [
+        {
+            cell: "Message - Basis and Foundation (February 23, 1993)",
+            descr: "English Translation",
+            html_id: "tathagata-message-basis-and-foundation"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-basis-and-foundation-source-info"
+        }
+    ],
+    "tathagata-message-buddhas-way-feb23": [
+        {
+            cell: "Message - Buddha's Way (February 23, 1993)",
+            descr: "English Translation",
+            html_id: "tathagata-message-buddhas-way-feb23"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-buddhas-way-feb23-source-info"
+        }
+    ],
+    "tathagata-message-buddhas-way-jan5": [
+        {
+            cell: "Message - Buddha's Way (January 5, 1989)",
+            descr: "English Translation",
+            html_id: "tathagata-message-buddhas-way-jan5"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-buddhas-way-jan5-source-info"
+        }
+    ],
+    "tathagata-message-end": [
+        {
+            cell: "Message - End of the World Phenomenon and the End",
+            descr: "English Translation",
+            html_id: "tathagata-message-end"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-end-source-info"
+        }
+    ],
+    "tathagata-message-foolishness": [
+        {
+            cell: "Message - Foolishness and Enlightenment (February 23, 1993)",
+            descr: "English Translation",
+            html_id: "tathagata-message-foolishness"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-foolishness-source-info"
+        }
+    ],
+    "tathagata-message-i-am-a": [
+        {
+            cell: "Message - I Am a Scientist Who Studies Behavior of the Natural World",
+            descr: "English Translation",
+            html_id: "tathagata-message-i-am-a"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-i-am-a-source-info"
+        }
+    ],
+    "tathagata-message-i-want": [
+        {
+            cell: "Message - I Want to Provide Answers to This Question",
+            descr: "English Translation",
+            html_id: "tathagata-message-i-want"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-i-want-source-info"
+        }
+    ],
+    "tathagata-message-i-will": [
+        {
+            cell: "Message - I Will Answer Any of Your Questions",
+            descr: "English Translation",
+            html_id: "tathagata-message-i-will"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-i-will-source-info"
+        }
+    ],
+    "tathagata-message-in-todays-world": [
+        {
+            cell: "Message - In Today's World, What Is the Problem (January 1, 1996)",
+            descr: "English Translation",
+            html_id: "tathagata-message-in-todays-world"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-in-todays-world-source-info"
+        }
+    ],
+    "tathagata-message-meaning": [
+        {
+            cell: "Message - Meaning (Janury 28, 1990)",
+            descr: "English Translation",
+            html_id: "tathagata-message-meaning"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-meaning-source-info"
+        }
+    ],
+    "tathagata-message-righteous": [
+        {
+            cell: "Message - Righteous Person (February 23, 1993)",
+            descr: "English Translation",
+            html_id: "tathagata-message-righteous"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-righteous-source-info"
+        }
+    ],
+    "tathagata-message-the-most": [
+        {
+            cell: "Message - The Most Feared Adversary is Indifference (October 1990)",
+            descr: "English Translation",
+            html_id: "tathagata-message-the-most"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-the-most-source-info"
+        }
+    ],
+    "tathagata-message-the-square": [
+        {
+            cell: "Message - The Square of Truth (October 1990)",
+            descr: "English Translation",
+            html_id: "tathagata-message-the-square"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-the-square-source-info"
+        }
+    ],
+    "tathagata-message-truth": [
+        {
+            cell: "Message - Truth and Truthfulness (Febraury 23, 1993)",
+            descr: "English Translation",
+            html_id: "tathagata-message-truth"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-message-truth-source-info"
+        }
+    ],
+    "tathagata-teaching-effort": [
+        {
+            cell: "Teaching - Effort",
+            descr: "English Translation",
+            html_id: "tathagata-teaching-effort"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-teaching-effort-source-info"
+        }
+    ],
+    "tathagata-teaching-prayer-kido": [
+        {
+            cell: "Teaching - Prayer",
+            descr: "English Translation",
+            html_id: "tathagata-teaching-prayer-kido"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-teaching-prayer-kido-source-info"
+        }
+    ],
+    "tathagata-teaching-prayer-penitence-hope": [
+        {
+            cell: "Teaching - Prayer of penitence and prayer of hope",
+            descr: "English Translation",
+            html_id: "tathagata-teaching-prayer-penitence-hope"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-teaching-prayer-penitence-hope-source-info"
+        }
+    ],
+    "tathagata-teaching-precepts": [
+        {
+            cell: "Teaching - Precepts",
+            descr: "English Translation",
+            html_id: "tathagata-teaching-precepts"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-teaching-precepts-source-info"
+        }
+    ],
+    "tathagata-teaching-road": [
+        {
+            cell: "Road to Enlightenment 1",
+            descr: "English Translation by JL",
+            html_id: "tathagata-teaching-road1"
+        },
+        {
+            cell: "Road to Enlightenment 2",
+            descr: "English Translation by JL",
+            html_id: "tathagata-teaching-road2"
+        },
+        {
+            cell: "Road to Enlightenment 3",
+            descr: "English Translation by JL",
+            html_id: "tathagata-teaching-road3"
+        },
+        {
+            cell: "Road to Enlightenment 4",
+            descr: "English Translation by JL",
+            html_id: "tathagata-teaching-road4"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-teaching-road-source-info"
+        }
+    ],
+    "tathagata-teaching-transcendence": [
+        {
+            cell: "Teaching - Transcendence",
+            descr: "English Translation",
+            html_id: "tathagata-teaching-transcendence"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-teaching-transcendence-source-info"
+        }
+    ],
+    "tathagata-teaching-words": [
+        {
+            cell: "Teaching - Words",
+            descr: "English Translation",
+            html_id: "tathagata-teaching-words"
+        },
+        {
+            cell: "Source Info",
+            html_id: "tathagata-teaching-words-source-info"
+        }
+    ],
+    "teaching-9ho": [
+        {
+            cell: "Teaching - 9ho - Daedam9 - Full Article",
+            descr: "English Translation",
+            html_id: "teaching-9ho"
+        },
+        {
+            cell: "Source Info",
+            html_id: "teaching-9ho-source-info"
         }
     ],
     "links": [
