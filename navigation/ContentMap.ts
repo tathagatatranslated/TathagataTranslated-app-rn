@@ -297,6 +297,7 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
 {
     "transcriptions-intro": require('../resources/specific/Transcriptions_README_modifiedForApp.md'),
     "precepts-commentary": require('../resources/transcriptions/commentary on sixteen precepts.md'),
+    "traveler-background-from-publisher": require('../resources/specific/traveler-background-from-publisher.md'),
     //
     // translations
     "new-translations-intro": require('../resources/specific/Translations_intro.md'),
@@ -416,7 +417,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             list_id: "about-tathagata"
         },
         {
-            cell: "Q & A from Visitors",
+            cell: "Q&A with Tathagata from Website Visitors",
             list_id: "q-a"
         },
         {
@@ -525,15 +526,15 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 		}
     ],
     "pubs": [
-        {
-			cell: "Traveler",
-			descr: "Poetry",
-			list_id: "traveler"
-		},
 		{
 			cell: "Enlightenment",
 			descr: "Tathagata's book Enlightenment",
 			list_id: "enlightenment-book"
+		},
+        {
+			cell: "Traveler",
+			descr: "Poetry",
+			list_id: "traveler"
 		},
 		{
 			cell: "Voices of Nature",
@@ -547,6 +548,11 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 		}
     ],
     "traveler": [
+        {
+            cell: "Background on This Translation",
+            descr: "From This Publisher",
+            html_id: "traveler-background-from-publisher"
+        },
         {
 			cell: "Ch 1. Dearest wish",
 			descr: "There was no place to dedicate conscience and courage again/In front of the man who has lived in the suffering./The solitary song of the man who had to walk along a lonely way,/Because of love toward the fatherland, has passed by burning young heart.",

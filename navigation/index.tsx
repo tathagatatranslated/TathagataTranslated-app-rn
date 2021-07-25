@@ -102,6 +102,15 @@ let WebContentScreen: React.FC<WebContentScreen_Props> = function(props)
                 // originWhitelist={['*']}
                 source={{ html: html }}
                 style={{flex: 1 }}
+                onShouldStartLoadWithRequest={event => {
+                    console.log("onShouldStartLoadWithRequest", event)
+                    // if (!/^[data:text, about:blank]/.test(event.url)) {
+                    if (event.url.slice(0,4) === 'http') {
+                        Linking.openURL(event.url)
+                        return false
+                    }
+                    return true
+                }}
             >
             </WebView>
         </View>
