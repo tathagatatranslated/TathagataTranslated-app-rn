@@ -1953,6 +1953,13 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             list_id: "teaching-9ho"
         }
     ],
+    "books-traveler-new": [
+        {
+            cell: "Introduction to This Translation",
+            descr: "By This Publisher",
+            url: "coming soon"
+        },
+    ],
     "books-lamentation": [
         {
             cell: "Books - Lamentation",

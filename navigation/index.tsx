@@ -142,17 +142,22 @@ function filteredListWithSearchText(searchText: string): ContentMapElement[]
     const normalized_searchText = searchNormalizedString(searchText)
     let initialList = initial_root_list
     //
-    return _filteredListWithSearchText(initialList, normalized_searchText)
+    return _filteredListWithSearchText(initialList, normalized_searchText, 'root list')
 }
-function _filteredListWithSearchText(searchingItemsList: ContentMapElement[], normalized_searchText: string): ContentMapElement[]
+function _filteredListWithSearchText(searchingItemsList: ContentMapElement[], normalized_searchText: string, list_id: string): ContentMapElement[]
 {
     let filteredList: ContentMapElement[] = []
+    if (!searchingItemsList || typeof searchingItemsList == 'undefined') {
+        alert("This is a bug: searchingItemsList for '" + list_id + "' was nil")
+    }
     for (var i = 0 ; i < searchingItemsList.length ; i++) {
         let item = searchingItemsList[i]
         if (item.list_id) { // recursive
-            filteredList = filteredList.concat(
-                _filteredListWithSearchText(contentItemListWithId(item.list_id!), normalized_searchText)
-            )
+            let sublist = _filteredListWithSearchText(contentItemListWithId(item.list_id!), normalized_searchText, item.list_id)
+            // console.log("sublist " , sublist)
+            filteredList = filteredList.concat(sublist)
+            // v-- commented since algo might as well match title/descr too
+            // continue // move to next iteration
         }
         if (__isMatchingContentItem(item, normalized_searchText)) {
             filteredList.push(item)
