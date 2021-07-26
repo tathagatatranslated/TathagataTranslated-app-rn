@@ -2351,7 +2351,31 @@ export function contentItemListWithId(list_id: string): ContentMapElement[]
 {
     return content_map[list_id]
 }
-
+function _lookedUp_contentMapElementWithFieldOfValue(fieldKey: string, value: string): ContentMapElement
+{
+    // TODO: memoize?
+    let keys = Object.keys(content_map)
+    for (var i = 0 ; i < keys.length ; i++) {
+        let list = content_map[keys[i]]
+        for (var j = 0 ; j < list.length ; j++) {
+            let contentMapElement = list[j]
+            if ((contentMapElement as any)[fieldKey] == value) {
+                return contentMapElement
+            }
+        }
+    }
+}
+export function lookedUp_contentMapElementWithListId(list_id: string): ContentMapElement
+{
+    // TODO: cache items by list_id?
+    return _lookedUp_contentMapElementWithFieldOfValue("list_id", list_id) // using a string for metaprogramming here is not optimal - is there a Typescript best practice for this?
+}
+export function lookedUp_contentMapElementWithHTMLId(html_id: string): ContentMapElement
+{
+    // TODO: cache items by html_id?
+    return _lookedUp_contentMapElementWithFieldOfValue("html_id", html_id) // using a string for metaprogramming here is not optimal - is there a Typescript best practice for this?
+}
+//
 export const root_list_id = "home"
 export let initial_root_list = contentItemListWithId(root_list_id)
 //

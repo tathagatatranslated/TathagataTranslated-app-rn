@@ -6,7 +6,7 @@
 import { NavigationContainer, DefaultTheme, DarkTheme, useNavigation } from '@react-navigation/native'
 import { createStackNavigator, StackNavigationOptions, CardStyleInterpolators } from '@react-navigation/stack';
 import React, { useState/*, useEffect */} from 'react'
-import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Linking, Platform } from 'react-native'
+import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Linking, Platform, Button } from 'react-native'
 import { SearchBar } from 'react-native-elements'
 import { WebView } from 'react-native-webview'
 //
@@ -17,7 +17,8 @@ import useColorScheme from '../hooks/useColorScheme'
 // import Colors from '../constants/Colors'
 //
 //
-import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId, htmlForMarkdownId, mdTextForId } from './ContentMap'
+import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId, lookedUp_contentMapElementWithListId, lookedUp_contentMapElementWithHTMLId } from './ContentMap'
+import { useEffect } from 'react';
 //
 //
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName })
@@ -68,10 +69,10 @@ const ItemSeparatorView = () => {
 const didSelect_rowWithItem = (item: ContentMapElement, navigation: any) =>
 {
     if (item.list_id) {
-        navigation.push("SubList", { list_id: item.list_id!, title: item.cell })
+        navigation.push("SubList", { list_id: item.list_id!/*, title: item.cell */})
         return
     } else if (item.html_id) {
-        navigation.push("WebContent", { html_id: item.html_id!, title: item.cell })
+        navigation.push("WebContent", { html_id: item.html_id!/*, title: item.cell */})
         return
     } else if (item.url) {
         if (Platform.OS == 'web') { // branching in order to get 'new tab' behavior on web
@@ -90,12 +91,13 @@ interface WebContentScreen_Props
 {
     // html: string
     route: any
+    navigation: any
 }
 let WebContentScreen: React.FC<WebContentScreen_Props> = function(props)
 {
-    let route = props.route
-    let params = route.params
+    let params = props.route.params
     let html = htmlForId(params.html_id)
+    //
     return (
         <View style={{ flex: 1 }}>
             <WebView
@@ -153,7 +155,11 @@ function _filteredListWithSearchText(searchingItemsList: ContentMapElement[], no
     for (var i = 0 ; i < searchingItemsList.length ; i++) {
         let item = searchingItemsList[i]
         if (item.list_id) { // recursive
-            let sublist = _filteredListWithSearchText(contentItemListWithId(item.list_id!), normalized_searchText, item.list_id)
+            let sublist = _filteredListWithSearchText(
+                contentItemListWithId(item.list_id!), 
+                normalized_searchText, 
+                item.list_id
+            )
             // console.log("sublist " , sublist)
             filteredList = filteredList.concat(sublist)
             // v-- commented since algo might as well match title/descr too
@@ -169,7 +175,7 @@ function _filteredListWithSearchText(searchingItemsList: ContentMapElement[], no
 //
 let SearchableListScreen: React.FC = (props) =>
 {
-    const colorScheme = useColorScheme()
+    // const colorScheme = useColorScheme()
     // let tintColor = Colors[colorScheme].tint
     const [search, setSearch] = useState("")
     const [displayableDataSource, setDisplayableDataSource] = useState(initial_root_list)
@@ -184,8 +190,13 @@ let SearchableListScreen: React.FC = (props) =>
         setDisplayableDataSource(dataSource)
         setSearch(searchText)
     }
+    //
     let navigation = useNavigation()
-    let rowTapped_fn = (item: ContentMapElement) => { didSelect_rowWithItem(item, navigation) }
+    let rowTapped_fn = (item: ContentMapElement) =>
+    {
+        didSelect_rowWithItem(item, navigation)
+    }
+    //
     return (<View>
         <SearchBar
             round
@@ -208,11 +219,13 @@ let SearchableListScreen: React.FC = (props) =>
 interface SubListScreenProps
 {
     route: any
+    navigation: any
 }
 let SubListScreen: React.FC<SubListScreenProps> = (props) =>
 {
     let route = props.route
-    let list_id = route.params.list_id
+    let params = route.params
+    let list_id = params.list_id
     let dataItems = contentItemListWithId(list_id)
     //
     let navigation = useNavigation()
@@ -254,6 +267,37 @@ const base_screenOptions: StackNavigationOptions =
 }
 const RootStack = createStackNavigator<RootStackParamList>()
 
+function _navigationScreenOptionsFor_subScreen(route: any, navigation: any, optl_staticTitleOverride: string|undefined)
+{
+    let params = route.params
+    let options: { [key: string]: any } = {}
+    if (typeof optl_staticTitleOverride != 'undefined' && optl_staticTitleOverride) {
+        options.title = optl_staticTitleOverride
+    } else {
+        if (params.title && typeof params.title !== 'undefined') { // if for some reason it's provided in params, use that - which would be convenient - but in this case, we don't want the URL to be polluted by the title so that URLs can be short and essential
+            options.title = params.title
+        } else {
+            let item: ContentMapElement|null = null
+            if (params.list_id) {
+                item = lookedUp_contentMapElementWithListId(params.list_id!)
+            } else if (params.html_id) {
+                item = lookedUp_contentMapElementWithHTMLId(params.html_id!)
+            }
+            if (!item) {
+                throw new Error("Item loaded in sub-screen without static title override had neither list_id nor html_id")
+            }
+            let title = item.cell
+            options.title = title
+        }
+    }
+    if (navigation.canGoBack() == false) { // if the page was loaded directly and does not have a back button - here's a janky way to resolve that in the UI
+        options.headerLeftContainerStyle = { paddingLeft: 20 }
+        options.headerTitleStyle = { paddingLeft: 20 }
+        options.headerLeft = () => ( <Button title="Home" onPress={() => { navigation.replace("Home") }} /> )
+    }
+    return options
+}
+
 function RootNavigator()
 {
     return (
@@ -267,11 +311,17 @@ function RootNavigator()
             
             <RootStack.Screen name="Home" component={SearchableListScreen} options={{ title: 'The Teaching of Tathagata' }} />
 
-            <RootStack.Screen name="SubList" component={SubListScreen} options={({route}) => ({ title: (route.params! as any).title })} />
+            <RootStack.Screen name="SubList" component={SubListScreen} 
+                options={({route, navigation}) => (_navigationScreenOptionsFor_subScreen(route, navigation, undefined)) } 
+            />
 
-            <RootStack.Screen name="WebContent" component={WebContentScreen} options={({route}) => ({ title: (route.params! as any).title })} />
+            <RootStack.Screen name="WebContent" component={WebContentScreen} 
+                options={({route, navigation}) => (_navigationScreenOptionsFor_subScreen(route, navigation, undefined)) } 
+            />
 
-            <RootStack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+            <RootStack.Screen name="NotFound" component={NotFoundScreen}
+                options={({route, navigation}) => (_navigationScreenOptionsFor_subScreen(route, navigation, "Oops!")) }
+            />
 
         </RootStack.Navigator>
     )

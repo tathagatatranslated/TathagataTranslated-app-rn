@@ -11,20 +11,8 @@ export default {
   config: {
     screens: {
       Home: "home",
-    //   {
-    //     screens: {
-    //       TabOne: {
-    //         screens: {
-    //           TabOneScreen: 'one',
-    //         },
-    //       },
-    //       TabTwo: {
-    //         screens: {
-    //           TabTwoScreen: 'two',
-    //         },
-    //       },
-    //     },
-    //   },
+      SubList: "SubList/:list_id",
+      WebContent: "WebContent/:html_id",
       NotFound: '*',
     },
   },
