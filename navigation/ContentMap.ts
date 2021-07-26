@@ -19,6 +19,9 @@ export interface ContentMapElement
     url?: string, // this is a URL 
 }
 //
+let pdfEmbedHTML_pdfPath_prefix = '<html><style>html, body {margin: 0; height: 100%; overflow: hidden; } * { margin: 0; padding: 0; } embed { width: 100%; height: 100vh; } </style><body><embed src="'
+let pdfEmbedHTML_pdfPath_suffix = '" type="application/pdf"></body></html>'
+//
 const htmls_by_id: { [key: string]: string } = 
 {
     //
@@ -302,7 +305,40 @@ const htmls_by_id: { [key: string]: string } =
     "new-traveler-ch8": require('../resources/TheTraveler/Chapter 8- The Law of Cause and Effect.html'),
     "new-traveler-ch9": require('../resources/TheTraveler/Chapter 9- Question and Answers.html'),
     "new-traveler-ch10": require('../resources/TheTraveler/Chapter 10- The History of Tathagata.html'),
+    //
+    "guide-charity-source-kr": pdfEmbedHTML_pdfPath_prefix + require(
+        '../resources/TranslatingTathagata-Translations/Guide - Charity - Excerpt/Original Korean Excerpt from Guide - Charity.pdf'
+    ) + pdfEmbedHTML_pdfPath_suffix,
+    "guide-introduction1-source-kr": pdfEmbedHTML_pdfPath_prefix + require(
+        '../resources/TranslatingTathagata-Translations/Guide - Introduction 1 - Excerpt/Original Korean Excerpt from Guide - Introduction1.pdf'
+    ) + pdfEmbedHTML_pdfPath_suffix,
+    "natureteaching-guide-source-kr": pdfEmbedHTML_pdfPath_prefix + require(
+        '../resources/TranslatingTathagata-Translations/natureteaching.com - guide - teaching/Teaching.pdf'
+    ) + pdfEmbedHTML_pdfPath_suffix,
+
+    "tathagata-appear-source-kr": pdfEmbedHTML_pdfPath_prefix + require(
+        '../resources/TranslatingTathagata-Translations/TATHAGATA - Appear - 1chul_hyun/Original Korean Article from - TATHAGATA - appear - 1chul_hyun.pdf'
+    ) + pdfEmbedHTML_pdfPath_suffix,
+
+
+    "tathagata-message-basis-and-foundation-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Basis and Foundation (February 23, 1993)] keunbon/Original Korean Article from - TATHAGATA - message - keunbon.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-buddhas-way-feb23-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (February 23, 1993)] bookchukil/Original Korean Article from - TATHAGATA - message - bookchukil.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-buddhas-way-jan5-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (January 5, 1989)] bookchukil2/Original Korean Article from - TATHAGATA - message - bookchukil2.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-end-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [End of the World Phenomenon and the End] malsae1/Original Korean Article from - TATHAGATA - message - malsae1.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-foolishness-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Foolishness and Enlightenment (February 23, 1993)] moojiwa/Original Korean Article from - TATHAGATA - message - moojiwa.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-i-am-a-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Am a Scientist Who Studies Behavior of the Natural World] jayun/Original Korean Article from - TATHAGATA - message - jayun.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-i-want-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Want to Provide Answers to This Question] daedap2/Original Korean Article from - TATHAGATA - message - daedap2.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-i-will-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [I Will Answer Any of Your Questions] daedap/Original Korean Article from - TATHAGATA - message - daedap.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-in-todays-world-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [In Today’s World, What Is the Problem (January 1, 1996)] moonjae/Original Korean Article from - TATHAGATA - message - moonjae.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-meaning-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Meaning (Janury 28, 1990)] chunjiman/Original Korean Article from - TATHAGATA - message - chunjiman.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-righteous-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Righteous Person (February 23, 1993)] jinsilhanja/Original Korean Article from - TATHAGATA - message - jinsilhanja.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-the-most-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Most Feared Adversary is Indifference (October 1990)] juk/Original Korean Article from - TATHAGATA - message - juk.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-the-square-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Square of Truth (October 1990)] gwangjang/Original Korean Article from - TATHAGATA - message - gwangjang.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    "tathagata-message-truth-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Truth and Truthfulness (Febraury 23, 1993)] jinri/Original Korean Article from - TATHAGATA - message - jinri.pdf') + pdfEmbedHTML_pdfPath_suffix,
+    //
+    "teaching-9ho-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/Teaching - 9ho - Daedam9 - Full Article/Original Korean Article from teaching - 9ho - daedam9.pdf') + pdfEmbedHTML_pdfPath_suffix,
 }
+//
 export function htmlForId(html_id: string)
 {
     return htmls_by_id[html_id]
@@ -317,15 +353,30 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
     //
     // translations
     "new-translations-intro": require('../resources/specific/Translations_intro.md'),
+
     "books-lamentation": require('../resources/TranslatingTathagata-Translations/Books - Lamentation/Lamentation - English - translated by J_lee_77777.txt'),
+    "books-lamentation-original-kr": require('../resources/specific/Original Korean - Lamentation - Hantan.md'),
+    "lamentation-background-1": require('../resources/TranslatingTathagata-Translations/Books - Lamentation/Background.md'),
+    "tathagata-teaching-precepts-background": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Precepts/Background.md'),
+
+    "books-lonely-struggle-background": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Background.md'),
     "books-lonely-struggle-intro": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Lonely Struggle - Introduction - English translation by JL.txt'),
     "books-lonely-struggle-ch30": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Lonely Struggle - Ch 30 and Epilogue - English translated by JL.txt'),
+    "books-lonely-struggle-intro-original-kr": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Original Korean - Lonely Struggle introduction.txt'),
+    "books-lonely-struggle-ch30-original-kr": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Original Korean - Lonely Struggle - Ch 30 and Epilogue.txt'),
+
     "guide-charity-jl": require('../resources/TranslatingTathagata-Translations/Guide - Charity - Excerpt/Charity Excerpt Translated by J_Lee_77777.md'),
     "guide-charity-park_jihyeon": require('../resources/TranslatingTathagata-Translations/Guide - Charity - Excerpt/Charity Excerpt Translated by park_jihyeon.md'),
     "guide-introduction1": require('../resources/TranslatingTathagata-Translations/Guide - Introduction 1 - Excerpt/Introduction1 Excerpt Translated by J_Lee_77777.md'),
+
     "natureteaching-no8-qa": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Translation by Olivia on Mar 7 2019 of 02-16-1999 - Keble College - Philosophy Society QA.txt'),
+    "natureteaching-no8-background": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Translation Background.md'),
+    "natureteaching-no8-source-kr": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Original Korean text - 02-16-1999 - Keble College - Philosophy Society QA.txt'),
+    
     "natureteaching-guide": require('../resources/specific/natureteaching.com - guide - teaching/Teaching.txt'),
+
     "tathagata-appear": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Appear - 1chul_hyun/1chul_hyun Translated by J_Lee_77777.md'),
+
     "tathagata-message-basis-and-foundation": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Basis and Foundation (February 23, 1993)] keunbon/Keunbon Translated by J_Lee_77777.md'),
     "tathagata-message-buddhas-way-feb23": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (February 23, 1993)] bookchukil/Boochukil Translated by J_Lee_77777.md'),
     "tathagata-message-buddhas-way-jan5": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (January 5, 1989)] bookchukil2/bookchukil2 Translated by J_Lee_77777.md'),
@@ -340,17 +391,27 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
     "tathagata-message-the-most": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Most Feared Adversary is Indifference (October 1990)] juk/Juk Translated by J_Lee_77777.md'),
     "tathagata-message-the-square": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [The Square of Truth (October 1990)] gwangjang/Gwangjang Translated by J_Lee_77777.md'),
     "tathagata-message-truth": require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Truth and Truthfulness (Febraury 23, 1993)] jinri/Jinri Translated by J_Lee_77777.md'),
+
     "tathagata-teaching-effort": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Effort [nolyuk]/English - Teaching - Effort (nolyuk) - translated by JL.txt'),
     "tathagata-teaching-prayer-kido": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer [kido]/English - Teaching - Prayer - translated by JL.txt'),
     "tathagata-teaching-prayer-penitence-hope": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer of penitence and prayer of hope [chamhoi]/English - Teaching - Prayer of penitence and prayer of hope - translated by JL.txt'),
     "tathagata-teaching-precepts": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Precepts/Precepts translated by J_lee_77777.txt'),
+
+    
+    "tathagata-teaching-road-background": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/Background Info.txt'),
+
+    "tathagata-teaching-words-background": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Words/Background Info.txt'),
+    
+
     "tathagata-teaching-road1": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_1) - translated by JL.txt'),
     "tathagata-teaching-road2": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_2) - translated by JL.txt'),
     "tathagata-teaching-road3": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_3) - translated by JL.txt'),
     "tathagata-teaching-road4": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/English - Teaching - Road to Enlightenment (load_4) - translated by JL.txt'),
     "tathagata-teaching-transcendence": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Transcendence [chowol]/English - Teaching - Transcendence (chowol) - translated by JL.txt'),
     "tathagata-teaching-words": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Words/English - Teaching - Words - translated by JL.txt'),
+
     "teaching-9ho": require('../resources/TranslatingTathagata-Translations/Teaching - 9ho - Daedam9 - Full Article/Daedam9 Translated by J_Lee_77777.md'),
+    //
     //
     "books-lamentation-source-info": require('../resources/TranslatingTathagata-Translations/Books - Lamentation/Source Info.txt'),
     "books-lonely-struggle-source-info": require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/Source Info.txt'),
@@ -380,7 +441,19 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
     "tathagata-teaching-road-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/Source Info.txt'),
     "tathagata-teaching-transcendence-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Transcendence [chowol]/Source Info.txt'),
     "tathagata-teaching-words-source-info": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Words/Source Info.txt'),
-    "teaching-9ho-source-info": require('../resources/TranslatingTathagata-Translations/Teaching - 9ho - Daedam9 - Full Article/Source Info - daedam9.txt')
+    "teaching-9ho-source-info": require('../resources/TranslatingTathagata-Translations/Teaching - 9ho - Daedam9 - Full Article/Source Info - daedam9.txt'),
+    //
+    "tathagata-teaching-effort-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Effort [nolyuk]/Original Korean - Teaching - nolyuk.txt'),
+    "tathagata-teaching-prayer-kido-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer [kido]/Original Korean - Teaching - Prayer.txt'),
+    "tathagata-teaching-prayer-penitence-hope-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Prayer of penitence and prayer of hope [chamhoi]/Original Korean - Teaching - Prayer of penitence and prayer of hope.txt'),
+    "tathagata-teaching-precepts-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Precepts/Original Korean - Precepts 1989-08-16,23.txt'),
+    "tathagata-teaching-road1-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/Original Korean - Teaching - Road to Enlightenment (load_1).txt'),
+    "tathagata-teaching-road2-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/Original Korean - Teaching - Road to Enlightenment (load_2).txt'),
+    "tathagata-teaching-road3-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/Original Korean - Teaching - Road to Enlightenment (load_3).txt'),
+    "tathagata-teaching-road4-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Road to Enlightenment 1, 2, 3, 4/Original Korean - Teaching - Road to Enlightenment (load_4).txt'),
+    "tathagata-teaching-transcendence-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Transcendence [chowol]/Original Korean - Teaching - chowol.txt'),
+    "tathagata-teaching-words-source-kr": require('../resources/TranslatingTathagata-Translations/TATHAGATA - Teaching - Words/Original Korean - Teaching - Words.txt')
+
 }
 let md_converter = new showdown.Converter();
 async function hydrate_mds()
@@ -1885,12 +1958,12 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             list_id: "tathagata-message-basis-and-foundation"
         },
         {
-            cell: "TATHAGATA - message - [Buddha's Way (February 23, 1993)] bookchukil",
-            list_id: "tathagata-message-buddhas-way-feb23"
-        },
-        {
             cell: "TATHAGATA - message - [Buddha's Way (January 5, 1989)] bookchukil2",
             list_id: "tathagata-message-buddhas-way-jan5"
+        },
+        {
+            cell: "TATHAGATA - message - [Buddha's Way (February 23, 1993)] bookchukil",
+            list_id: "tathagata-message-buddhas-way-feb23"
         },
         {
             cell: "TATHAGATA - message - [End of the World Phenomenon and the End] malsae1",
@@ -2028,16 +2101,29 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     ],
     "books-lamentation": [
         {
+            cell: "Background on This Translation",
+            html_id: "lamentation-background-1"
+        },
+        {
             cell: "Books - Lamentation",
-            descr: "English Translation",
+            descr: "English Translation by JL",
             html_id: "books-lamentation"
         },
         {
             cell: "Source Info",
             html_id: "books-lamentation-source-info"
+        },
+        {
+            cell: "Lamentation - Korean Source",
+            html_id: "books-lamentation-original-kr"
         }
-    ],
+    ],    
     "books-lonely-struggle": [
+        {
+            cell: "Background on This Translation",
+            descr: "From This Publisher",
+            html_id: "books-lonely-struggle-background"
+        },
         {
             cell: "Lonely Struggle - Introduction",
             descr: "English Translation by JL",
@@ -2051,7 +2137,15 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "books-lonely-struggle-source-info"
-        }
+        },
+        {
+            cell: "Lonely Struggle - Introduction - Korean Source",
+            html_id: "books-lonely-struggle-intro-original-kr"
+        },
+        {
+            cell: "Lonely Struggle - Ch 30 and Epilogue - Korean Source",
+            html_id: "books-lonely-struggle-ch30-original-kr"
+        },
     ],
     "guide-charity": [
         {
@@ -2067,6 +2161,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "guide-charity-source-info"
+        },
+        {
+            cell: "Charity - Excerpt - Korean Source",
+            html_id: "guide-charity-source-kr"
         }
     ],
     "guide-introduction1": [
@@ -2078,9 +2176,17 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "guide-introduction1-source-info"
+        },
+        {
+            cell: "Guide - Introduction 1 - Excerpt - Korean Source",
+            html_id: "guide-introduction1-source-kr"
         }
     ],
     "natureteaching-no8-qa": [
+        {
+            cell: "Background on This Translation",
+            html_id: "natureteaching-no8-background"
+        },
         {
             cell: "Keble College - Philosophy Society QA on 02-16-1999",
             descr: "English Translation by Olivia",
@@ -2089,6 +2195,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "natureteaching-no8-qa-source-info"
+        },
+        {
+            cell: "Keble College - 02-16-1999 - Korean Source",
+            html_id: "natureteaching-no8-source-kr"
         }
     ],
     "natureteaching-guide": [
@@ -2100,6 +2210,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "natureteaching-guide-source-info"
+        },
+        {
+            cell: "natureteaching.com - guide - teaching - Korean Source",
+            html_id: "natureteaching-guide-source-kr"
         }
     ],
     "tathagata-appear": [
@@ -2111,6 +2225,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-appear-source-info"
+        },
+        {
+            cell: "Buddha's Appearance - Korean Source",
+            html_id: "tathagata-appear-source-kr"
         }
     ],
     "tathagata-message-basis-and-foundation": [
@@ -2122,6 +2240,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-basis-and-foundation-source-info"
+        },
+        {
+            cell: "Message - Basis and Foundation - Korean Source",
+            html_id: "tathagata-message-basis-and-foundation-source-kr"
         }
     ],
     "tathagata-message-buddhas-way-feb23": [
@@ -2133,6 +2255,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-buddhas-way-feb23-source-info"
+        },
+        {
+            cell: "Message - Buddha's Way (February 23, 1993) - Korean Source",
+            html_id: "tathagata-message-buddhas-way-feb23-source-kr"
         }
     ],
     "tathagata-message-buddhas-way-jan5": [
@@ -2144,6 +2270,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-buddhas-way-jan5-source-info"
+        },
+        {
+            cell: "Message - Buddha's Way (January 5, 1989) - Korean Source",
+            html_id: "tathagata-message-buddhas-way-jan5-source-kr"
         }
     ],
     "tathagata-message-end": [
@@ -2155,6 +2285,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-end-source-info"
+        },
+        {
+            cell: "Message - End of the World Phenomenon and the End - Korean Source",
+            html_id: "tathagata-message-end-source-kr"
         }
     ],
     "tathagata-message-foolishness": [
@@ -2166,6 +2300,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-foolishness-source-info"
+        },
+        {
+            cell: "Message - Foolishness and Enlightenment - Korean Source",
+            html_id: "tathagata-message-foolishness-source-kr"
         }
     ],
     "tathagata-message-i-am-a": [
@@ -2177,6 +2315,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-i-am-a-source-info"
+        },
+        {
+            cell: "Message - I Am a Scientist Who Studies Behavior of the Natural World - Korean Source",
+            html_id: "tathagata-message-i-am-a-source-kr"
         }
     ],
     "tathagata-message-i-want": [
@@ -2188,6 +2330,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-i-want-source-info"
+        },
+        {
+            cell: "Message - I Want to Provide Answers to This Question - Korean Source",
+            html_id: "tathagata-message-i-want-source-kr"
         }
     ],
     "tathagata-message-i-will": [
@@ -2199,6 +2345,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-i-will-source-info"
+        },
+        {
+            cell: "Message - I Will Answer Any of Your Questions - Korean Source",
+            html_id: "tathagata-message-i-will-source-kr"
         }
     ],
     "tathagata-message-in-todays-world": [
@@ -2210,6 +2360,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-in-todays-world-source-info"
+        },
+        {
+            cell: "Message - In Today's World, What Is the Problem - Korean Source",
+            html_id: "tathagata-message-in-todays-world-source-kr"
         }
     ],
     "tathagata-message-meaning": [
@@ -2221,6 +2375,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-meaning-source-info"
+        },
+        {
+            cell: "Message - Meaning - Korean Source",
+            html_id: "tathagata-message-meaning-source-kr"
         }
     ],
     "tathagata-message-righteous": [
@@ -2232,6 +2390,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-righteous-source-info"
+        },
+        {
+            cell: "Message - Righteous Person - Korean Source",
+            html_id: "tathagata-message-the-most-source-kr"
         }
     ],
     "tathagata-message-the-most": [
@@ -2243,6 +2405,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-the-most-source-info"
+        },
+        {
+            cell: "Message - The Most Feared Adversary is Indifference - Korean Source",
+            html_id: "tathagata-message-the-most-source-kr"
         }
     ],
     "tathagata-message-the-square": [
@@ -2254,6 +2420,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-the-square-source-info"
+        },
+        {
+            cell: "Teaching - The Square of Truth - Korean Source",
+            html_id: "tathagata-message-the-square-source-kr"
         }
     ],
     "tathagata-message-truth": [
@@ -2265,6 +2435,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-message-truth-source-info"
+        },
+        {
+            cell: "Message - Truth and Truthfulness - Korean Source",
+            html_id: "tathagata-message-truth-source-kr"
         }
     ],
     "tathagata-teaching-effort": [
@@ -2276,6 +2450,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-teaching-effort-source-info"
+        },
+        {
+            cell: "Teaching - Effort - Korean Source",
+            html_id: "tathagata-teaching-effort-source-kr"
         }
     ],
     "tathagata-teaching-prayer-kido": [
@@ -2287,6 +2465,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-teaching-prayer-kido-source-info"
+        },
+        {
+            cell: "Teaching - Prayer - Korean Source",
+            html_id: "tathagata-teaching-prayer-kido-source-kr"
         }
     ],
     "tathagata-teaching-prayer-penitence-hope": [
@@ -2298,9 +2480,18 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-teaching-prayer-penitence-hope-source-info"
+        },
+        {
+            cell: "Teaching - Prayer of penitence and prayer of hope - Korean Source",
+            html_id: "tathagata-teaching-prayer-penitence-hope-source-kr"
         }
     ],
     "tathagata-teaching-precepts": [
+        {
+            cell: "Background on This Translation",
+            descr: "From This Publisher",
+            html_id: "tathagata-teaching-precepts-background"
+        },
         {
             cell: "Teaching - Precepts",
             descr: "English Translation",
@@ -2309,32 +2500,57 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-teaching-precepts-source-info"
+        },
+        {
+            cell: "Teaching - Precepts - Korean Source",
+            html_id: "tathagata-teaching-precepts-source-kr"
         }
     ],
     "tathagata-teaching-road": [
         {
-            cell: "Road to Enlightenment 1",
+            cell: "Background on These Four Translations",
+            descr: "From This Publisher",
+            html_id: "tathagata-teaching-road-background"
+        },
+        {
+            cell: "Teaching - Road to Enlightenment 1",
             descr: "English Translation by JL",
             html_id: "tathagata-teaching-road1"
         },
         {
-            cell: "Road to Enlightenment 2",
+            cell: "Teaching - Road to Enlightenment 2",
             descr: "English Translation by JL",
             html_id: "tathagata-teaching-road2"
         },
         {
-            cell: "Road to Enlightenment 3",
+            cell: "Teaching - Road to Enlightenment 3",
             descr: "English Translation by JL",
             html_id: "tathagata-teaching-road3"
         },
         {
-            cell: "Road to Enlightenment 4",
+            cell: "Teaching - Road to Enlightenment 4",
             descr: "English Translation by JL",
             html_id: "tathagata-teaching-road4"
         },
         {
             cell: "Source Info",
             html_id: "tathagata-teaching-road-source-info"
+        },
+        {
+            cell: "Teaching - Road to Enlightenment 1 - Korean Source",
+            html_id: "tathagata-teaching-road1-source-kr"
+        },
+        {
+            cell: "Teaching - Road to Enlightenment 2 - Korean Source",
+            html_id: "tathagata-teaching-road2-source-kr"
+        },
+        {
+            cell: "Teaching - Road to Enlightenment 3 - Korean Source",
+            html_id: "tathagata-teaching-road3-source-kr"
+        },
+        {
+            cell: "Teaching - Road to Enlightenment 4 - Korean Source",
+            html_id: "tathagata-teaching-road4-source-kr"
         }
     ],
     "tathagata-teaching-transcendence": [
@@ -2346,9 +2562,18 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-teaching-transcendence-source-info"
+        },
+        {
+            cell: "Teaching - Transcendence - Korean Source",
+            html_id: "tathagata-teaching-transcendence-source-kr"
         }
     ],
     "tathagata-teaching-words": [
+        {
+            cell: "Background Info",
+            descr: "From This Publisher",
+            html_id: "tathagata-teaching-words-background"
+        },
         {
             cell: "Teaching - Words",
             descr: "English Translation",
@@ -2357,6 +2582,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "tathagata-teaching-words-source-info"
+        },
+        {
+            cell: "Teaching - Words - Korean Source",
+            html_id: "tathagata-teaching-words-source-kr"
         }
     ],
     "teaching-9ho": [
@@ -2368,6 +2597,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "Source Info",
             html_id: "teaching-9ho-source-info"
+        },
+        {
+            cell: "Teaching - 9ho - Daedam9 - Korean Source",
+            html_id: "teaching-9ho-source-kr"
         }
     ],
     "links": [

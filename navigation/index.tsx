@@ -102,7 +102,7 @@ let WebContentScreen: React.FC<WebContentScreen_Props> = function(props)
         <View style={{ flex: 1 }}>
             <WebView
                 // originWhitelist={['*']}
-                source={{ html: html }}
+                source={{ html: html, baseUrl:'' }}
                 style={{flex: 1 }}
                 onShouldStartLoadWithRequest={event => {
                     console.log("onShouldStartLoadWithRequest", event)
