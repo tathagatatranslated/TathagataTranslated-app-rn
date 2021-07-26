@@ -1,10 +1,13 @@
 //
 //
 import * as showdown from './showdown.min.js'
+const { v4: uuidV4 } = require('uuid') 
 //
 //
 export interface ContentMapElement
 {
+    runtimeUUID?: string // hydrated at runtime - useful in search for fast deduping - will not be nil
+    //
     cell: string // this is the title to be displayed in the cell
     descr?: string // this is a subtitle to be displayed in the cell
     source_url?: string // this is a URL at which to find the original hosting location 
@@ -286,6 +289,19 @@ const htmls_by_id: { [key: string]: string } =
     //
     // translations
     // .md files here will be hydrated as htmls from pathsFor_mds_by_html_id
+    //
+    // translations - the traveler
+    "new-traveler-foreword": require('../resources/TheTraveler/The Traveler - Foreword by This Publisher.html'),
+    "new-traveler-ch1": require('../resources/TheTraveler/Chapter 1- Dearest Wish.html'),
+    "new-traveler-ch2": require('../resources/TheTraveler/Chapter 2- Forgotten Time.html'),
+    "new-traveler-ch3": require('../resources/TheTraveler/Chapter 3- The Story of Yunhwa [Lotus] Island.html'),
+    "new-traveler-ch4": require('../resources/TheTraveler/Chapter 4- The Sound of Heaven.html'),
+    "new-traveler-ch5": require('../resources/TheTraveler/Chapter 5- Traveler.html'),
+    "new-traveler-ch6": require('../resources/TheTraveler/Chapter 6- A Grain of Seed.html'),
+    "new-traveler-ch7": require('../resources/TheTraveler/Chapter 7- Deploration.html'),
+    "new-traveler-ch8": require('../resources/TheTraveler/Chapter 8- The Law of Cause and Effect.html'),
+    "new-traveler-ch9": require('../resources/TheTraveler/Chapter 9- Question and Answers.html'),
+    "new-traveler-ch10": require('../resources/TheTraveler/Chapter 10- The History of Tathagata.html'),
 }
 export function htmlForId(html_id: string)
 {
@@ -1832,16 +1848,16 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             html_id: "new-translations-intro"
         },
         {
-            cell: "Books - Traveler",
-            descr: "A new translation by two trained members",
+            cell: "Books - Poetry: The Traveler",
+            descr: "A new translation by two trained seekers",
             list_id: "books-traveler-new"
         },
         {
-            cell: "Books - Lamentation",
+            cell: "Books - Poetry: Lamentation",
             list_id: "books-lamentation"
         },
         {
-            cell: "Books - Lonely Struggle",
+            cell: "Books - Autobiography: Lonely Struggle",
             list_id: "books-lonely-struggle"
         },
         {
@@ -1956,9 +1972,59 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "books-traveler-new": [
         {
             cell: "Introduction to This Translation",
-            descr: "By This Publisher",
-            url: "coming soon"
+            descr: "Foreword by This Publisher",
+            html_id: "new-traveler-foreword"
         },
+        {
+            cell: "Chapter 1: Dearest Wish",
+            descr: "There was no place to dedicate conscience and courage again,/In front of a man who has lived in suffering./Because of love towards his fatherland,/The solitary song of a man who had to walk along a lonely path, passed/by burning his young heart.",
+            html_id: "new-traveler-ch1"
+        },
+        {
+            cell: "Chapter 2: Forgotten Time",
+            descr: "Where should I meet the true world?/I did not have the place to ask it./I would rather have wished/That the dark time was a dream.",
+            html_id: "new-traveler-ch2"
+        },
+        {
+            cell: "Chapter 3: The Story of Yunhwa [Lotus] Island",
+            descr: "An innocent man had to see a sin/Was heaven's meaning./Because there was no place to hide his mind,/He who had to confine himself to a solitary island/Lamented as following.",
+            html_id: "new-traveler-ch3"
+        },
+        {
+            cell: "Chapter 4: The Sound of Heaven",
+            descr: "A new world appeared in my calm mind./I saw myself,/who had neither anguish nor fantasy./In my lonely heart,/the sound of heaven was heard.",
+            html_id: "new-traveler-ch4"
+        },
+        {
+            cell: "Chapter 5: Traveler",
+            descr: "Heaven burdened me./Nobody could bear that burden rather than me./So I had to wander around the world again.",
+            html_id: "new-traveler-ch5"
+        },
+        {
+            cell: "Chapter 6: A Grain of Seed",
+            descr: "Soyun./This is the name/That I gave to the world for the first time./After having given this name,/I told her all my secrets.",
+            html_id: "new-traveler-ch6"
+        },
+        {
+            cell: "Chapter 7: Deploration",
+            descr: "This is the song/Which I have been singing,/Seeing myself, the one who has no place to go and stay./Heaven! Please let me find righteous people today./And please let them cause a new world to come into being.",
+            html_id: "new-traveler-ch7"
+        },
+        {
+            cell: "Chapter 8: The Law of Cause and Effect",
+            descr: "The law of cause and effect is the eternal promise that exists in our world./We call this promise truth./I will explain things of the world by this law.",
+            html_id: "new-traveler-ch8"
+        },
+        {
+            cell: "Chapter 9: Question and Answers",
+            descr: "There is something we can not believe in the world./However, as time goes by, people come to know such a thing./And then it is clear that truth and falsehood can be proven by a fact.",
+            html_id: "new-traveler-ch9"
+        },
+        {
+            cell: "Chapter 10: The History of Tathagata",
+            descr: "Truth exists forever./If apples do not look like apples,/If apples do not taste like apple/We can not call them apples.",
+            html_id: "new-traveler-ch10"
+        }
     ],
     "books-lamentation": [
         {
@@ -2351,19 +2417,34 @@ export function contentItemListWithId(list_id: string): ContentMapElement[]
 {
     return content_map[list_id]
 }
-function _lookedUp_contentMapElementWithFieldOfValue(fieldKey: string, value: string): ContentMapElement
+function __enumerateContentMapElements(fn: (el: ContentMapElement) => any)
 {
-    // TODO: memoize?
     let keys = Object.keys(content_map)
     for (var i = 0 ; i < keys.length ; i++) {
         let list = content_map[keys[i]]
         for (var j = 0 ; j < list.length ; j++) {
             let contentMapElement = list[j]
-            if ((contentMapElement as any)[fieldKey] == value) {
-                return contentMapElement
+            if (!fn(contentMapElement)) {
+                return
             }
         }
     }
+}
+function _lookedUp_contentMapElementWithFieldOfValue(fieldKey: string, value: string): ContentMapElement
+{
+    // TODO: memoize this by id?
+    let foundEl: ContentMapElement|null = null
+    __enumerateContentMapElements((el: ContentMapElement) => {
+        if ((el as any)[fieldKey] == value) {
+            foundEl = el
+            return false
+        }
+        return true
+    })
+    if (!foundEl) {
+        throw new Error("Expected to find content map element with " + fieldKey + "=" + value)
+    }
+    return foundEl!
 }
 export function lookedUp_contentMapElementWithListId(list_id: string): ContentMapElement
 {
@@ -2383,4 +2464,9 @@ export let initial_root_list = contentItemListWithId(root_list_id)
 export async function setup_content() // this must be called on boot
 {
     await hydrate_mds()
+    //
+    __enumerateContentMapElements((el: ContentMapElement) => {
+        el.runtimeUUID = uuidV4()
+        return true
+    })
 }

@@ -144,33 +144,37 @@ function filteredListWithSearchText(searchText: string): ContentMapElement[]
     const normalized_searchText = searchNormalizedString(searchText)
     let initialList = initial_root_list
     //
-    return _filteredListWithSearchText(initialList, normalized_searchText, 'root list')
+    let map = _filteredContentMapElementsByRuntimeUUIDWithSearchText(initialList, normalized_searchText, 'root list')
+    //
+    return Object.values(map)
 }
-function _filteredListWithSearchText(searchingItemsList: ContentMapElement[], normalized_searchText: string, list_id: string): ContentMapElement[]
+function _filteredContentMapElementsByRuntimeUUIDWithSearchText(searchingItemsList: ContentMapElement[], normalized_searchText: string, list_id: string): { [key: string]: ContentMapElement }
 {
-    let filteredList: ContentMapElement[] = []
+    let filtered_map: { [key: string]: ContentMapElement } = {}
     if (!searchingItemsList || typeof searchingItemsList == 'undefined') {
         alert("This is a bug: searchingItemsList for '" + list_id + "' was nil")
     }
     for (var i = 0 ; i < searchingItemsList.length ; i++) {
         let item = searchingItemsList[i]
         if (item.list_id) { // recursive
-            let sublist = _filteredListWithSearchText(
+            let filtered_submap = _filteredContentMapElementsByRuntimeUUIDWithSearchText(
                 contentItemListWithId(item.list_id!), 
                 normalized_searchText, 
                 item.list_id
             )
-            // console.log("sublist " , sublist)
-            filteredList = filteredList.concat(sublist)
+            // console.log("filtered_submap " , filtered_submap)
+            // if (filtered_submap.length > 0) {
+            filtered_map = Object.assign({}, filtered_submap, filtered_map) // using a map functions as a de-dupe in case the same list is linked from multiple locations
+            // }
             // v-- commented since algo might as well match title/descr too
             // continue // move to next iteration
         }
         if (__isMatchingContentItem(item, normalized_searchText)) {
-            filteredList.push(item)
+            filtered_map[item.runtimeUUID!/*will not be nil if setup_content called*/] = item
         }
     }
     //
-    return filteredList
+    return filtered_map
 }
 //
 let SearchableListScreen: React.FC = (props) =>
