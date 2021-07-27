@@ -22,6 +22,21 @@ export interface ContentMapElement
 let pdfEmbedHTML_pdfPath_prefix = '<html><style>html, body {margin: 0; height: 100%; overflow: hidden; } * { margin: 0; padding: 0; } embed { width: 100%; height: 100vh; } </style><body><embed src="'
 let pdfEmbedHTML_pdfPath_suffix = '" type="application/pdf"></body></html>'
 //
+let imageEmbedHTML_imageEls_prefix = '<html><style></style><body>'
+let imageEmbedHTML_imageEls_suffix = '</body></html>'
+function imageElsHTMLStringFrom(requiredImageFileKeys: string[])
+{
+    let str = ''
+    let requiredImageFileKeys_length = requiredImageFileKeys.length
+    for (var i = 0 ; i < requiredImageFileKeys_length ; i++) {
+        str += '<image src="'+requiredImageFileKeys[i]+'" />'
+        if (i < requiredImageFileKeys_length - 1) {
+            str += '<br/>'
+        }
+    }
+    return str
+}
+//
 const htmls_by_id: { [key: string]: string } = 
 {
     //
@@ -320,7 +335,20 @@ const htmls_by_id: { [key: string]: string } =
         '../resources/TranslatingTathagata-Translations/TATHAGATA - Appear - 1chul_hyun/Original Korean Article from - TATHAGATA - appear - 1chul_hyun.pdf'
     ) + pdfEmbedHTML_pdfPath_suffix,
 
-
+    //
+    "books-lamentation-photos": imageEmbedHTML_imageEls_prefix + imageElsHTMLStringFrom([
+        require('../resources/TranslatingTathagata-Translations/Books - Lamentation/book_250.jpg'),
+        require('../resources/TranslatingTathagata-Translations/Books - Lamentation/book_a129.jpg')
+    ]) + imageEmbedHTML_imageEls_suffix,
+    //
+    "books-lonely-struggle-photos": imageEmbedHTML_imageEls_prefix + imageElsHTMLStringFrom([
+        require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_245.jpg'),
+        require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_a.jpg'),
+        require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_a150.jpg'),
+        require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_b.jpg'),
+        require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_b150.jpg')
+    ]) + imageEmbedHTML_imageEls_suffix,
+    //
     "tathagata-message-basis-and-foundation-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Basis and Foundation (February 23, 1993)] keunbon/Original Korean Article from - TATHAGATA - message - keunbon.pdf') + pdfEmbedHTML_pdfPath_suffix,
     "tathagata-message-buddhas-way-feb23-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (February 23, 1993)] bookchukil/Original Korean Article from - TATHAGATA - message - bookchukil.pdf') + pdfEmbedHTML_pdfPath_suffix,
     "tathagata-message-buddhas-way-jan5-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Buddha\'s Way (January 5, 1989)] bookchukil2/Original Korean Article from - TATHAGATA - message - bookchukil2.pdf') + pdfEmbedHTML_pdfPath_suffix,
@@ -464,8 +492,16 @@ async function hydrate_mds()
         let pathFor_md = pathsFor_mds_by_html_id[md_id]
         try {
             let res = await fetch(pathFor_md, { credentials: "same-origin" })
-            let md_str = await res.text()
-            let html_str = md_converter.makeHtml(md_str);
+            let raw_str = await res.text()
+            let html_str: string
+            if (pathFor_md.endsWith(".md")) {
+                html_str = md_converter.makeHtml(raw_str) // raw_str is actually md_str
+            } else { 
+                if (pathFor_md.endsWith(".txt") != true) {
+                    console.warn("Non-txt, non-md file passed to hydrate_mds()")
+                }
+                html_str = raw_str.replace(/\n/g,'<br/>')
+            }
             htmls_by_id[md_id] = html_str
         } catch (e) {
             console.error("Unable to fetch or convert the md file at id", md_id)
@@ -559,31 +595,6 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			html_id: "teaching"
 		},
         {
-			cell: "Places of Lecture",
-			descr: "",
-			html_id: "places"
-		},
-		{
-			cell: "The Way of Enlightenment",
-			descr: "April 1998 in Busan, Korea",
-			html_id: "way_of_enlightenment"
-		},
-		{
-			cell: "The World of Life",
-			descr: "",
-			html_id: "world_of_life"
-		},
-		{
-			cell: "Human Beings and God",
-			descr: "",
-			html_id: "human_being_and_god"
-		},
-		{
-			cell: "The Earth Seen Through Science",
-			descr: "",
-			html_id: "earth"
-		},
-        {
 			cell: "Teaching from 11/26/2006",
 			descr: "",
 			html_id: "11262006"
@@ -612,6 +623,31 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			cell: "Teaching from 3/4/2007",
 			descr: "",
 			html_id: "03042007"
+		},
+        {
+			cell: "Places of Lecture",
+			descr: "",
+			html_id: "places"
+		},
+		{
+			cell: "The Way of Enlightenment",
+			descr: "April 1998 in Busan, Korea",
+			html_id: "way_of_enlightenment"
+		},
+		{
+			cell: "The World of Life",
+			descr: "",
+			html_id: "world_of_life"
+		},
+		{
+			cell: "Human Beings and God",
+			descr: "",
+			html_id: "human_being_and_god"
+		},
+		{
+			cell: "The Earth Seen Through Science",
+			descr: "",
+			html_id: "earth"
 		}
     ],
     "pubs": [
@@ -1927,6 +1963,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Books - Poetry: Lamentation",
+            descr: "May have been written before the recovery of His enlightenment",
             list_id: "books-lamentation"
         },
         {
@@ -1935,19 +1972,22 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Guide - Charity - Excerpt",
+            descr: "Assumed prepared by Soyun",
             list_id: "guide-charity"
         },
         {
             cell: "Guide - Introduction 1 - Excerpt",
+            descr: "Assumed prepared by Soyun",
             list_id: "guide-introduction1"
+        },
+        {
+            cell: "natureteaching.com - guide - teaching",
+            descr: "Assumed prepared by Soyun",
+            list_id: "natureteaching-guide"
         },
         {
             cell: "natureteaching - No.8 - Correspondent Report Q&A",
             list_id: "natureteaching-no8-qa"
-        },
-        {
-            cell: "natureteaching.com - guide - teaching",
-            list_id: "natureteaching-guide"
         },
         {
             cell: "TATHAGATA - Appear - 1chul_hyun",
@@ -2105,6 +2145,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             html_id: "lamentation-background-1"
         },
         {
+            cell: "Photos",
+            html_id: "books-lamentation-photos"
+        },
+        {
             cell: "Books - Lamentation",
             descr: "English Translation by JL",
             html_id: "books-lamentation"
@@ -2123,6 +2167,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             cell: "Background on This Translation",
             descr: "From This Publisher",
             html_id: "books-lonely-struggle-background"
+        },
+        {
+            cell: "Photos",
+            html_id: "books-lonely-struggle-photos"
         },
         {
             cell: "Lonely Struggle - Introduction",
@@ -2170,7 +2218,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "guide-introduction1": [
         {
             cell: "Guide - Introduction 1 - Excerpt",
-            descr: "English Translation - Assumed authored by Soyun",
+            descr: "English Translation by J_Lee_77777",
             html_id: "guide-introduction1"
         },
         {
@@ -2179,6 +2227,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Guide - Introduction 1 - Excerpt - Korean Source",
+            descr: "Assumed authored by Soyun",
             html_id: "guide-introduction1-source-kr"
         }
     ],
@@ -2213,6 +2262,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "natureteaching.com - guide - teaching - Korean Source",
+            descr: "Assumed prepared by Soyun",
             html_id: "natureteaching-guide-source-kr"
         }
     ],
@@ -2234,7 +2284,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-basis-and-foundation": [
         {
             cell: "Message - Basis and Foundation (February 23, 1993)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-basis-and-foundation"
         },
         {
@@ -2249,7 +2299,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-buddhas-way-feb23": [
         {
             cell: "Message - Buddha's Way (February 23, 1993)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-buddhas-way-feb23"
         },
         {
@@ -2264,7 +2314,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-buddhas-way-jan5": [
         {
             cell: "Message - Buddha's Way (January 5, 1989)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-buddhas-way-jan5"
         },
         {
@@ -2279,7 +2329,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-end": [
         {
             cell: "Message - End of the World Phenomenon and the End",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-end"
         },
         {
@@ -2294,7 +2344,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-foolishness": [
         {
             cell: "Message - Foolishness and Enlightenment (February 23, 1993)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-foolishness"
         },
         {
@@ -2309,7 +2359,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-i-am-a": [
         {
             cell: "Message - I Am a Scientist Who Studies Behavior of the Natural World",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-i-am-a"
         },
         {
@@ -2324,7 +2374,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-i-want": [
         {
             cell: "Message - I Want to Provide Answers to This Question",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-i-want"
         },
         {
@@ -2339,7 +2389,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-i-will": [
         {
             cell: "Message - I Will Answer Any of Your Questions",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-i-will"
         },
         {
@@ -2354,7 +2404,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-in-todays-world": [
         {
             cell: "Message - In Today's World, What Is the Problem (January 1, 1996)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-in-todays-world"
         },
         {
@@ -2369,7 +2419,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-meaning": [
         {
             cell: "Message - Meaning (Janury 28, 1990)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-meaning"
         },
         {
@@ -2384,7 +2434,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-righteous": [
         {
             cell: "Message - Righteous Person (February 23, 1993)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-righteous"
         },
         {
@@ -2399,7 +2449,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-the-most": [
         {
             cell: "Message - The Most Feared Adversary is Indifference (October 1990)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-the-most"
         },
         {
@@ -2414,7 +2464,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-the-square": [
         {
             cell: "Message - The Square of Truth (October 1990)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-the-square"
         },
         {
@@ -2429,7 +2479,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-truth": [
         {
             cell: "Message - Truth and Truthfulness (Febraury 23, 1993)",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-message-truth"
         },
         {
@@ -2444,7 +2494,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-effort": [
         {
             cell: "Teaching - Effort",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-teaching-effort"
         },
         {
@@ -2459,7 +2509,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-prayer-kido": [
         {
             cell: "Teaching - Prayer",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-teaching-prayer-kido"
         },
         {
@@ -2474,7 +2524,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-prayer-penitence-hope": [
         {
             cell: "Teaching - Prayer of penitence and prayer of hope",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-teaching-prayer-penitence-hope"
         },
         {
@@ -2494,7 +2544,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Teaching - Precepts",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "tathagata-teaching-precepts"
         },
         {
@@ -2556,7 +2606,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-transcendence": [
         {
             cell: "Teaching - Transcendence",
-            descr: "English Translation",
+            descr: "English Translation by JL",
             html_id: "tathagata-teaching-transcendence"
         },
         {
@@ -2576,7 +2626,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Teaching - Words",
-            descr: "English Translation",
+            descr: "English Translation by JL",
             html_id: "tathagata-teaching-words"
         },
         {
@@ -2591,7 +2641,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "teaching-9ho": [
         {
             cell: "Teaching - 9ho - Daedam9 - Full Article",
-            descr: "English Translation",
+            descr: "English Translation by J_Lee_77777",
             html_id: "teaching-9ho"
         },
         {

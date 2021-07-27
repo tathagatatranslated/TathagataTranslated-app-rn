@@ -11,8 +11,8 @@ export default {
   config: {
     screens: {
       Home: "home",
-      SubList: "SubList/:list_id",
-      WebContent: "WebContent/:html_id",
+      SubList: "list/:list_id",
+      WebContent: "page/:html_id",
       NotFound: '*',
     },
   },
