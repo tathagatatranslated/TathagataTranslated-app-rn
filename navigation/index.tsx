@@ -184,14 +184,25 @@ let SearchableListScreen: React.FC = (props) =>
     //
     let state_isSearching = state_searchText && typeof state_searchText !== 'undefined' ? true : false
 
-    const updateDataSourceWithPossibleSearchText = (this_searchText: string) =>
+    // let debounceTimeout: any = null
+    const debounced_updateDataSourceWithPossibleSearchText = (this_searchText: string) =>
+    { // wait for user to stop typing
+        // TODO: uncomment this when implementing search execution debounce - but it seems the FlatList and the data source need to be factored out into a subcomponent with the FlatList below to make this possible; otherwise the searchText ends up updating in the same render cycle, due to how React works
+        // if (debounceTimeout != null) {
+        //     clearTimeout(debounceTimeout)
+        // }
+        // debounceTimeout = setTimeout(() => {
+        //     debounceTimeout = null
+            immediate_updateDataSourceWithPossibleSearchText(this_searchText)
+        // }, 300)
+    }
+    const immediate_updateDataSourceWithPossibleSearchText = (this_searchText: string) =>
     {
         let dataSource: any;
         let this_isSearching = this_searchText && typeof this_searchText !== 'undefined' ? true : false
         if (this_isSearching) {
             dataSource = filteredListWithSearchText(this_searchText)
         } else { // inserted text is blank - revert to 'initialRoot' data source
-            let introPaneContentItem = {}
             dataSource = initial_root_list
         }
         setDisplayableDataSource(dataSource)
@@ -208,8 +219,8 @@ let SearchableListScreen: React.FC = (props) =>
         <SearchBar
             round
             searchIcon={{ size: 24 }}
-            onChangeText={(text: string) => updateDataSourceWithPossibleSearchText(text)}
-            onClear={(_) => updateDataSourceWithPossibleSearchText('')}
+            onChangeText={(text: string) => debounced_updateDataSourceWithPossibleSearchText(text)}
+            onClear={(_) => immediate_updateDataSourceWithPossibleSearchText('')}
             placeholder="Search Content"
             value={state_searchText}
         />
