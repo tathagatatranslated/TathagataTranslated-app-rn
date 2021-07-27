@@ -228,7 +228,7 @@ let SearchableListScreen: React.FC = (props) =>
                 > I am a Tathagata.{'\n'}
             </Text>
             <Text style={{ fontStyle: 'italic', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 12 }}>
-                Books - Poetry: The Traveler, Chapter 9
+                New Translations > Books - Poetry: The Traveler, Chapter 9
             </Text>
         </View> : <></> }
         <FlatList
