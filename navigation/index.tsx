@@ -13,10 +13,10 @@ import { WebView } from 'react-native-webview'
 import NotFoundScreen from './NotFoundScreen'
 import { RootStackParamList } from '../types'
 import LinkingConfiguration from './LinkingConfiguration'
+import LandingContentView from '../components/LandingContentView'
 //
 //
 import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId, lookedUp_contentMapElementWithListId, lookedUp_contentMapElementWithHTMLId } from './ContentMap'
-import { useEffect } from 'react';
 //
 //
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName })
@@ -213,22 +213,7 @@ let SearchableListScreen: React.FC = (props) =>
             placeholder="Search Content"
             value={state_searchText}
         />
-        { state_isSearching != true ? <View style={{ paddingBottom: 14, paddingTop: 24, backgroundColor: 'white' /* blend into intro img */ }}>
-            <Image 
-                source={require('../resources/specific/index_background.jpg')}
-                style={{ width: 313, height: 199, marginHorizontal: 'auto' }}
-            />
-            <Text style={{ width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontFamily: 'monospace', paddingBottom: 8, paddingTop: 6, fontSize: 15, borderLeftWidth: 3, backgroundColor: 'rgb(238, 238, 238)', borderLeftColor: '#ccc', paddingLeft: 10, paddingRight: 6, marginBottom: 6, marginTop: 3 }}>There is something we can not believe in the world.{'\n'}
-                However, as time goes by, people come to know such a thing.{'\n'}
-                And then it is clear that truth and falsehood can be proven by a fact.{'\n'}
-                {'\n'}
-                Who are you?{'\n'}
-                > I am a Tathagata.{'\n'}
-            </Text>
-            <Text style={{ fontStyle: 'italic', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 12 }}>
-                New Translations {'>'} Books - Poetry: The Traveler, Chapter 9
-            </Text>
-        </View> : <></> }
+        { state_isSearching != true ? <LandingContentView is_for_loading_splash={false} /> : <></> }
         <FlatList
             data={displayableDataSource}
             keyExtractor={(item, index) => index.toString()}

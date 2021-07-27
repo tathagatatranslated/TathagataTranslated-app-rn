@@ -8,16 +8,15 @@ import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
 import Navigation from './navigation';
 
+import LandingContentView from './components/LandingContentView'
+
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
     return (<SafeAreaProvider>
             { isLoadingComplete == false
-                ? <Image 
-                    source={require('./resources/specific/index_background.jpg')}
-                    style={{ width: 313, height: 199, marginHorizontal: 'auto', marginTop: 154 }}
-                /> 
+                ? <LandingContentView is_for_loading_splash={true} /> 
                 : <Navigation colorScheme={colorScheme} />
             }
         <StatusBar />
