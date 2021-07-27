@@ -24,18 +24,28 @@ let pdfEmbedHTML_pdfPath_suffix = '" type="application/pdf"></body></html>'
 //
 let imageEmbedHTML_imageEls_prefix = '<html><style></style><body>'
 let imageEmbedHTML_imageEls_suffix = '</body></html>'
-function imageElsHTMLStringFrom(requiredImageFileKeys: string[])
+function imageElsHTMLStringFrom(requiredImageFileKeys: string[], optl_correspondingCaptionStrings: string[]|null)
 {
+    let hasCaptions = optl_correspondingCaptionStrings && typeof optl_correspondingCaptionStrings != 'undefined'
+    if (hasCaptions) {
+        if (requiredImageFileKeys.length != optl_correspondingCaptionStrings!.length) {
+            throw new Error("Code fault: gallery_imageFileKeys.length != gallery_captionStrings.length")
+        }
+    }
     let str = ''
     let requiredImageFileKeys_length = requiredImageFileKeys.length
     for (var i = 0 ; i < requiredImageFileKeys_length ; i++) {
         str += '<image src="'+requiredImageFileKeys[i]+'" />'
+        if (hasCaptions) {
+            str += '<p>'+optl_correspondingCaptionStrings![i]+'</p>'
+        }
         if (i < requiredImageFileKeys_length - 1) {
             str += '<br/>'
         }
     }
     return str
 }
+//
 //
 const htmls_by_id: { [key: string]: string } = 
 {
@@ -339,7 +349,7 @@ const htmls_by_id: { [key: string]: string } =
     "books-lamentation-photos": imageEmbedHTML_imageEls_prefix + imageElsHTMLStringFrom([
         require('../resources/TranslatingTathagata-Translations/Books - Lamentation/book_250.jpg'),
         require('../resources/TranslatingTathagata-Translations/Books - Lamentation/book_a129.jpg')
-    ]) + imageEmbedHTML_imageEls_suffix,
+    ], null) + imageEmbedHTML_imageEls_suffix,
     //
     "books-lonely-struggle-photos": imageEmbedHTML_imageEls_prefix + imageElsHTMLStringFrom([
         require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_245.jpg'),
@@ -347,6 +357,40 @@ const htmls_by_id: { [key: string]: string } =
         require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_a150.jpg'),
         require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_b.jpg'),
         require('../resources/TranslatingTathagata-Translations/Books - Lonely Struggle/book_b150.jpg')
+    ], null) + imageEmbedHTML_imageEls_suffix,
+    //
+    "tathagata-photos-gallery": imageEmbedHTML_imageEls_suffix + imageElsHTMLStringFrom([
+        require("../resources/Gallery/02_001.jpg"),
+        require("../resources/Gallery/lastscan1.jpg"),
+        require("../resources/Gallery/14.jpg"),
+        require("../resources/Gallery/19981029_1.jpg"),
+        require("../resources/Gallery/oxforf1997.jpg"),
+        require("../resources/Gallery/20000526_1.jpg"),
+        require("../resources/Gallery/20000524_3.jpg"),
+        require("../resources/Gallery/20000625_1.jpg"),
+        require("../resources/Gallery/20020619_1.jpg"),
+        require("../resources/Gallery/portrait_07.jpg"),
+        require("../resources/Gallery/portrait_08.jpg"),
+        require("../resources/Gallery/photo 003.jpg"),
+        require("../resources/Gallery/photo 123.jpg"),
+        require("../resources/Gallery/photo 231.jpg"),
+        require("../resources/Gallery/______ 033.jpg")
+    ], [
+        "Master Tathagata, Soyun, and David at Leicester Square.",
+        "Tathagata in Bodh Gaya in 1994.",
+        "India, 1997.",
+        "Maharashtra Institute of Technology, 1998.",
+        "At Oxford University in 1998.",
+        "May 24, 2000.",
+        "May 26, 2000.",
+        "June 25, 2000 in Hyde Park, London.",
+        "Barking, UK on June 19, 2002.",
+        "Portrait from 2004.",
+        "Portrait of Tathagata from 2006.",
+        "Hollywood, 2007.",
+        "Columbia University, 2007.",
+        "New York University, 2007.",
+        "Tathagata lecturing in Busan, 2007."
     ]) + imageEmbedHTML_imageEls_suffix,
     //
     "tathagata-message-basis-and-foundation-source-kr": pdfEmbedHTML_pdfPath_prefix + require('../resources/TranslatingTathagata-Translations/TATHAGATA - message - [Basis and Foundation (February 23, 1993)] keunbon/Original Korean Article from - TATHAGATA - message - keunbon.pdf') + pdfEmbedHTML_pdfPath_suffix,
@@ -936,7 +980,12 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 			cell: "Enlightenment of Tathagata",
 			descr: "Tathagata's Love for Mankind",
 			html_id: "love"
-		}
+		},
+        {
+            cell: "Photo Gallery",
+            descr: "A small collection from various websites",
+            html_id: "tathagata-photos-gallery"
+        }
     ],
     "q-a": [
         {
