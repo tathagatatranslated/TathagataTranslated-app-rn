@@ -10,11 +10,9 @@ import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Li
 import { SearchBar } from 'react-native-elements'
 import { WebView } from 'react-native-webview'
 //
-import NotFoundScreen from '../screens/NotFoundScreen'
+import NotFoundScreen from './NotFoundScreen'
 import { RootStackParamList } from '../types'
 import LinkingConfiguration from './LinkingConfiguration'
-import useColorScheme from '../hooks/useColorScheme'
-// import Colors from '../constants/Colors'
 //
 //
 import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId, lookedUp_contentMapElementWithListId, lookedUp_contentMapElementWithHTMLId } from './ContentMap'
@@ -228,7 +226,7 @@ let SearchableListScreen: React.FC = (props) =>
                 > I am a Tathagata.{'\n'}
             </Text>
             <Text style={{ fontStyle: 'italic', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 12 }}>
-                New Translations > Books - Poetry: The Traveler, Chapter 9
+                New Translations {'>'} Books - Poetry: The Traveler, Chapter 9
             </Text>
         </View> : <></> }
         <FlatList
