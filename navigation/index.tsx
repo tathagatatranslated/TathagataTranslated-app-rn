@@ -6,7 +6,7 @@
 import { NavigationContainer, DefaultTheme, DarkTheme, useNavigation } from '@react-navigation/native'
 import { createStackNavigator, StackNavigationOptions, CardStyleInterpolators } from '@react-navigation/stack';
 import React, { useState/*, useEffect */} from 'react'
-import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Linking, Platform, Button } from 'react-native'
+import { ColorSchemeName, View, Text, FlatList, TouchableOpacity, StyleSheet, Linking, Platform, Button, Image } from 'react-native'
 import { SearchBar } from 'react-native-elements'
 import { WebView } from 'react-native-webview'
 //
@@ -99,7 +99,7 @@ let WebContentScreen: React.FC<WebContentScreen_Props> = function(props)
     let html = htmlForId(params.html_id)
     //
     return (
-        <View style={{ flex: 1 }}>
+        <View style={{ flex: 1, backgroundColor: 'rgb(238, 238, 238)'}}>
             <WebView
                 // originWhitelist={['*']}
                 source={{ html: html, baseUrl:'' }}
@@ -181,18 +181,23 @@ let SearchableListScreen: React.FC = (props) =>
 {
     // const colorScheme = useColorScheme()
     // let tintColor = Colors[colorScheme].tint
-    const [search, setSearch] = useState("")
+    const [state_searchText, setState_searchText] = useState("")
     const [displayableDataSource, setDisplayableDataSource] = useState(initial_root_list)
-    const updateDataSourceWithPossibleSearchText = (searchText: string) =>
+    //
+    let state_isSearching = state_searchText && typeof state_searchText !== 'undefined' ? true : false
+
+    const updateDataSourceWithPossibleSearchText = (this_searchText: string) =>
     {
         let dataSource: any;
-        if (searchText && typeof searchText !== 'undefined') {
-            dataSource = filteredListWithSearchText(searchText)
+        let this_isSearching = this_searchText && typeof this_searchText !== 'undefined' ? true : false
+        if (this_isSearching) {
+            dataSource = filteredListWithSearchText(this_searchText)
         } else { // inserted text is blank - revert to 'initialRoot' data source
+            let introPaneContentItem = {}
             dataSource = initial_root_list
         }
         setDisplayableDataSource(dataSource)
-        setSearch(searchText)
+        setState_searchText(this_searchText)
     }
     //
     let navigation = useNavigation()
@@ -208,12 +213,29 @@ let SearchableListScreen: React.FC = (props) =>
             onChangeText={(text: string) => updateDataSourceWithPossibleSearchText(text)}
             onClear={(_) => updateDataSourceWithPossibleSearchText('')}
             placeholder="Search Content"
-            value={search}
+            value={state_searchText}
         />
+        { state_isSearching != true ? <View style={{ paddingBottom: 14, paddingTop: 24, backgroundColor: 'white' /* blend into intro img */ }}>
+            <Image 
+                source={require('../resources/specific/index_background.jpg')}
+                style={{ width: 313, height: 199, marginHorizontal: 'auto' }}
+            />
+            <Text style={{ width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontFamily: 'monospace', paddingBottom: 8, paddingTop: 6, fontSize: 15, borderLeftWidth: 3, backgroundColor: 'rgb(238, 238, 238)', borderLeftColor: '#ccc', paddingLeft: 10, paddingRight: 6, marginBottom: 6, marginTop: 3 }}>There is something we can not believe in the world.{'\n'}
+                However, as time goes by, people come to know such a thing.{'\n'}
+                And then it is clear that truth and falsehood can be proven by a fact.{'\n'}
+                {'\n'}
+                Who are you?{'\n'}
+                > I am a Tathagata.{'\n'}
+            </Text>
+            <Text style={{ fontStyle: 'italic', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 12 }}>
+                Books - Poetry: The Traveler, Chapter 9
+            </Text>
+        </View> : <></> }
         <FlatList
             data={displayableDataSource}
             keyExtractor={(item, index) => index.toString()}
             ItemSeparatorComponent={ItemSeparatorView}
+            style={{ backgroundColor: 'white' }}
             renderItem={({ item }: { item: ContentMapElement }) => {
                 return (<ItemView item={item} rowTapped_fn={rowTapped_fn} />) 
             }}
@@ -240,6 +262,7 @@ let SubListScreen: React.FC<SubListScreenProps> = (props) =>
             data={dataItems}
             keyExtractor={(item, index) => index.toString()}
             ItemSeparatorComponent={ItemSeparatorView}
+            style={{ backgroundColor: 'white' }}
             renderItem={({ item }: { item: ContentMapElement }) => {
                 return (<ItemView item={item} rowTapped_fn={rowTapped_fn} />) 
             }}
@@ -296,7 +319,7 @@ function _navigationScreenOptionsFor_subScreen(route: any, navigation: any, optl
     }
     if (navigation.canGoBack() == false) { // if the page was loaded directly and does not have a back button - here's a janky way to resolve that in the UI
         options.headerLeftContainerStyle = { paddingLeft: 20 }
-        options.headerTitleStyle = { paddingLeft: 20 }
+        options.headerTitleStyle = { paddingLeft: 30 }
         options.headerLeft = () => ( <Button title="Home" onPress={() => { navigation.replace("Home") }} /> )
     }
     return options
