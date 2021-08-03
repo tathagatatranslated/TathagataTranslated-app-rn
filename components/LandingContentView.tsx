@@ -23,6 +23,9 @@ let LandingContentView: React.FC<LandingContentViewProps> = function(props)
         <Text style={{ fontStyle: 'italic', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 12 }}>
             New Translations {'>'} Books - Poetry: The Traveler, Chapter 9
         </Text>
+        {
+            props.is_for_loading_splash ? (<Text style={{ fontStyle: 'normal', fontWeight: 'bold', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 17, marginTop: 20 }}>Downloading Content... Please Wait...</Text>) : (<></>)
+        }
     </View>);
 }
 export default LandingContentView;
