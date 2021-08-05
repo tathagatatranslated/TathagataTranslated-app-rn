@@ -16,13 +16,14 @@ import LinkingConfiguration from './LinkingConfiguration'
 import LandingContentView from '../components/LandingContentView'
 //
 //
-import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId, lookedUp_contentMapElementWithListId, lookedUp_contentMapElementWithHTMLId } from './ContentMap'
+import { initial_root_list, ContentMapElement, contentItemListWithId, htmlForId, lookedUp_contentMapElementWithListId, lookedUp_contentMapElementWithHTMLId } from '../Content/ContentMap'
 //
 //
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName })
 {
+    // theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}
     return (
-        <NavigationContainer linking={LinkingConfiguration} theme={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+        <NavigationContainer linking={LinkingConfiguration} >
             <RootNavigator />
         </NavigationContainer>
     )
@@ -350,9 +351,6 @@ function RootNavigator()
 //
 //
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: 'white',
-    },
     itemContentContainer: {
         flexDirection: 'row',
         alignItems: 'center',
