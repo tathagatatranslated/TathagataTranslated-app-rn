@@ -598,6 +598,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             list_id: "new-translations"
         },
         {
+            cell: "AI Translations",
+            list_id: "ai-translations"
+        },
+        {
             cell: "Links to Other Websites",
             list_id: "links"
         }
@@ -712,8 +716,8 @@ export const content_map: { [key: string]: ContentMapElement[] } =
 		},
 		{
 			cell: "Lonely Struggle",
-			descr: "Autobiography not yet translated - See 'New Translations'",
-			list_id: "new-translations"
+			descr: "Autobiography originally translated - See 'New Translations' and 'AI Translations'",
+			list_id: "ai-translations"
 		}
     ],
     "traveler": [
@@ -1998,6 +2002,13 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             descr: "These precepts can be found in the 'New Translations' section",
             html_id: "precepts-commentary"
         },
+    ],
+    "ai-translations": [
+        {
+            cell: "Books - Traveler (AI translation)",
+            descr: "Translated by AI in June 2025 after training on Tathagata's English biography",
+            html_id: "ai-translations-traveler-jun25"
+        }
     ],
     "new-translations": [
         {

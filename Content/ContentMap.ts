@@ -423,6 +423,8 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
     "precepts-commentary": require('../resources/transcriptions/commentary on sixteen precepts.md'),
     "traveler-background-from-publisher": require('../resources/specific/traveler-background-from-publisher.md'),
     //
+    "ai-translations-traveler-jun25": require('../resources/ai/ai-translations-traveler-jun25.md'),
+    //
     // translations
     "new-translations-intro": require('../resources/specific/Translations_intro.md'),
 
@@ -607,6 +609,10 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         {
             cell: "New Translations",
             list_id: "new-translations"
+        },
+        {
+            cell: "AI Translations",
+            list_id: "ai-translations"
         },
         {
             cell: "Links to Other Websites",
@@ -2009,6 +2015,13 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             descr: "These precepts can be found in the 'New Translations' section",
             html_id: "precepts-commentary"
         },
+    ],
+    "ai-translations": [
+        {
+            cell: "Books - Traveler",
+            descr: "Translated by AI in June 2025 after training on Tathagata's English biography",
+            html_id: "ai-translations-traveler-jun25"
+        }
     ],
     "new-translations": [
         {
