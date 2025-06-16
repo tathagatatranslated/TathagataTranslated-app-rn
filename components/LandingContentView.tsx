@@ -25,7 +25,7 @@ Who are you?  {'\n'}
             from AI Translations {'>'} Books - Poetry: Traveler, Chapter 9
         </Text>
         <Text style={{ fontStyle: 'italic', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 12 }}>
-            Last Updated: May 22 2025
+            Last Updated: Jun 16 2025
         </Text>
         {
             props.is_for_loading_splash ? (<Text style={{ fontStyle: 'normal', fontWeight: 'bold', width: '65%', minWidth: 320, maxWidth: 660, marginHorizontal: 'auto', fontSize: 17, marginTop: 20 }}>Downloading Content... Please Wait...</Text>) : (<></>)

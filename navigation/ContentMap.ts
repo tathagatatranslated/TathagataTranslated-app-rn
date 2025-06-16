@@ -2005,9 +2005,14 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     ],
     "ai-translations": [
         {
-            cell: "Books - Traveler (AI translation)",
+            cell: "Books - Traveler",
             descr: "Translated by AI in June 2025 after training on Tathagata's English biography",
             html_id: "ai-translations-traveler-jun25"
+        },
+        {
+            cell: "Books - A Lonely Struggle",
+            descr: "Translated by AI in June 2025",
+            html_id: "ai-translations-a-lonely-struggle-jun25"
         }
     ],
     "new-translations": [

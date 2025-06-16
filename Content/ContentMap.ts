@@ -424,6 +424,7 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
     "traveler-background-from-publisher": require('../resources/specific/traveler-background-from-publisher.md'),
     //
     "ai-translations-traveler-jun25": require('../resources/ai/ai-translations-traveler-jun25.md'),
+    "ai-translations-a-lonely-struggle-jun25": require('../resources/ai/ai-translations-a-lonely-struggle-jun25.md'),
     //
     // translations
     "new-translations-intro": require('../resources/specific/Translations_intro.md'),
@@ -2021,6 +2022,11 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             cell: "Books - Traveler",
             descr: "Translated by AI in June 2025 after training on Tathagata's English biography",
             html_id: "ai-translations-traveler-jun25"
+        },
+        {
+            cell: "Books - A Lonely Struggle",
+            descr: "Translated by AI in June 2025",
+            html_id: "ai-translations-a-lonely-struggle-jun25"
         }
     ],
     "new-translations": [
