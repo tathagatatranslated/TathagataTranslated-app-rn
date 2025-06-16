@@ -1,20 +1,11 @@
-NOTE FROM THIS WEBMASTER: I made this translation by using AI software so it could be *very incorrect*, missing, or totally made up in some places. 
 
-Please do not take this content as an absolute or authoritative translation. It is likely there is at least one major error by the AI translator. 
-
-I suggest people make better translations of this as this sort of AI translation software becomes more reliable in the future and prompts are perfected. I tried making many AI translations of these chapters and they often turned out very differently each time, if that tells you anything. 
-
-The prompt used to obtain the translation makes a very, very big difference - and because the systems are probabilistic, you still absolutely should find a fluent human speaker to tell you the right interpretation. I have not fully checked this content even for completeness (some sentences might be missing especially at the end of chapters), so *read it at your own risk*.
-
-
----
 
 
 
 Son of a Hwajeonmin [slash-and-burn farmer], Lee Sam-han
 A Lonely Struggle
 
----
+
 
 New Four-Six Edition 380 pages
 Printing / April 30, 1983
@@ -23,8 +14,6 @@ Author / Lee Sam-han
 Publisher / Seo Jae-sam
 Publishing House / Busan Mun-ye-sa
 Printing Company / Taehwa Publishing Company
-
----
 
 A Lonely Struggle
 
@@ -62,8 +51,6 @@ To those who are still without blessings, I want to show them the way.
 
 Lonely people of the world, fight against your cowardly self.
 
----
-
 Table of Contents
 
 1. Elegy in the Forest (悲歌)
@@ -96,12 +83,7 @@ Table of Contents
 28. The Frustrating People
 29. The Talented Fool
 30. Despair and Blessing
-
-
 Afterword
-
-
----
 
 1. Elegy in the Forest (悲歌)
 
@@ -6161,607 +6143,286 @@ Who will save us of today? O heavens, give us your blessing. Help people to real
 It was one such day. December 26, 1981, while feeling disappointment with the world, there was a destiny that I had to suffer once more in a society that only betrays the era we are living in.
 
 
-29. The Great Fool
+29. The Well-Bred Fool
 
-I heard a story that my wife was looking for me.
+I heard that my wife was looking for me.
 
-I called home to ask what was the matter.
+I called home to see what was the matter.
 
-My wife's urgent voice said, "The report on that came out."
+My wife's urgent voice said, "It's been reported in the news."
 
-Hearing that, my vision went dark. While thinking it couldn't be, a suspicion arose. A sense of futility about the world was rising in my heart.
+Hearing that, my vision went dark. I couldn't believe it, but doubts arose. A sense of futility about the world was rising in my heart.
 
-It was because it was money I had obtained by even lying, on my part, to help someone, trusting only the friendship I usually had.
+It was money I had obtained, even by lying, in my own way, to help someone I knew, trusting solely in the friendship I had always shown them.
 
-When I first saw the check, I had even asked if it could be trusted, and it was a promissory note that the two of us had even inquired about at the paying bank.
+When I first saw the promissory note, I had even asked if it could be trusted, and it was a note that the two of them had even inquired about at the paying bank.
 
-At that time, the person who had identified himself as the manager of the Dadae branch of the Busan Fisheries Cooperative was the one who answered the phone.
+At that time, the person who answered the phone had even revealed his identity as the director of the Dadae branch of the National Federation of Fisheries Cooperatives in Busan.
 
-When I spoke of the check, he said that if it was that item, he could take responsibility for it. Hearing that, for a brief moment, I had even felt a sense of shame for my heart that had doubted people and society.
+When I mentioned the note, he said that if it was that item, he could take responsibility for it. Hearing those words, I had even felt a sense of shame for a moment for having doubted people and society.
 
-Every time I thought about it, a fierce emotion of "those bastards" rose up from within. I began to wander the streets in search of the vulgar people who had come to believe that betrayal was common sense.
+Every time I thought about it, a fierce anger of "those bastards" welled up inside me. I began to wander the streets in search of those base people who believed that betrayal was common sense.
 
-It felt as if my eyes would flip over in an instant. While feeling the chilly December air on my skin, I even hid in an alley and lay in wait, and at the end of it, I met the old man who had taken the money.
+It felt as if my eyes would flip in an instant. Feeling the chilly December air on my skin, I even hid in an alley, lay in wait, and at the end of my wait, I met the old man who had taken the money.
 
-The old man, upon seeing me, pretended to be flustered at first, but soon became calm. He feigned ignorance, saying he had also received it. Then, as if he had no choice, he took me to the place called the issuing company.
+Seeing me, the old man at first pretended to be flustered, but soon became composed. He feigned ignorance, saying he had also received it. Then, as if he had no other choice, he took me to the place that was supposedly the issuing company.
 
-As soon as I went there, I felt that I had been swindled. It was visibly planned. I did not let go of the old man and continued to press him.
+As soon as I went there, I felt that I had been scammed. It was clear that it was planned. I did not let the old man go and continued to press him.
 
-The old man, who knew my temper, was flustered, knowing that a mere swindler's organization in the land of Busan could not dare to face Lee Sam-han and fight him head-on.
+The old man, who knew my temper, was flustered, knowing that a mere scammer organization in Busan would not dare to confront Lee Sam-han head-on.
 
-The next day, thinking I should give the man who was the manager of the financial institution a piece of my mind, I went to find his branch office, but he had already submitted his resignation a week before, hastily collected his severance pay, and fled.
+The next day, thinking I should teach the man who called himself the director of the financial institution a lesson, I went to his office, only to find that he had submitted his resignation a week ago, hastily collected his severance pay, and fled.
 
-My world was collapsing again. I began to feel disillusioned with people's consciences.
+My world was collapsing again. I began to feel disillusioned with people's conscience.
 
-Anger surged at the conscience of a society that would just let things like this be, more than at the people who considered the pathetic act of betraying someone who trusts them as a talent.
+Anger surged not at the people who regarded the pitiful act of betraying those who trust them as a talent, but at the conscience of a society that would let such things go on forever.
 
-I finally thought that this was not a matter to be solved by excitement alone and sorted things out, listening to people's stories one by one.
+I finally realized that this was not something that could be resolved by excitement alone and began to sort things out by listening to people's stories one by one.
 
-On the back of the dishonored promissory note worth 30 million won, there was the endorsement signature of the manager of the Dadae branch of the Fisheries Cooperative. While thinking that he must have pocketed about 1 billion won in a few months with just his wits, my heart was bitter.
+On the back of the bounced promissory note, worth 30 million won, was the endorsed signature of the director of the Dadae branch of the National Federation of Fisheries Cooperatives. I thought to myself that with just their intelligence, they had managed to pocket about 1 billion won in a few months, but my heart was bitter.
 
-Even without compensating a single 10 won, the gang handled the situation so well that the other people, except for me, were dazedly deflated.
+While they didn't reimburse a single 10 won, the gang was so good at handling the situation that everyone except me was left dumbfounded and deflated.
 
-I did a background check on the issuer. The issuer had several prior convictions for fraud, and he was a past offender of issuing bad checks who had done this before, and had no property in his name. For the means of a past offender with no money, it was amazing. No, it was a story of this land where conscience is not considered important.
+I did a background check on the issuer. The issuer had several prior convictions for fraud and was a repeat offender of issuing bad checks, with no assets in his name. For a convict with no money, his methods were astounding. No, this was a story of a land where conscience was not valued.
 
-The man who was the manager of the Fisheries Cooperative was also known for his spending habits, and there were also rumors that he had several women behind him. I had a suspicion, could it have been a play by the two of them?
+The man who called himself the director of the cooperative was also known for his lavish spending, and there were rumors that he had several women behind him. I began to suspect if it had been an act by the two of them.
 
-I heard there was a boss in Seoul behind the story, but I could not pursue it further. Because even if I found out more, there was no solution for me.
+After the story, I heard that there was a boss in Seoul, but I couldn't pursue it any further. It was because even if I found out more, I had no solution.
 
-I felt that this matter was a problem for me personally, but also a problem for society. I thought about it for several days. Would it work if I appealed this matter to the law? I had doubts whether the law represented social justice.
+I felt that this incident was a problem not only for me personally but also for society. I thought about it for many days and for a long time. Would appealing to the law in a matter like this work? I began to doubt whether the law represented social justice.
 
-If I say this, people of the next generation might think I am a strange person, but the principle of non-intervention in civil cases by investigative agencies means that for a crime committed by an intelligent criminal, unless he is caught and confesses, even an investigator who knows justice can do nothing.
+If I talk about this, the next generation might think I'm a strange person, but the principle of non-intervention in civil cases means that even a detective who knows justice can't do anything until the perpetrator is caught and confesses to the crime he committed.
 
-To write down all the details in a complaint to make it understandable would take several days, and even then, its effect was not certain, and in this society where it was always the admonition of the high-ranking people not to slander, I could not just make a judgment myself and write that these people were swindlers.
+To write down the whole story in a complaint and make it understandable would take several days, and even then, its effect was uncertain. In a society like this, where the admonitions of high-ranking people have always been to refrain from slander, I couldn't make a judgment on my own and write that these people were scammers.
 
-Also, I could not say that the issuer was a past offender with an organization.
+Also, I couldn't say that the issuer was a convict with an organization.
 
-I couldn't just shout that one bastard, to feed and support three women, took out check forms and promissory note forms and swindled the money of customers who came in and out of the store. Thinking about it, it's even more absurd.
+I couldn't shout that one bastard was taking out check forms and promissory note forms to support three women and swindling money from customers who frequented his store. The more I thought about it, the more absurd it was.
 
-First, there has to be a place with the mission to save justice so I can go and talk about it, but my conscience would not allow me to just cover it up and move on.
+First, there should be a place with a mission to uphold justice for me to go and talk to, but my conscience wouldn't allow me to just cover it up and move on.
 
-I called the social affairs departments of a broadcasting station and a certain newspaper company. I told them that there was such and such a thing, and if they covered it, something interesting would be revealed. The other side said they understood.
+I called the social affairs department of a broadcasting station and a certain newspaper company. I told them that if they investigated such and such a matter, something interesting would be revealed. The other side said they understood.
 
-All that day and until the next day, for two days, I listened intently in front of the radio and television at every news time, but no mention of that incident ever came out. The newspapers were the same.
+I listened intently to the radio and television at every news hour all that day and the next, but there was never any mention of the incident. The newspapers were the same.
 
-Having no other choice, I went directly to the broadcasting station around 9 a.m. However, I only had to feel shock and disappointment with the world. The reporters did not try to confirm the incident.
+Reluctantly, I went to the broadcasting station myself around 9 a.m. However, I only had to feel shock and disappointment with the world. The reporters would not even try to verify the incident.
 
-Even for the sake of stopping the swindlers' next conspiracy, I requested that they cover this case as it had too many absurdities and let the world know, but the reporters showed a very unpleasant impression. Why has the world become like this? No matter how much I thought, I could not understand.
+I demanded that they cover this case and let the world know about it, as there were too many absurdities, if only to prevent the scammers' next plot, but the reporters even showed a very unpleasant impression. Why has the world come to this? No matter how much I thought about it, I couldn't understand.
 
-When I demanded to know what the mission of the press was, only then did they say let's go to the police station, speaking to me with an even more unpleasant face. The world was making me laugh.
+When I asked what the mission of the press was, only then did they say, with an even more unpleasant face, "Let's go to the police station." The world was making me laugh.
 
-The surroundings, which I had thought of as simple, were so much different from my thoughts. Still, with some expectation in a corner of my heart, I went to a department of the police station that the reporter had told me about at the appointed time. The reporter from the broadcasting station also came into the police station at that time.
+The surroundings, which I had thought to be simple, were so different from my thoughts. Still, with a sense of expectation in a corner of my heart, I went to a department at the police station that the reporter had told me about at the appointed time. The reporter from the broadcasting station also came to the police station at that time.
 
-He looked at me and, without even treating me like a person, spoke to the detective in charge of economic crimes in a complaining tone, saying that I had come to the broadcasting station and made a fuss.
+He saw me and, without even treating me like a person, spoke to the detective in charge of economic crimes in a complaining tone, saying that I had come to the broadcasting station and made a fuss.
 
-The police officer confirms who I am and greets me. "Mr. Lee, you know me, don't you? You could have just come here, why did you go to the broadcasting station?" and said to write out a detailed complaint and submit it.
+The police officer recognized me and greeted me. "Mr. Lee, you know me, don't you? You could have just come here, why did you go to the broadcasting station?" he said, telling me to write a detailed complaint.
 
-At that time, a reporter from a certain daily newspaper published in Busan strikes up a conversation. He asked if I was the one who called their company. I answered that I was.
+At that moment, a reporter from a daily newspaper published in Busan struck up a conversation. He asked if I was the one who had called their company. I answered that I was.
 
-He insults me with humiliating words. Asking if I am a loan shark. Now, more than the swindlers, the actions of the people called reporters were unpleasant.
+He insulted me with derogatory words. He asked if I was a moneylender. Now, more than the scammers, the behavior of the people called reporters was unpleasant to me.
 
-Also, he speaks recklessly without hesitation. He even said he was going to teach me a lesson but held back after meeting me.
+He also spoke recklessly without hesitation. He even said that he was going to teach me a lesson but held back after meeting me.
 
-I immediately took the reporter's words and said,
+I immediately responded to the reporter's words.
 
-"Hey, I am a person who has struggled for 15 years to brighten society."
+"Look here, I am a person who has fought for 15 years to brighten society."
 
-And the reporter, who looked younger than me, says that he has worked for the country for 25 years.
+Then, the reporter, who looked younger than me, said that he had worked for the country for 25 years.
 
-I felt a sense of shame at the very fact that I was exchanging words with such people. I just came out of that place.
+I felt a sense of shame at the fact that I was arguing with such people. I walked out of that place like an adult.
 
-I walked the road alone. My worry for the future of society grew. "Unforgivable bastards," I ground my teeth. After confirming that there was nowhere to trust in my surroundings, my walking legs trembled.
+I walked alone on the street. The future of society turned into a worry. My teeth ground together at the thought of the unforgivable bastards. After confirming that there was no one to trust anywhere around me, my walking legs trembled.
 
-As the days went by, my conscience was subjected to unbearable torture. When I saw the sign "Realization of a Just Society" on the street, I would turn my head away.
+As the days went by, my conscience was tortured unbearably. When I saw signs on the street that said "Implementation of a Just Society," I would turn my head away.
 
-The thought arose that the truth must be told as it is for the good people to be able to live as well.
+The thought came to me that the truth must be told as it is for the good to be able to live.
 
-In my heart, I was becoming worried about the future I had to live in. There are wronged people, but there is no friend for the wronged person.
+In my heart, I was worried about the future I had yet to live. There are wronged people, but there are no friends of the wronged people.
 
-In a word, justice in this land was dead.
+In a word, justice is dead in this land.
 
 People just live on without confirming this sad fact.
 
-When spring came, shocking facts were waiting for me again.
+When spring came, more shocking facts were waiting for me.
 
-My eldest sister, among my siblings living in the land of Hadong in the countryside, contacted me to come for a visit. And the next day, she made a fuss over the phone, telling me to come up quickly.
+My eldest sister, who lives in the countryside of Hadong, contacted me to come and visit her. Then, the next day, she urged me on the phone to come up quickly.
 
-Knowing my sister's situation was urgent, I hurriedly went up to my hometown, Hadong. My sister, who met me after a long time, let out a sigh as if she had survived. I heard the story of the reason my sister had urged me to come up. An absurd thing was happening even in a corner of the countryside.
+Knowing that my sister's situation was urgent, I quickly went up to my hometown of Hadong. My sister, who I hadn't seen in a long time, let out a sigh as if she had survived. I heard the story of why my sister had urged me to come up. An absurd thing was happening even in the corner of the countryside.
 
-A few irresponsible people had become puppets called the land readjustment committee, and even though the location conditions were by no means suitable, they were starting work that made ignorant people cry, saying they were doing farmland improvement.
+A few irresponsible people had become puppets called the land readjustment committee, and even though the location was completely unsuitable, they were starting to make innocent people cry by claiming to be doing land consolidation work.
 
-It was a laughable thing from the very beginning. They told me to pay a levy of nearly 500,000 won to make a rice paddy that was split into three pieces into two pieces. When I asked why I had to pay so much money, the answer was that everyone had agreed.
+It was ridiculous from the start. They said I had to pay a contribution of nearly 500,000 won to turn a three-sectioned rice paddy into two sections. When I asked why I had to pay so much money, the answer was that everyone had agreed to it.
 
-The person called the village head said that if I just paid the money, everything would be done before rice planting. I trusted the authorities, I trusted the construction company, and I trusted the words of the village head who was playing the puppet show there.
+The village headman said that if I just paid the money, everything would be done before planting the rice seedlings. I trusted the authorities, I trusted the construction company, and I trusted the village headman who was playing the puppet.
 
-However, in a place lacking justice, trust always brought about failure.
+However, in a place where justice is lacking, trust always brought about failure.
 
-After the construction was finished, other than the 50cm rice paddy levee turning into 2m, there was only destruction around our owned land.
+When the construction was finished, besides the 50cm paddy ridges turning into 2m, there was only destruction around our land.
 
-Saying they were making a new waterway, they dug a perfectly good one deep and even cut off the irrigation channel. Because of the destructive act on someone else's land, we were left with a huge amount of work.
+They dug a deep new ditch, claiming to be making a new waterway, and even cut off the irrigation channel. Because of the destructive acts on someone else's land, we were left with a huge amount of work.
 
-Having suffered an absurd thing and being a person with nowhere to complain, as I was enduring, the trickery slowly begins to reveal itself. They say the destroyed paddy levee should be done by the individual at their own expense.
+As I was enduring as a person who had been wronged and had nowhere to complain, their tricks slowly began to be revealed. They said that the destroyed paddy ridges had to be rebuilt by the individuals at their own expense.
 
-12% of the land is taken away for the maintenance people under a plausible pretext. The rice paddy I received as 1,025 pyeong is actually only 750 pyeong.
+12% of the land is taken away for the sake of the influential people under a plausible pretext. The rice paddy I received as 1,025 pyeong is actually only 750 pyeong.
 
-When I fought and protested, the county office employee, while spewing all sorts of insults, consulted with the surveyor and did give back the remaining missing part of the land, but this too was a trick to just shut my mouth for a moment.
+When I fought and protested, they cursed at me in all sorts of ways. The county office employee, in consultation with the surveyor, did give me the remaining missing part of the land, but this was also a trick to shut my mouth for a moment.
 
-Now the topography of the rice paddy was worse than before the farmland improvement. The three pieces were still three pieces. Rather, to remake the paddy levee destroyed by the bulldozer, the construction cost was over 600,000 won more.
+Now, the topography of the rice paddy was worse than before the land consolidation work. The three sections were still three sections. Rather, it would cost an additional 600,000 won in construction costs to rebuild the paddy ridges that the bulldozer had destroyed.
 
-What also surprised me was that a government subsidy of about 2 million won had been issued in our name to help us. The thought that came to my dull head was only that a few bastards were planning to pocket some money.
+What surprised me again was that a government subsidy of about 2 million won had been issued in our name to help us. The thought that came to my dull mind was that a few bastards were going to get their hands on some money.
 
-But then a few days later, they drove a stake into the rice paddy that had been given as a temporary replacement. It was to say that we should only have about 900 pyeong. It was truly absurd.
+Then, a few days later, they put a stake in the rice paddy they had given me. They said that we should only have about 900 pyeong. It was truly absurd.
 
-Having been hit again this time, there was not a single bastard in the world to take responsibility for the defect. When I protested, they threatened me instead. When I calculated it, I was dumbfounded.
+After being had again this time, there was not a single person in the world to take responsibility for the defect. If I protested, they threatened me instead. When I calculated it, it was absurd.
 
-From 1158 pyeong, 258 pyeong were to be forcibly taken, and the levy and the work cost to make the paddy levee were about 1.1 million won. And if you add the 2 million or so that the authorities supposedly added to help the farmers, it comes to about 3.1 million won, and I don't know how much the 900 pyeong I got back would be worth, but the price for a bulldozer passing over the land for 4 hours was that I lost half the land. When I think about it, it's absurd, and when I look at the world, it's just pitiful.
+Out of 1158 pyeong, 258 pyeong were to be forcibly taken away, and the contribution and the cost of rebuilding the paddy ridges amounted to nearly 1.1 million won. If you add the 2 million won that the authorities supposedly gave to help the farmers, it would be over 3.1 million won. I don't know how much the 900 pyeong I got back would be worth, but the price of a bulldozer passing over the land for 4 hours was that I lost half of my land. When I thought about it, it was absurd, and when I looked at the world, it was just pitiful.
 
-Is this kind of thing a project where the state helps the people? Anger welled up.
+Is this kind of thing a project where the state helps its people? Anger flared up.
 
-The world that was fine even after doing this was just pathetic. It was a world where there was nowhere to protest even if you were wronged, and the hearts of the people who had to keep their mouths shut for fear of being hit again were unspeakably pained.
+I was just pathetic that the world was fine even after doing this. It was a world where you had nowhere to complain even if you were wronged, and the hearts of the people who had to keep their mouths shut for fear of being wronged again were unspeakably pained.
 
 People who don't know how to take responsibility, people who persecute justice and hate conscience, because such people live in this land, we have been robbed of our hope.
 
-After knowing all the facts, I wandered in search of justice. I went to see the Hadong county governor, and I also went to see the provincial director of agricultural administration. In the end, I gained no income other than the result of wasting my travel expenses on my meager living.
+After knowing all the facts, I wandered in search of justice. I went to the Hadong county governor and also to the director of the provincial agricultural administration bureau. In the end, I gained nothing but the cost of travel from my meager living expenses.
 
-When a wronged person says they are wronged, the ones who have lost their conscience look at them as if they are subversive.
+When a wronged person says they are wronged, the ones who have lost their conscience look at them as if they are disloyal.
 
-The last thing I said when I went to see the high-ranking person at the provincial office was, "Are the people in charge idiots and fools? Is it collusion with corruption? Is it a treacherous act to manipulate the public's distrust through a government support project?" but the answer from the other party who heard my protest was always a cynical smile in silence.
+The last thing I said when I went to see the high-ranking official at the provincial office was, "Are the people in charge fools and idiots? Is this a collusion with corruption? Is this an act of treason to manipulate public distrust through a government support project?" But the other party's response to my protest was always a silent sneer.
 
-It's unfair, it's unfair. But it seems there is definitely no friend in this country who will help this wronged person. So this kind of thing happens again. It became a cry that had no echo even if I shouted and shouted. I felt the strength drain from my whole body and I was getting exhausted.
+Unfair, unfair. But it seems there is clearly no friend in this country to help this wronged person. So this kind of thing happens again. Even if I shout and shout, it has become a cry without an echo. I felt my whole body lose strength and become exhausted.
 
-Are courage and conscience and the like, at least in this era, the luxury goods of a foolish person with no value? To be honest, I fell into a state of collapse.
+Are things like courage and conscience luxury items for a foolish person that have no value, at least in this era? Frankly speaking, I fell into a state of futility.
 
-In my chest, a chilly feeling arose as if the blood had gone cold. Looking around at the surroundings full of only injustice, I could not understand where a person's conscience was needed.
+A cold feeling arose in my chest as if the blood had gone cold. Looking around at the absurd surroundings, I couldn't understand where a person's conscience was needed.
 
-Unspeakable stories piled up in my chest and it was frustrating. I began to search for the words I needed at times like these for myself. A story from a fairy tale came to mind.
+Unspoken stories piled up in my chest, and I felt frustrated. I started to look for the words I needed at times like this for myself. A story from a fairy tale came to mind.
 
-The story of a monkey with two eyes who went to a village of one-eyed monkeys and was treated like a cripple made me laugh. The world became interesting.
+I laughed at the story of a two-eyed monkey who went to a village of one-eyed monkeys and was treated like a cripple. The world became interesting.
 
-When I thought of a pig trapped in a pen all day, I had no reason whatsoever to complain. It felt as if destruction and a big event were about to happen at any moment.
+When I thought about the pig trapped in a cage all day, I had no reason to complain. It felt like ruin and great trouble were imminent.
 
-From this time on, to imitate what the people around me were doing, when I spent a little money, alcohol and absurd thoughts made me forget everything.
+From this point on, I spent some money to imitate what the people around me were doing, and alcohol and strange thoughts made me forget everything.
 
-While repeating this life to deliberately corrupt myself, I felt my surroundings getting dimmer day by day. I gradually cannot see. I thought that I was now going to live like other people. My eyes grew dimmer.
+While repeating this life to deliberately corrupt myself, I felt my surroundings getting dimmer day by day. I was gradually losing my sight. Now I thought, am I going to live like other people? My eyes became even dimmer.
 
-But an anxious feeling arises. My steps led me to the hospital.
+But an anxious feeling arose. My steps led me to the hospital.
 
-The ophthalmologist, after examining me, frightens me by saying it was a close call. He warned that if I had been just 3 days late, I would have been completely blind, and that I should not drink even a little alcohol.
+After an ophthalmologist examined me, he scared me by saying that it was almost a disaster. He warned me that if I had been just 3 days late, I would have completely lost my sight, and that I should not drink even a little alcohol.
 
-Because of the thought that I should not become blind, I received treatment without rest, and my eyesight recovered.
+Because of the thought that I shouldn't become blind, I received treatment without rest, and my eyesight recovered.
 
-As I quit drinking, my dazed self gradually regains its vitality and revives.
+As I quit drinking, my dull self gradually regained its vitality and was revived.
 
-I finally, to find a place for courage and conscience to stand in my life, wandered the streets where common sense had disappeared. No matter what kind of scheme I came up with, I could not find a way.
+I finally wandered the streets where common sense had disappeared in search of a place for courage and conscience to stand in my life. No matter what I tried, I couldn't find a way.
 
-To expose the conspiracy of the countryside thieves to society, I began to write a petition. Since the mass media frequently made a fuss that false accusations would be severely punished, my hand trembled even as I wrote the truth.
+I started to write a petition to expose the conspiracy of the country thieves to society. Since the media often clamored that false accusations would be severely punished, my hand trembled even as I wrote the truth.
 
-After some time, a reply came from a high-ranking person. Thinking of the stories I had often heard around me, I no longer had any expectations. Having been disgraced by alcohol several times, I drank again and tried to overcome the unbearable moments.
+Some time later, I received a reply from a high-ranking person. Thinking of the stories I often heard around me, I no longer had any expectations. Even after being disgraced by alcohol several times, I tried to endure the unbearable moments by drinking again.
 
 After receiving the final reply to the petition, I shouted.
 
-It's just the thought that thieves are ruining the country.
+All I could think was that the thieves were ruining the country.
 
-Where the government was involved, there was always an unpleasant smell around. In the reply to the petition, geniuses at number crunching had written down a few laws.
+Wherever the government was involved, there was always a bad smell around. In the reply to the petition, the geniuses at balancing the books had written down a few laws.
 
-I only felt dumbfounded and as if blood was clotting in my chest. Since they were the ones who said they would not take responsibility even if promises were broken, I wondered what use there would be in arguing further.
+I felt nothing but absurdity and the feeling of blood curdling in my chest. Since they were the ones who said they would not take responsibility even if a promise was broken, I thought what was the use of arguing further.
 
-I firmly resolved to appeal to the National Assembly or the authorities.
+I made up my mind to appeal to the National Assembly or the authorities.
 
-First, I thought of finding a person who had not abandoned justice and getting a supporter for this matter of mine. And I thought that I could not overlook this matter, even if I were to suffer for it.
+First, I thought of finding someone who had not abandoned justice and asking for their support in this matter. And I thought that I could not overlook this matter even if I had to suffer.
+
+
+
+
+
+
 
 
 30. Despair and Blessing
 
-In my thoughts, a matter arose that brought me frustration again.
+In my thoughts, I believed that if I only searched, there would be comrades around me who shared the idea of having to save our society.
 
-The things happening around me were like that, and what I saw before my eyes was also like that. Things were happening that made it difficult to live with common sense.
+I wandered the streets searching for such people. As each day passed, my heart felt a sense of loneliness. Impatience grew in my mind, and my chest felt heavy.
 
-The people of the world no longer opened their mouths about other people's affairs. Also, incomprehensible things made my heart anxious and caused me pain.
+Even while knowing that my family’s finances had become difficult due to the misfortunes that had followed us for several years, I was possessed by the thought that I must now go up to Seoul and start something. I pressed my wife to find me travel expenses.
 
-Then one day, a rumor spread that the coastal road in front of my business site would be restored, and it reached my ears.
+My only thought was the conviction that I must prevail against those who are unjust.
 
-However, when I confirmed that rumor once more, I came to doubt my own ears. It was the story that they would neglect only the road in front of my house and the one next to it.
+The fact that I had to expose to society the villains who tormented individuals, created distrust in society, and drained the nation's difficult finances by deceiving the state, was the only thing that set my heart on fire.
 
-I could not be convinced by what those people were saying. Strange rumors were spreading around.
+And so, I dismissed my wife's advice as the words of an unlucky woman and went up to Seoul. I believed that if I went to that place where many people live, there would be someone who would rescue a wronged conscience.
 
-The laborers of the subcontracting company in charge of the road restoration work, perhaps feeling more frustrated by the actions of the government office that had given them the work, looked at me and told me to go to the relevant government office and try to get along with them.
+Believing this, I went all the way to Seoul, but now a complete miscalculation began to arise in my plans.
 
-Some dull people believed this was my fault due to my incompetence, and some quick-witted people, seeing this, sympathized with me.
+Even when I went to see assemblymen who should have known better, they would not even deign to speak about social justice or the reality of the nation.
 
-All the flood damage in the southern port had been restored, but to neglect a road section that was not even a harbor for two years, and then, while saying they would finally start the construction, to leave a mere 40-meter section unfinished and stubbornly hold out, seemed to have some meaning behind it.
+In my frustration, I visited places called political parties, trying to get at least verbal support for my struggle, but what I felt immediately was only contempt and ridicule.
 
-Because of the things I see before my eyes, when I think about what would happen if the people who do the country's work all liked to do this kind of thing, my worries for the future of the homeland that is to come take precedence.
+For some reason, even my old comrades with whom I had been close avoided a person like me, and those who had clawed their way to success were even more unwilling to associate with me.
 
-Foolishly, I even petitioned the high-ranking people in the government about this matter. When I received the reply, my past actions now made me fall into self-torment.
+Could the world really be like this? My heart went past sorrow and was about to go mad. Everyone I met, for whatever reason, only tried to pacify me and tried to turn a blind eye to the frustrating affairs of the world.
 
-When I think that this too is a part of my destiny, the fear of whether it is God's will or the devil's deed torments me until that thought disappears. To find comfort for myself, I looked for all sorts of thoughts.
+I was dumbfounded seeing the state of these people. Did all those people in Seoul now become parrots as well?
 
-To settle the past, which had many useless acts, I also placed hope in the future when the Fifth Republic would be born, and when even that was not enough, I would lose my mind with alcohol without side dishes. In the midst of that, another sad thing happened to me.
+A laugh mixed with anger emerged at their emotionless behavior. When I changed my perspective and looked, it seemed like a comedy unfolding on a stage.
 
-I heard the news that my father-in-law, who had forcibly made me his son-in-law and had dedicated himself to my work, had passed away the day after Chuseok in 1980.
+I became ridiculous to myself for having been so stubborn until now. What on earth did I expect, coming to a place like this?
 
-After holding the funeral for my father-in-law with my wife's family, truths that I had not felt in normal times were sprouting in my heart.
+What I could feel in my body was only death and a sorrow more painful than death.
 
-He was known as a good person in the community, but only after his death did I realize how much of a support the actions of my father-in-law, who had a keen eye for people, had been without me even knowing. Only then did a corner of my heart feel empty as if it were vacant.
+What will become of the world in the future? I thought of the frustrated hearts of people who see a thief but cannot catch him. In the midst of that, my heart sank deeper and deeper into the swamp of despair.
 
-Such days continued. I felt lonely in the world and was turning into a foolish person before my ever-increasing tolerance for alcohol. My appearance immediately began to change. My nose was always red and my face was flushed.
+I cleared out such thoughts from my head. I heard a voice telling me to kill my memories. It was telling me to forget the useless people.
 
-Whenever my wife saw me, she advised me about my health, but I let such words flow in one ear and out the other.
+It was telling me that I had to wash away the things I had suffered. I heard a voice telling me to start the first path of life again from today.
 
-At that time, I was becoming so weak that it was getting harder and harder to even control my own body.
+I finally began to understand myself. It felt as if I could understand the world a little in my heart as well. And so, I began to release the arrogance that had bound me until now.
 
-Outlandishly, I also felt like I wanted to fall into depravity once in a grand way and test what kind of fun it is to be born in the world. To me in this state, as if to add insult to injury, another absurd thing happened.
+The judgment was revived within me that even if living in the world ahead is more lonely and more difficult, I must find my second life in this land.
 
-A person appeared whom I don't know whether to introduce as a friend or a surveillance agent, and he watched over me like a shadow.
+At that very moment, a strong flame of life was rising from within my chest toward my head again.
 
-The man named K became a drinking buddy at drinking parties, and whenever I showed an impulse to become depraved, he became my companion to any place.
+I began to feel my own heart growing hot.
 
-When I did not meet with other people and talk about political issues or about entering the political stage in the future, he did not bother me.
+I knelt on the floor and brought my hands together.
 
-In this situation, while sorting out my powerlessness, I closed the office I had kept open by Yeongdo Bridge and moved the belongings to my house.
+My body trembled and grew hot as if an electric current was flowing through it.
 
-I cut off contact with people and cooped myself up at home. The only person who came to my house without missing a day was K.
+At this moment, I began to pray towards a high place.
 
-Even in chance encounters, whenever the topic of my future election matters connected to my personal affairs or my entry into politics came up, K would glare. In any place, he would deliberately ruin the atmosphere and had been consistently hostile.
+I will protect myself so that I may be respected even by my enemies.
 
-If the people next to me, not knowing who he was because of his actions, showed a curious look, K would make the first move. He would introduce himself to the other person, saying he was Lee Sam-han's friend, with his own mouth.
+For the first time, for the sake of others, I began to write the story of my life, looking back on the destiny I had walked.
 
-At these moments, I don't know if I had made a good friend thanks to the world, but it was not just once or twice that I felt displeased by K's actions.
+I retraced my past memories one by one. My mind grew clearer and clearer, and my hands trembled.
 
-As the autumn of that year passed with absurd thoughts, all sorts of rumors were relayed to my ears. Also, the place called the mass media delivered new topics, I don't know if they were lies or truth.
+For the youth of the future, and thinking of the future of my homeland, I wrote on manuscript paper.
 
-People just watched the newspapers or television and accepted the new issues to the extent of thinking 'it's probably like that.'
+The fear within my body disappeared. In its place, a great emotion arose. And then, a strange phenomenon occurred.
 
-I couldn't see anyone trying to find out what was right or wrong, as if it was none of their business. Words that 'new wine must be put into new wineskins' began to circulate.
+The various illnesses I had in my body until then disappeared one by one.
 
-Now, who is hoping for what, and how?
+Something was happening that no one would believe if they heard it.
 
-Will the mass apparatus, which was so difficult in our long history, be realized? Or will we go back into the difficult history? Such thoughts, after a long time, made me restless, as if I had some responsibility.
+The severe hacking cough stopped, and my red nose returned to its proper color. The afflictions in my heavy chest were healed.
 
-From that time, the newspapers and television were making a special feature out of the list of those subject to political regulation as the focus of their news. The people of the world made all sorts of speculations.
+Seeing me completely changed and well, my wife was amazed. When I told her the truth, she muttered, "Aren't you possessed by a ghost?"
 
-During this time, K practically lived at my house during the day. And when we parted, he would ask about my plans for tomorrow. I was gradually getting tired of K's actions.
+I was born again.
 
-People around me spurred me on, saying that my time had come. Whenever such a moment occurred, K, who was next to me, would even get angry and try to cut off the conversation between me and the other person.
+A mighty voice spread from within my heart.
 
-Every time, my question was, why does K do this? What is his mission?
+Fight with your cowardly self.
 
-Looking at the state of how the world was turning, there were more than one or two things that were suspicious. In the stories of people who just kept changing so much, the hope hidden in my heart becomes absurd.
+I show this writing to those who are feeling frustrated and lonely in a society where faith has grown dim.
 
-The man named K, who entered my house freely, whether he knew my intentions or not, tried his best to make me give up my entry into politics.
+I have written the story of how, for 40 years, in a desperate situation, though a destiny was given to me, I protected myself amidst contempt and scorn, abuse and persecution, with only the conscience and courage to seek happiness and inspiration.
 
-There were people around who thought of the future and promised encouragement and support. It seemed that even the people of the world, when there were no conflicts of interest, would place their hopes on what was fair and just.
+Now, the moment you too see this book, you will come to know the fact that anyone can bless themselves.
 
-No matter how people saw me regarding my future path, which was only anxious even amidst some belief, I didn't care much. I wanted to lament that there was no place to offer my own affection to my own country.
+To those who carry a difficult destiny, asking what is happiness and what is unhappiness, I want to convey the words that they cannot obtain true happiness until they realize the value of eternal life.
 
-Then one day, the list of individuals subject to regulation was announced.
-
-With a pounding heart, I opened my eyes wide and searched for my name among the names in the newspaper, but my name was not there. Even when the second list was announced, my name was not there again.
-
-Now, there were even people around me who believed that I would run in this election and that I would be elected. A flame began to burn in my chest.
-
-To have a country, one must protect the country. And yet, when I came to my senses, only a sense of frustration was before me. There was no way to know the thoughts of today's main actors. For me, who had experienced the past, I could not guarantee anything with just common sense.
-
-I thought about what the heart of a bird in a cage would be like. How much it would want to fly in the open sky, but even with strong wings, it cannot fly in the open sky, so unless one is the one suffering, who would know that heart, I thought to myself.
-
-In my heart, a burden that arose with time began to pile up.
-
-The winter was getting colder, yet my body temperature was radiating heat.
-
-And on such a day, as if a pledge to save a new era, a story of an election-monger was being broadcast on the evening program on the screen, and the heartless human affairs bustling in the midst of material things created a heart-wrenching scene.
-
-In the city, the saying 'new wine must be put into new wineskins' became a trend and flowed from people's mouths.
-
-The time presented by the government was three months left until the election. It was just a mystery why they were rushing such a big event so quickly. In the political section of the newspapers, stories of political parties began to be published, and a few days after that, the outlines of political parties began to emerge like mushrooms after rain.
-
-In my heart, worries begin to pile up again. It was the issue of whether to place hope in the country or to make my family's hearts comfortable.
-
-In a short time, while thinking of my own terrible fate, I resolved to place a new hope in the Fifth Republic. The media outlets made people's hearts flutter even more clamorously.
-
-December 7th was the day I was to serve as the chairman of a speech contest held at the main auditorium of the Busan Anti-Communist League, and for K, it was the day of the third memorial service for his recently deceased mother.
-
-That day, I skipped the award ceremony and boarded an express train for Seoul. Before my eyes, the faces of the organizers who would doubt and resent me came to mind. The train ran excitedly.
-
-In my foolish heart, I began to hold a new affection full of expectation. I tried hard to find the value of being born into the world. I did not forget the expectation that I must find my mission for myself, no matter what.
-
-As the train got closer to Seoul, excitement arose in my heart.
-
-There was only the expectation that the Fifth Republic must give birth to a politics that could protect the hopes of our countrymen, leaving no failures behind.
-
-I remembered the resentful past days. Thinking of the not-so-proud history, the life of the persecuted populace, and as someone who had grown up without feeling love, perhaps a greater ambition arose in me for such things.
-
-If my actions could secure the happiness of my countrymen in the future, it seemed my soul could endure any pain. My promise was that I wanted to save the nation by offering my resentful past experiences.
-
-I felt a deep affection for my actions. As the rushing train arrived on time, my heart becomes busy again.
-
-To meet people, I got a Korean-style room at the Woosuk Hotel in Samgak-dong, which had relatively good transportation, and called people I knew. The people I spoke with, perhaps because of the times, were also excited and most of them rushed over right away.
-
-My hotel room soon became clamorous. This time, no one brought up words to dissuade me from my intentions.
-
-As time passed, the endless conversation allowed us to find some hope. I finally, tracing the tedious memories of 18 years, fall into the illusion that I have now met the time when I can offer my abilities. I tried to hear from those around me what actions to take immediately.
-
-The people in front of me at that time, in terms of their mentality and ability, were only people we must have, indispensable among the remaining talents in this land. So perhaps I became even more arrogant.
-
-From the next day, I decided to go and pay my respects to several newly formed political parties. People with newfound ambition, unaware of the things that would unfold, came to see me, and some brought up the idea of working together in the same political party.
-
-There was also a side that made my hotel phone ring, asking me to attend a founders' meeting to create a political party late.
-
-In any case, Seoul was bustling, and aspiring politicians who had come up from all over the country brought a business boom after a long time to the lodging businesses in Seoul that had been suffering from a slump.
-
-The newspaper articles fanned the flames in the hearts of the aspiring politicians even more fervently. I began to search for my own final decision.
-
-It was noon on that very day.
-
-The news flowing from the radio bewildered people. It was because of the declaration to abandon the formation of the tentatively named Liberal Democratic Party. In my head, I began to have questions about the things that had happened at an unexpected time.
-
-The people next to me bring up all sorts of speculations. However, for those who are not directly involved, there is no way to know the reasons for their abandonment. I now, to find a place to put myself, visited the newly formed political parties.
-
-But what was different from yesterday was something I had seen for the first time in my 12 years of organizational life.
-
-The majority of people who had initiated the creation of a political party were pleased, but the working-level officials in charge of organizational matters immediately gave the impression that they found me burdensome. At least about 4 parties were like that. These things placed a burden on my heart, which had been acting up without knowing the world.
-
-Why could that be? For a reason I didn't know, my heart kept feeling uneasy. It seemed there was something wrong with me, but there was no way to know what it was.
-
-Because of truth, conscience, and hope, my philosophical mission to offer myself to fight against contradiction was gradually getting wounded.
-
-There are bound to be differences in how each person sees the world. I felt that God had not yet made a time for me to convey my will. I didn't even want to wait for the decision in my heart of whether to give up or to participate.
-
-If I stayed one more day in Seoul, I would only lose a day's worth of lodging fees. My heart, thinking this, was bitter.
-
-For the first time in my common sense, I felt fear. As my hot chest cooled, my whole mind felt empty, and I had to pull in some other thought to fill this chest.
-
-The thought that immediately came to mind was that there was nothing more to see in Seoul. I hurried to prepare to leave Seoul quietly so that the people around me would not notice.
-
-Seoul was still overflowing with the fervor of aspiring politicians who did not know the ways of the world, and the newspapers allotted even more space to these people.
-
-I walked briskly toward Seoul Station as if fleeing from such a scene. My older acquaintance Gu Jwa-seok followed me busily, holding a bag. I didn't even have the leisure to look around.
-
-Avoiding people I felt I would bump into, with a hurried heart, I forgot even to take a car and walked all the way to Seoul Station. In front of the ticket office selling tickets for the Gyeongbu line, people were lining up at every window. Someone was trying to exchange a ticket for a train just leaving for money in front of a window.
-
-I confirmed from that person that it was a ticket to Busan and bought that ticket from him. And then, I received the bag from my older acquaintance Gu Jwa-seok, who had been acting together with me to help me until this very moment, and we exchanged a farewell handshake.
-
-The clock hanging at the station was indicating that there was not much time left until the train's departure. People getting their tickets checked run with hurried steps. Gu Jwa-seok spoke first, urging me to go in quickly.
-
-I passed through the ticket gate hurriedly and went to find my seat number on the train. The train immediately began to move, blowing its whistle. For a reason I don't know, anger keeps welling up to my throat.
-
-Even while looking at the scenery flashing by outside the window, I didn't feel the emotion I usually did, but only a stuffy and frustrated heart. In my head, I began to recall the memories of my life that was approaching 40 years.
-
-Will fate only give me failures in my attempt to leave behind a purpose? The curiosity about the future pulls my thoughts into fear. In my thoughts that had become unbearable, to save myself, I bought a bottle of soju at a station where the train stopped.
-
-The taste of soju I drank alone in the train in the middle of the day was bitter, but since I was drinking to get drunk, I forced it into my mouth. Not long after, I felt nauseous, and heat rose to my face. The effect of the alcohol made my body uncomfortable. A hazy consciousness fortunately put me to sleep.
-
-The time the train arrived in Busan was late in the afternoon. I went straight home, and my wife, from my expression, keeps observing my every move, trying to find out something.
-
-Thinking that I am a fellow with no luck wherever I go, and about to get grumpy, my wife, perhaps from some conviction to brighten my heavy expression, even puts on a beaming smile.
-
-If I were to act on my temper, I would have wanted to smack the witless woman, but thinking how much she must be pained by me to go that far, I felt a momentary loneliness for myself once again.
-
-A world that does not go as one pleases, while feeling curious about that world, for several days I stayed cooped up in the house and did not go out.
-
-I soothed my agonizing thoughts and sad thoughts with alcohol. Election-mongers occasionally visited my house. They tried to know my intentions. Their biggest interest was only in how much money I would have prepared.
-
-I could see the foolish people who had seen the drama "The Election-monger" that had recently finished airing, dreaming of making a fortune, going crazy to attach themselves to a person with money.
-
-Having to see such a sight, I needed a larger and larger amount of alcohol to sustain myself, and the effect of the alcohol spreading through my body made my body and mind fall into a state of collapse.
-
-Even in the same daily actions, when I couldn't soothe the world's affairs with alcohol and came outside, I could hear unexpected words in the stories of the people coming and going, and the future of the country fanned the flames of worry in my heart.
-
-In the newspapers and on the broadcasts, the names of the organizers announced by each political party were published daily. In a way, it also looked like a single catastrophe.
-
-Seeing this, should I open my mouth or close it? Now, I was just doubtful of how many people were left in society to confirm the truth.
-
-I did not want to open my mouth because of the chill I felt when I read the proclamation that spreading groundless rumors or false accusations would be severely punished. Everything is known by heaven, how could I possibly gauge this right or wrong, I thought.
-
-Day by day was tedious. I drank alcohol without looking at the time. In my heart, it was a state of collapse, having forgotten hope. With an anxious heart, I couldn't find a person to talk to and staggered around the streets.
-
-Spring came again. There were many people who wanted to succeed, even in this situation. I held a smile to myself at the corner of my mouth. Some people seemed pitiful even to look at. When I thought of their families, I also felt sympathy.
-
-March was hard for me to endure. The candidates for the National Assembly kept the order well without revealing any political alternatives or convictions.
-
-Seeing this, I did not feel the reality of the election more than ever before. Only my mind, depending on how I thought, was dark and fearful.
-
-My nose had become a strawberry nose and was swollen with a red color. I was so poisoned by alcohol that it felt as if my body was pickled in it.
-
-My wife worried about me, who was too concerned about the affairs of the world. She also complained, asking why I couldn't live like others, asking if I was trying to become some patriot. She asked if there was even one person who was an independence activist during the Japanese occupation who is successful now.
-
-Hearing my wife's words, I had now even forgotten the leisure to scold her for it and became dazed. In my heart that was turning to collapse, the sense of justice that could not close its eyes to escape the pain of reality cried alone without a sound.
-
-Then one day, the general election finally ended. In my heart, I was a little bitter about the election results, but I did not want to raise another objection to what other people had chosen because they liked them.
-
-As my frustrated heart would not be relieved, several more days passed.
-
-One afternoon, in the local section of the delivered daily newspaper, an article was published that the coastal road in the area of 95-18 Seogu Amnam-dong, a 46-meter section that had been cut off and neglected, would undergo restoration work.
-
-And then a month after that, I don't know which construction company took on the work, but they started lifting the broken concrete pieces with a crane and leveling the ground.
-
-In my chest, new thoughts began to stir after a long time.
-
-Thinking that all the will of the world is decided by heaven, I changed my thoughts about my own future. It felt as if vitality was gradually reviving after a long time.
-
-As summer came, roads were built again in the flood-damaged areas. The construction company that had taken on the work withdrew. I was going to try to do business diligently.
-
-While leveling the remaining land we owned and handling the seawall construction for the road with my own hands, for some reason, a corner of my heart was bitter.
-
-It was because the spot where the work supervised by the government office was finished somehow kept bothering me. Thinking of the disaster to come regarding this, my mind was just pained.
-
-In any case, for my work, I borrowed money and started the construction, and after a few days, the seawall construction was also finished.
-
-The hot summer weather continued to be hot. After finishing the construction and looking at it, it was now impossible to do the kind of sand business I had done before. It was because on the shoddily done road side, the seawall construction had not properly prepared the ground, so large rocks were buried under the water any which way.
-
-Also, looking at this, I was frustrated with the way people in the world work. If a typhoon came, would that kind of thing be able to withstand it? Such a doubt kept leaving a question in my mind.
-
-Then one day, the sea's waves became rough. It was the weather forecast that a typhoon would come. The next day, the sea began to turn upside down. The wave height got higher and higher. The weather station's announcement changes every hour. They say the typhoon is passing by, brushing against the coast of our country.
-
-I felt a slight sense of relief, but for some reason, my heart was not at ease about the sea side. That afternoon, the road that had taken two years to complete broke powerlessly, and the newly restored parts fell under the water.
-
-Watching this process, I began to be dumbfounded. The sense of stability that had briefly stayed with me crumbles in an instant. My chest ached more from the distrust of the authorities than from my own loss. Why is the world allowed to be like this? I really hated a world where the wronged person does not receive sympathy.
-
-What pained my heart again was the slogan to help the flood victims. Laughter came out of me by itself. I had no interest at all in the contents of the media outlets that were making a fuss day after day. If it weren't for alcohol, I would have ended up going mad, unable to control the sad emotion of having forgotten even the place to speak of the dumbfounding story.
-
-I don't know for what reason they dragged on the "emergency recovery" for several years, but just a few days after finishing it as if they were grudgingly completing the construction, that same spot burst again, so this time, even people unrelated to the flood area poured out their resentment against the authorities rather than their distrust of the construction itself.
-
-It was the question of whether it burst because of the waves, or if it was caused by a shoddy job without preparation.
-
-When it came to this, the relevant government office opened its mouth. The content was reported in the newspaper, and it was that the waves were exceptionally strong. And yet, the strange thing was that of all the destroyed parts in the vicinity, the only loss was in the construction section that the government office had supervised.
-
-For people like me who were just frustrated and felt wronged, no one asked, but there was also no place to speak.
-
-As I suffered flood damage repeatedly, I had experience from last time, so I knew that this time too, they would not help a flood victim like me.
-
-And yet, when this kind of thing happened, as if it were some annual event, the heartless action of even students running around in the streets only created worry about the unfortunate reality. To me in this state, a certain person came to my house.
-
-I don't know if it was a voluntary action or if someone had ordered it without knowing, but the old man from the neighborhood whom I knew by sight came looking for me and said he would help the flood victims. My eyes immediately open wide.
-
-Thinking that this time it was real, and thinking how the old man knew that we had suffered flood damage when it wasn't even in the newspapers, even if it was a neighbor's affair, I was glad.
-
-So my face was immediately in a good mood as if I had met some savior, but later, knowing the old man's true intention, I was dumbfounded.
-
-He stubbornly insisted that I give a donation. I was so dumbfounded that words would not come out. I felt pathetic, wondering why all people were like this.
-
-With a blatantly unpleasant feeling that I could not hide, I asked what he would do if I gave him money, and he just said it was to help the flood victims. So I kept asking who he would give the money to if it was collected. The face of the old man who had demanded a donation from me began to turn red.
-
-I finally grumbled about the story of how I had reached the verge of bankruptcy due to the typhoon damage and that even though I had suffered flood damage repeatedly, far from receiving support, there was not a single person who spoke a kind word, and that person left my presence as if fleeing. Again, the thought arises that the world is indeed a big problem.
-
-This fact is not something you can just talk about anywhere. Since articles about cracking down on groundless rumors are so often published in the newspapers, even if you tell the truth, if they say it's not the truth, who will prove this, so I couldn't distinguish if this was a comedy or a tragedy. I was burning up inside and frustrated.
-
-I filled the time with alcohol. I persecuted my own body. Feeling that I was living while seeing truly difficult world affairs, I wondered if life itself was a sea of suffering, as a monk at some temple had said.
-
-Do other people feel this way and die, or is it only me who feels it? I had lost all the hope that was before me. I had foreseen it, but I felt it was truly a frightening world.
-
-There was no place to even speak of the sad sorrow of having to see one's own empty and lonely self. Even though it seemed my liver and intestines in my stomach were suffering from the alcohol and I was getting sick, I couldn't just spend my time idly, so I drank alcohol again.
-
-It was a night in that late summer. It was after 10 p.m. on the evening of August 14, 1981, and the sound of the telephone bell torments my nerves.
-
-At the incessant ringing, I difficultly picked up the receiver. The other side of the phone urgently asks for me. I told the other side that the person on the phone was me. The person who greeted me with a pleased voice that changed instantly was comrade Choi Hee-soo, who lived in Seoul.
-
-The news he gave me was a sad one. He informed me of the death of my older acquaintance Gu Jwa-seok and asked me to come up on the night train.
-
-The alcohol I had drunk messily was instantly gone. My dazed feeling changed to collapse.
-
-My impetuous nature revealed its true colors again at a time like this. Looking at the clock, I hurried to catch the last night train to Seoul.
-
-I pressed my wife to get me travel expenses and rushed out of the house like a madman.
-
-Perhaps because it was the vacation season, when I arrived at the station, the front of the station was crowded with a young crowd heading up to Seoul, and the front of the ticket office was bustling. Standing behind a long line, with the thought that I had to buy even a standing-room-only ticket, I kept paying attention to the hands of the clock.
-
-Inside the last train leaving Busan that day, it was difficult for people with standing-room-only tickets to even stand. Heat arose between people.
-
-I, with my large frame, couldn't squeeze into a seat bought by someone with a seat ticket, and if I stood leaning for a moment next to someone's seat, a young person would push my hip away. As my body grew tired, time went by even more slowly. My mind also gets exhausted from fighting the tedious feeling.
-
-In my hurried heart, a complaint comes out. I curse at the dead person for making the living suffer, and only then do I laugh.
-
-Because of the tedious time, thinking of the things that had happened between him and me over the past 15 years, I felt some emotion for a while.
-
-To leave, leaving me with much to do, with whom else can I associate, believe to be a true comrade, and discuss dreams and intentions for the world? A new sense of regret arose for him who had met a different fate.
-
-The train that had run all night, piercing through the darkness, entered the city of Seoul. While washing my face with water in the train's lavatory, I thought of the things I would experience during the day today. A fortunate thing was that when I got off the train, the grill at Seoul Station at that hour was open, so I could use it.
-
-I let comrade Choi Hee-soo's house know that I had come up to the capital. Comrade Choi Hee-soo says he will come out soon and hangs up the phone I had made. In a hurry, I had to contact other comrades I knew in Seoul, but because of the date, August 15th, it was difficult to make contact.
-
-I waited for comrade Choi while searching in my head for the things I had to do for the last time for my older acquaintance Gu Jwa-seok. Comrade Choi Hee-soo, whom I hadn't seen in quite a while, appeared at the station grill with a happy face sooner than I had thought.
-
-And he started to guide me, putting me in his car. The two of us went to find the shabby mortuary of my older acquaintance Gu Jwa-seok, which was set up in a hospital.
-
-His family members recognize my face and burst into tears.
-
-When I faced the photograph placed on the altar in front of his mortuary, I finally felt the reality that he was dead, and thinking of his past deeds, I thought of him who had suffered because of his conscience and sense of justice, and I shed tears.
-
-My older acquaintance Shim Bong-seop, who had been a member of the National Assembly from Gyeongju, was overseeing the funeral arrangements at the mortuary. We talked about my older acquaintance Gu Jwa-seok's past and about the funeral arrangements. The deceased's younger brother and sisters also seemed to want to rely on my and Shim Bong-seop's opinions.
-
-As I had not closed my eyes once all night, I was tired. When evening came, a dispute arose over the matter of the burial site for the funeral to be held the next day.
-
-The deceased's younger siblings wanted to bury him on the family mountain in Gwangju, Gyeonggi Province, and his wife's opinion was to bury him in a Christian cemetery park near Seoul. Both sides were very stubborn and there was no compromise.
-
-Also, the pastor of the church the deceased had attended in his lifetime came and even said that they would take responsibility for all the costs related to the cemetery. The opinions of several people were decided on Ilsan, near Seoul.
-
-I persuaded the deceased's younger siblings and recommended that they do so. The deceased's younger siblings also listened to me. The time was already well into the evening. Only then did people look at me and recommend that I go somewhere and rest my body, and some people recommended that I go to their house.
-
-The group of several people who had been close to the deceased in his lifetime left only the bereaved family at the hospital mortuary and got up from their seats, thinking of the funeral to be held the next day.
-
-I followed comrade Choi Hee-soo to Cheonho-dong. When I thought of the dead person, I felt endlessly desolate. I wanted to receive comfort for my empty heart from somewhere. My tired thoughts gradually disappear.
-
-The thought that he was a truly good friend keeps forming in my head. Comrade Choi Hee-soo gave me a little alcohol.
-
-On August 16th, I stopped by the hospital to hold the funeral and was shocked by something I heard. The death of my older acquaintance Gu Jwa-seok was not from illness but was a suicide.
-
-Confirming it from the death certificate issued by the hospital, I thought of his pain before he died, and I immediately felt a breathless pain in myself as well.
-
-The grief of a young man who died without living out his life piled up in my chest.
-
-Why did you die? Say something. No matter how much I asked, I could not hear his voice.
-
-Because I didn't know the cause of death, I was even more frustrated. The people around made all sorts of speculations, and only then did the people who were around at that time talk about the things that had happened.
-
-The atmosphere among the bereaved family was tense. I thought that the dead should not be further disgraced. I calmed the excited people and hurried to proceed with the funeral procedures.
-
-As the hearse crossed the boundary of Seoul Metropolitan City, it rattled along on an unpaved road. In my head, even the smallest things that had happened between him and me until now came to mind.
-
-The fact that he, who had said he would give his life for the country, had ended his life with suicide without leaving a reason, was incomprehensible, but the fear that if there was a reason for his death, it must have been a considerable one, could not be hidden.
-
-At the public cemetery, the workers there already knew the grave site where the body would lie and had dug a pit for the coffin to go in, and were just waiting for our arrival. Seeing this scene, I felt a lump in my throat.
-
-My friend, my comrade, rest in peace. Even if your final tragedy was sad, I too have a place that resembles you, so I will die after doing your share for the country. Such words rose from my throat like a promise.
-
-Seeing me back from Seoul, my wife's nerves seemed to be on edge even more about my health. I gradually felt the futility of life itself.
-
-Day by day, I would fall into a state of collapse due to the things happening in the world, and in the solitude of feeling like I was left alone in this world, I would be lost in pessimistic thoughts and also feel despair about myself.
-
-Truly, day by day was tedious, and my will for reality was being lost. Again, my life began to receive comfort from alcohol. With a shameless face, I would wander the streets in search of someone to drink with me.
-
-My face grew gaunt, and my nose again began to shine red. My wife, seeing me like this, began to worry as she always had. Does she know my heart that wishes I were dead?
-
-I wanted to forget everything about myself. What is good and what is evil? When it passes, what is left is only memory, so why can't people understand the same thing in the same way?
-
-The soul is born into the world receiving a body to save itself, but because of the body, it falls into the temptation of desire.
-
-Who am I? Why am I different from other people? A tenacious life force, stories that continue like a miracle, a life that holds beautiful memories in a destiny full of only pain.
-
-Doubts arose about everything. How should I live? I waited for someone to answer that question.
-
-Then one day, I discovered a physical defect in myself that I had never felt before.
-
-My whole body felt drained of energy. It was difficult even to walk a short distance. When I think that I might die like this, some lingering attachment remains. I feel that a regret for life remains in me.
-
-I went to the hospital to check my health status.
-
-The diagnosis from the internal medicine specialist frightens me, saying my liver is badly damaged due to alcohol. He recommended that I be hospitalized, but when I thought of the treatment costs associated with the hospitalization procedure, the vague answer that it wasn't a fatal illness right away popped out.
-
-Perhaps because of the doctor's words, I grow to dislike alcohol. I began to take a few liver treatment pills that are commonly available at the pharmacy. As day by day passed, vitality began to sprout again in my body.
-
-The justice that was dying in my chest was revived, and with a new affection for the country, I began to feel something like regret.
-
-I again, to find my mission, think deeply and diligently formulate some theory. I feel the fact that the problems a person faces can be solved within one's own mind.
-
-I thought that the work I had to do in this land was to offer my conscience, courage, and effort before my fellow countrymen. And yet, this was not an easy task because of the problem of today's political reality.
-
-On this land, there was a group of power, there was evil, and there was the desire of the flesh, so my actions were being rejected.
-
-God does not show me a miracle for this. People do not think much of me. Only my heart is frustrated. Around us, there are many difficulties due to various conditions. And yet, no one puts forth any truth again.
-
-There is no one who is willing to die now for the problems of tomorrow. They are just trying to deceive and be deceived over an obvious fact. Is this the logic of the learned people of today?
-
-Is this tremendous fact of distorting the truth recklessly because it is easy to say with the mouth being hidden with some kind of confidence? The truth is something that can never be hidden, so I was just worried about the future of the society we are living in.
-
-To be for oneself, one must first fight with oneself, and a person who knows how to be for his countrymen must first fight with his countrymen; this truth comes to mind.
-
-I think in my head of how difficult it is to offer oneself for the country.
-
-A conscience that will be with suffering, a justice that will be with danger, a lonely courage that must be found in the midst of starvation.
-
-I now, because of these thoughts of mine, felt the tediousness of the reality that I was living longer than anyone else.
-
-As I only see a truly pitiful world, to comfort my own solitude in front of my eyes, whenever I grab a person I meet and convey my theory, the people who only have the sense to live in reality feign ignorance even when I speak the right words.
-
-Even while seeing this, I could not just lament the affairs of the world for which no one could be blamed.
-
-Conscience, trying to live by relying on this conscience that torments oneself was only more difficult. Self-torment and self-reproach exhaust me even if left alone. Now there was truly nothing to wait for or to look for.
-
-I thought of the memory that though I was born in this land and lived a lonely life, I had lived without shame. The conscience I had stubbornly kept is a comfort at times.
-
-Who will save us of today? O heavens, give us your blessing. Help people to realize the truth. I began to pray for things that I myself could not handle.
-
-It was one such day. December 26, 1981, while feeling disappointment with the world, there was a destiny that I had to suffer once more in a society that only betrays the era we are living in.
-
+I sincerely hope that through my sacrifice, many more people will be blessed with life, even if just a little.
 
 -The End-
 
