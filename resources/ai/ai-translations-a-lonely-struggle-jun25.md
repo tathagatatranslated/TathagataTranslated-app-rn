@@ -1,3 +1,13 @@
+NOTE FROM THIS WEBMASTER: I made this translation by using AI software so it could be *very incorrect*, missing, or totally made up in some places. 
+
+Please do not take this content as an absolute or authoritative translation. It is likely there is at least one major error by the AI translator. 
+
+I suggest people make better translations of this as this sort of AI translation software becomes more reliable in the future and prompts are perfected. I tried making many AI translations of these chapters and they often turned out very differently each time, if that tells you anything. 
+
+The prompt used to obtain the translation makes a very, very big difference - and because the systems are probabilistic, you still absolutely should find a fluent human speaker to tell you the right interpretation. I have not fully checked this content even for completeness (some sentences might be missing especially at the end of chapters), so *read it at your own risk*.
+
+
+---
 
 
 
