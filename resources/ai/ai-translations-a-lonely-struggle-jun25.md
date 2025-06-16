@@ -7,14 +7,14 @@ I suggest people make better translations of this as this sort of AI translation
 The prompt used to obtain the translation makes a very, very big difference - and because the systems are probabilistic, you still absolutely should find a fluent human speaker to tell you the right interpretation. I have not fully checked this content even for completeness (some sentences might be missing especially at the end of chapters), so *read it at your own risk*.
 
 
-
+---
 
 
 
 Son of a Hwajeonmin [slash-and-burn farmer], Lee Sam-han
 A Lonely Struggle
 
-
+---
 
 New Four-Six Edition 380 pages
 Printing / April 30, 1983
@@ -23,6 +23,8 @@ Author / Lee Sam-han
 Publisher / Seo Jae-sam
 Publishing House / Busan Mun-ye-sa
 Printing Company / Taehwa Publishing Company
+
+---
 
 A Lonely Struggle
 
@@ -60,6 +62,8 @@ To those who are still without blessings, I want to show them the way.
 
 Lonely people of the world, fight against your cowardly self.
 
+---
+
 Table of Contents
 
 1. Elegy in the Forest (悲歌)
@@ -92,7 +96,12 @@ Table of Contents
 28. The Frustrating People
 29. The Talented Fool
 30. Despair and Blessing
+
+
 Afterword
+
+
+---
 
 1. Elegy in the Forest (悲歌)
 
