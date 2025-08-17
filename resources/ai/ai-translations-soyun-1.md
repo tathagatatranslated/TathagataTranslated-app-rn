@@ -14,7 +14,9 @@ It would be a great and worthwhile goal for someone who speaks Korean natively t
 
 Original Korean source material follows English translation.
 
-From: http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm
+From: [http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm](http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm)
+
+This content was copyright © 實相學會:Society of Enlightenment.
 
 
 # Translated Content of "Life Story of Soyun, part 1"
@@ -22,6 +24,8 @@ From: http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm
 **Yoon So-yeon**
 
 **Renunciation**
+
+<div>
 
 Why am I living?
 What is my origin?
@@ -1104,12 +1108,16 @@ He carefully started talking to me:
 "Sunim [i.e. master], may I ask you something?"
 
 - To be continued -
+</div>
 
 
 
 # Source Material
 
-From http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm
+From [http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm](http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm)
+
+
+<div>
 
 
 윤 소 연
@@ -2027,3 +2035,4 @@ From http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm
  
 
 - 계속 -
+</div>

@@ -25,6 +25,8 @@ This content was copyright © 實相學會:Society of Enlightenment.
 
 **Meeting**
 
+<div>
+
 There weren't many people on the moving bus. I was absentmindedly looking at the cityscape flowing past the window.
 
 Then someone lightly tapped my shoulder, so I turned my head in that direction.
@@ -1044,15 +1046,17 @@ He said Buddha's path would open again here and all of heaven's energy would gat
 
 - To be continued -
 
-
+</div>
 
 
 
 
 # Source Material
 
-From http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory2.htm
+From [http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory2.htm](http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory2.htm)
 
+
+<div>
 
 윤 소 연
 
@@ -2150,3 +2154,5 @@ Mr.진이라는 현직 교사는 우리에게 제발 식수를 조심하라고 �
 
 - 계속 -
 
+
+</div>

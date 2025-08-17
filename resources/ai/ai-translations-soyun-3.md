@@ -14,7 +14,7 @@ It would be a great and worthwhile goal for someone who speaks Korean natively t
 
 Original Korean source material follows English translation.
 
-From: http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory3.htm
+From: [http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory3.htm](http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory3.htm)
 
 This content was copyright © 實相學會:Society of Enlightenment.
 
@@ -24,6 +24,8 @@ This content was copyright © 實相學會:Society of Enlightenment.
 **Yoon So-yeon**
 
 **Opening of Dalma-won, the House of Enlightenment**
+
+<div>
 
 March 5, 1989, Dalma-won (House of Enlightenment) opened its doors.
 
@@ -556,11 +558,15 @@ Not meeting people who want to bless themselves, there's nowhere to give his ble
 
 <End>
 
+</div>
+
 
 # Source Material
 
-From http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory3.htm
+From [http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory3.htm](http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory3.htm)
 
+
+<div>
 
 윤 소 연
 
@@ -1177,3 +1183,4 @@ From http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory3.htm
 
 < 끝 >
 
+</div>
