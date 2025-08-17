@@ -423,6 +423,10 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
     "precepts-commentary": require('../resources/transcriptions/commentary on sixteen precepts.md'),
     "traveler-background-from-publisher": require('../resources/specific/traveler-background-from-publisher.md'),
     //
+    "ai-translations-soyun-1": require('../resources/ai/ai-translations-soyun-1.md'),
+    "ai-translations-soyun-2": require('../resources/ai/ai-translations-soyun-2.md'),
+    "ai-translations-soyun-3": require('../resources/ai/ai-translations-soyun-3.md'),
+    //
     "ai-translations-traveler-jun25": require('../resources/ai/ai-translations-traveler-jun25.md'),
     "ai-translations-a-lonely-struggle-jun25": require('../resources/ai/ai-translations-a-lonely-struggle-jun25.md'),
     //
@@ -2027,6 +2031,21 @@ export const content_map: { [key: string]: ContentMapElement[] } =
             cell: "Books - A Lonely Struggle",
             descr: "Translated by AI in June 2025",
             html_id: "ai-translations-a-lonely-struggle-jun25"
+        },
+        {
+            cell: "Life of Soyun, part 1",
+            descr: "Translated by AI in Aug. 2025",
+            html_id: "ai-translations-soyun-1"
+        },
+        {
+            cell: "Life of Soyun, part 2",
+            descr: "Translated by AI in Aug. 2025",
+            html_id: "ai-translations-soyun-2"
+        },
+        {
+            cell: "Life of Soyun, part 3",
+            descr: "Translated by AI in Aug. 2025",
+            html_id: "ai-translations-soyun-3"
         }
     ],
     "new-translations": [
