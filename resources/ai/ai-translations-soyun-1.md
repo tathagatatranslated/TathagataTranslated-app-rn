@@ -14,7 +14,7 @@ Original Korean source material follows English translation.
 
 From: [http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm](http://natureteaching.com/ENLIGHTENMENT/4_history/soyun_lifestory1.htm)
 
-This content was copyright © 實相學會:Society of Enlightenment.
+The Korean content was copyright © 實相學會:Society of Enlightenment.
 
 
 # Translated Content of "Life Story of Soyun, part 1"
