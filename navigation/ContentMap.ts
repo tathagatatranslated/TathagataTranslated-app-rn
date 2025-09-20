@@ -441,7 +441,7 @@ const pathsFor_mds_by_html_id: { [key: string]: string} =
     "guide-charity-park_jihyeon": require('../resources/TranslatingTathagata-Translations/Guide - Charity - Excerpt/Charity Excerpt Translated by park_jihyeon.md'),
     "guide-introduction1": require('../resources/TranslatingTathagata-Translations/Guide - Introduction 1 - Excerpt/Introduction1 Excerpt Translated by J_Lee_77777.md'),
 
-    "natureteaching-no8-qa": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Translation by Olivia on Mar 7 2019 of 02-16-1999 - Keble College - Philosophy Society QA.txt'),
+    "natureteaching-no8-qa": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Translation from Mar 7 2019 of 02-16-1999 - Keble College - Philosophy Society QA.txt'),
     "natureteaching-no8-background": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Translation Background.md'),
     "natureteaching-no8-source-kr": require('../resources/TranslatingTathagata-Translations/natureteaching - No.8 - Correspondent Report Q&A/Original Korean text - 02-16-1999 - Keble College - Philosophy Society QA.txt'),
     
@@ -2263,12 +2263,12 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "guide-charity": [
         {
             cell: "Charity - Excerpt",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "guide-charity-jl"
         },
         {
             cell: "Charity - Excerpt",
-            descr: "English Translation by park_jihyeon",
+            descr: "English Translation by native speaker",
             html_id: "guide-charity-park_jihyeon"
         },
         {
@@ -2283,7 +2283,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "guide-introduction1": [
         {
             cell: "Guide - Introduction 1 - Excerpt",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "guide-introduction1"
         },
         {
@@ -2303,7 +2303,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Keble College - Philosophy Society QA on 02-16-1999",
-            descr: "English Translation by Olivia",
+            descr: "English Translation by Native Speaker",
             html_id: "natureteaching-no8-qa"
         },
         {
@@ -2334,7 +2334,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-appear": [
         {
             cell: "Buddha's Appearance",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-appear"
         },
         {
@@ -2349,7 +2349,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-basis-and-foundation": [
         {
             cell: "Message - Basis and Foundation (February 23, 1993)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-basis-and-foundation"
         },
         {
@@ -2364,7 +2364,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-buddhas-way-feb23": [
         {
             cell: "Message - Buddha's Way (February 23, 1993)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-buddhas-way-feb23"
         },
         {
@@ -2379,7 +2379,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-buddhas-way-jan5": [
         {
             cell: "Message - Buddha's Way (January 5, 1989)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-buddhas-way-jan5"
         },
         {
@@ -2394,7 +2394,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-end": [
         {
             cell: "Message - End of the World Phenomenon and the End",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-end"
         },
         {
@@ -2409,7 +2409,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-foolishness": [
         {
             cell: "Message - Foolishness and Enlightenment (February 23, 1993)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-foolishness"
         },
         {
@@ -2424,7 +2424,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-i-am-a": [
         {
             cell: "Message - I Am a Scientist Who Studies Behavior of the Natural World",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-i-am-a"
         },
         {
@@ -2439,7 +2439,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-i-want": [
         {
             cell: "Message - I Want to Provide Answers to This Question",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-i-want"
         },
         {
@@ -2454,7 +2454,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-i-will": [
         {
             cell: "Message - I Will Answer Any of Your Questions",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-i-will"
         },
         {
@@ -2469,7 +2469,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-in-todays-world": [
         {
             cell: "Message - In Today's World, What Is the Problem (January 1, 1996)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-in-todays-world"
         },
         {
@@ -2484,7 +2484,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-meaning": [
         {
             cell: "Message - Meaning (Janury 28, 1990)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-meaning"
         },
         {
@@ -2499,7 +2499,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-righteous": [
         {
             cell: "Message - Righteous Person (February 23, 1993)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-righteous"
         },
         {
@@ -2514,7 +2514,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-the-most": [
         {
             cell: "Message - The Most Feared Adversary is Indifference (October 1990)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-the-most"
         },
         {
@@ -2529,7 +2529,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-the-square": [
         {
             cell: "Message - The Square of Truth (October 1990)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-the-square"
         },
         {
@@ -2544,7 +2544,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-message-truth": [
         {
             cell: "Message - Truth and Truthfulness (Febraury 23, 1993)",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-message-truth"
         },
         {
@@ -2559,7 +2559,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-effort": [
         {
             cell: "Teaching - Effort",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-effort"
         },
         {
@@ -2574,7 +2574,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-prayer-kido": [
         {
             cell: "Teaching - Prayer",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-prayer-kido"
         },
         {
@@ -2589,7 +2589,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-prayer-penitence-hope": [
         {
             cell: "Teaching - Prayer of penitence and prayer of hope",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-prayer-penitence-hope"
         },
         {
@@ -2609,7 +2609,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Teaching - Precepts",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-precepts"
         },
         {
@@ -2629,22 +2629,22 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Teaching - Road to Enlightenment 1",
-            descr: "English Translation by JL",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-road1"
         },
         {
             cell: "Teaching - Road to Enlightenment 2",
-            descr: "English Translation by JL",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-road2"
         },
         {
             cell: "Teaching - Road to Enlightenment 3",
-            descr: "English Translation by JL",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-road3"
         },
         {
             cell: "Teaching - Road to Enlightenment 4",
-            descr: "English Translation by JL",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-road4"
         },
         {
@@ -2671,7 +2671,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "tathagata-teaching-transcendence": [
         {
             cell: "Teaching - Transcendence",
-            descr: "English Translation by JL",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-transcendence"
         },
         {
@@ -2691,7 +2691,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
         },
         {
             cell: "Teaching - Words",
-            descr: "English Translation by JL",
+            descr: "English Translation by native speaker",
             html_id: "tathagata-teaching-words"
         },
         {
@@ -2706,7 +2706,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "teaching-9ho": [
         {
             cell: "Teaching - 9ho - Daedam9 - Full Article",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "teaching-9ho"
         },
         {

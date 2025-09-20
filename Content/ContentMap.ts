@@ -2296,12 +2296,12 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "guide-charity": [
         {
             cell: "Charity - Excerpt",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "guide-charity-jl"
         },
         {
             cell: "Charity - Excerpt",
-            descr: "English Translation by park_jihyeon",
+            descr: "English Translation by native speaker",
             html_id: "guide-charity-park_jihyeon"
         },
         {
@@ -2316,7 +2316,7 @@ export const content_map: { [key: string]: ContentMapElement[] } =
     "guide-introduction1": [
         {
             cell: "Guide - Introduction 1 - Excerpt",
-            descr: "English Translation by J_Lee_77777",
+            descr: "English Translation by native speaker",
             html_id: "guide-introduction1"
         },
         {

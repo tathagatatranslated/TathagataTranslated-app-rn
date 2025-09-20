@@ -1,5 +1,5 @@
-# Translatiosn by JLee on Apr 5, 9 2019
+# Translations from Apr 5, 9 2019
 
-This translation was performed by J_lee_77777 who operates at https://www.fiverr.com/j_lee_77777.
+This translation was performed by a native Korean speaker who operated on fiverr.
 
-Paul S corresponded with J Lee to perform a number of readability revisions.
+This publisher corresponded with them to perform a number of readability revisions.
